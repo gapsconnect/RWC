@@ -11360,25 +11360,31 @@ ul.slick-dots {
 .mail-cart {
   border-top: 1px solid #e7e7e7;
   padding: 40px 0; }
-  .mail-cart h3 {
+
+.mail-cart h3 {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
     color: #979da0;
     font-weight: 300;
     text-transform: uppercase; }
-    .mail-cart h3 span {
+
+.mail-cart h3 span {
       color: #232a32; }
-  .mail-cart form {
+
+.mail-cart form {
     padding: 50px 0; }
-  .mail-cart .checkbox {
+
+.mail-cart .checkbox {
     float: right;
     margin-right: 40px; }
-    .mail-cart .checkbox label {
+
+.mail-cart .checkbox label {
       font-family: "Roboto", sans-serif;
       font-size: 14px;
       color: #979da0;
       font-weight: 400; }
-  .mail-cart button {
+
+.mail-cart button {
     background: #63aa3d;
     border: 1px solid #63aa3d;
     font-family: "Roboto", sans-serif;
@@ -11389,6 +11395,43 @@ ul.slick-dots {
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 4px; }
-    .mail-cart button:hover {
+
+.mail-cart button:hover {
       color: #63aa3d;
       background: white; }
+
+
+.announcement-container {
+		width: 100%;
+		overflow: hidden;
+		background-color: #ffcc00;
+		color: #000;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+	}
+
+.announcement-text {
+		display: inline-block;
+		white-space: nowrap;
+		padding: 10px 0;
+		animation: slide-left-to-right 10s linear infinite;
+	}
+
+@keyframes slide-left-to-right {
+		from {
+			transform: translateX(-100%);
+		}
+		to {
+			transform: translateX(100%);
+		}
+	}
+
+	/* Ensure header is pushed down to make space for the announcement */
+.header-main {
+		margin-top: 50px; /* Adjust based on announcement height */
+	}
