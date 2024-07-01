@@ -429,14 +429,14 @@ $(document).ready(function () {
     if($('.client').length){
         $('.client').slick({
             infinite:true,
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll:1,
             dots:false,
             arrows:false,
             autoplay:true,
                 responsive: [
                     {
-                      breakpoint: 2000,
+                      breakpoint: 1000,
                       settings: {
                         slidesToShow: 5,
                         slidesToScroll: 1
