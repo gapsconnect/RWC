@@ -10509,7 +10509,8 @@ ul.slick-dots {
   z-index: 0; }
 
 .formcontact {
-  padding: 30px 90px; }
+  padding: 30px 90px;
+height: 1183px; }
   .formcontact .form-group {
     margin-bottom: 20px;
     width: 100%;
