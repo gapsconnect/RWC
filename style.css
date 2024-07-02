@@ -10338,6 +10338,14 @@ ul.slick-dots {
   position: relative;
   display: block; }
 
+  .image_eg {
+	width: 100%;
+	height: 400px;
+	background: #b81e20;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	position: relative;
+	display: block; }
 .column_g {
   position: relative;
   overflow: hidden;
