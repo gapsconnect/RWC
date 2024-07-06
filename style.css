@@ -6122,6 +6122,7 @@ h4 {
   h4 span {
     color: black; }
 
+	
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -7107,73 +7108,97 @@ h6 {
     margin: 20px auto;
     padding: 0; } }
 
-.banner {
-  background: white;
-  height: 500px; }
-  @media screen and (min-width: 768px) {
-    .banner {
-      height: 950px; } }
-  .banner img {
-    max-width: 100% !important; }
-
-.bannertext {
-  font-family: "Montserrat", sans-serif;
-  font-size: 120px;
-  color: #57606a;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-style: italic;
-  padding-right: 10px; }
-  .bannertext01 {
-    font-size: 90px;
-    text-transform: uppercase;
-    padding-right: 10px; }
-    .bannertext01 sup {
-      font-size: 50%;
-      top: -1em; }
-  .bannertext02 {
-    background: #b82128;
-    color: white;
-    position: relative;
-    font-style: italic;
-    padding: 13px 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    color: white;
-    font-weight: 400; }
-    .bannertext02:after, .bannertext02:before {
-      position: absolute;
-      width: 0;
-      height: 0;
-      content: '';
-      top: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent; }
-    .bannertext02:after {
-      right: -21px;
-      border-top: 45px solid #b82128; }
-    .bannertext02:before {
-      left: -21px;
-      border-bottom: 45px solid #b82128; }
-  .bannertext03 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 23px;
-    color: #1d2452;
-    font-weight: 400; }
-
-.banner-text {
-  background: #57606a;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  color: white;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 20px 0;
-  text-align: center; }
-
-@media screen and (min-width: 992px) {
-  .banner-text {
-    display: none; } }
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 500px;
+		overflow: hidden;
+		background: white;
+	}
+	@media screen and (min-width: 768px) {
+		.banner {
+			height: 950px;
+		}
+	}
+	.banner .slides {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	.banner .slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.banner .slide.active {
+		opacity: 1;
+	}
+	.banner .slide img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.banner .banner-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		z-index: 2;
+	}
+	.banner .bannertext {
+		font-family: "Montserrat", sans-serif;
+		font-size: 120px;
+		color: #57606a;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-style: italic;
+		padding-right: 10px;
+	}
+	.banner .bannertext01 {
+		font-size: 90px;
+		text-transform: uppercase;
+		padding-right: 10px;
+	}
+	.banner .bannertext02 {
+		background: #b82128;
+		color: white;
+		padding: 13px 20px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 15px;
+		font-weight: 400;
+	}
+	.banner .bannertext03 {
+		font-family: "Montserrat", sans-serif;
+		font-size: 23px;
+		color: #1d2452;
+		font-weight: 400;
+	}
+	.banner .navigation {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-between;
+		z-index: 3;
+	}
+	.banner .nav-btn {
+		background: rgba(0, 0, 0, 0.5);
+		border: none;
+		color: white;
+		font-size: 30px;
+		padding: 10px;
+		cursor: pointer;
+	}
+	.banner .nav-btn:hover {
+		background: rgba(0, 0, 0, 0.7);
+	}
+	
 
 .layercontent01 {
   left: 0% !important;
