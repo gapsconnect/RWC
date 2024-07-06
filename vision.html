@@ -11,6 +11,20 @@
     <link rel=stylesheet href=style.css>
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
+	<style>
+
+
+		@media screen and (max-width: 768px) {
+		  .information_section {
+			flex-direction: column;
+		  }
+		
+		  .card {
+			width: 100%;
+		  }
+		}
+		
+			</style>
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -18,10 +32,10 @@
 <![endif]-->
 <div class=wrapper>
 	<div class="announcement-container">
-        <div class="announcement-text">
-            Important Announcement: Website is under construction!
-        </div>
-    </div>
+		<div class="announcement-text" id="announcementText">
+			Announcement: AGM on 07 July 2024
+		</div>
+	</div>
     <header class=header-main>
         <div class="header-lower clearfix">
             <div class=container>

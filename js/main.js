@@ -1025,3 +1025,21 @@ $(document).ready(function () {
     }
 });
 
+
+
+
+    const announcements = [
+		"Announcement: AGM on 07 July 2024",	
+		"Announcement: 3rd Expert Cup ",
+		"Announcement: Expert Cup on 13th and 14th Sept 2024"	
+    ];
+
+    let currentAnnouncementIndex = 0;
+    const announcementText = document.getElementById("announcementText");
+
+    function updateAnnouncement() {
+        currentAnnouncementIndex = (currentAnnouncementIndex + 1) % announcements.length;
+        announcementText.textContent = announcements[currentAnnouncementIndex];
+    }
+
+    setInterval(updateAnnouncement, 10000); // Change announcement every 13 seconds
