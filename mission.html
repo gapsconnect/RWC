@@ -96,32 +96,42 @@
         <div class=content></div>
         <div class=innerbanner><h2 class=bannerHeadline>Our <span>Mission</span></h2></div>
     </div>
-    <section class=playerDpage>
-        <div class=container>
-            <div class=row><h2 class=heading>Our <span>Mission</span></h2>
-
-                <p class=headParagraph>At Royal Westerns Club, our mission is to create a supportive and inclusive community where individuals can come together to enjoy football and other activities. We aim to provide a platform for physical fitness, stress relief, and personal growth through sports and community engagement. Our goals encompass the following key objectives:
-					.</p>
-
-                <div class=information_section><h4>Promote Physical Fitness</h4>
-
-                    <p>Encourage regular participation in sports and physical activities to improve overall health and well-being..</p>
-                    <h4>Foster Social Connections</h4>
-
-                    <p>Create opportunities for members to build strong relationships and a sense of community through shared experiences.</p>
-
-                    <h4>
-                        Support Personal Growth</h4>
-
-                    <p>Provide resources and programs that help members develop their skills, both in sports and in their personal lives.
-
-					</p><h4>Engage in Community Service</h4>
-
-                    <p>Actively participate in and organize initiatives that benefit the broader community, demonstrating our commitment to social responsibility.</p></div>
-
-            </div>
-        </div>
-    </section>
+	<section class="playerDpage">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading">Our <span>Mission</span></h2>
+				<p class="headParagraph">At Royal Westerns Club, our mission is to create a supportive and inclusive community where individuals can come together to enjoy football and other activities. We aim to provide a platform for physical fitness, stress relief, and personal growth through sports and community engagement. Our goals encompass the following key objectives:</p>
+				<div class="information_section">
+					<div class="card" data-mission="Promote Physical Fitness" data-description="Encourage regular participation in sports and physical activities to improve overall health and well-being.">
+						<h4>Promote Physical Fitness</h4>
+						<div class="card-hover">
+							<p>Encourage regular participation in sports and physical activities to improve overall health and well-being.</p>
+						</div>
+					</div>
+					<div class="card" data-mission="Foster Social Connections" data-description="Create opportunities for members to build strong relationships and a sense of community through shared experiences.">
+						<h4>Foster Social Connections</h4>
+						<div class="card-hover">
+							<p>Create opportunities for members to build strong relationships and a sense of community through shared experiences.</p>
+						</div>
+					</div>
+					<div class="card" data-mission="Support Personal Growth" data-description="Provide resources and programs that help members develop their skills, both in sports and in their personal lives.">
+						<h4>Support Personal Growth</h4>
+						<div class="card-hover">
+							<p>Provide resources and programs that help members develop their skills, both in sports and in their personal lives.</p>
+						</div>
+					</div>
+					<div class="card" data-mission="Engage in Community Service" data-description="Actively participate in and organize initiatives that benefit the broader community, demonstrating our commitment to social responsibility.">
+						<h4>Engage in Community Service</h4>
+						<div class="card-hover">
+							<p>Actively participate in and organize initiatives that benefit the broader community, demonstrating our commitment to social responsibility.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
 
     <footer class=footer-type01>
 
@@ -170,42 +180,25 @@
 	});
 </script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all menu items that have a submenu
-    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
-
-    menuItems.forEach(menuItem => {
-        menuItem.addEventListener('click', function(event) {
-            event.preventDefault();
-            const parentLi = menuItem.parentElement;
-            const submenu = parentLi.querySelector('.sub-menu');
-            
-            // Toggle the active class to show/hide the submenu
-            if (parentLi.classList.contains('active')) {
-                parentLi.classList.remove('active');
-            } else {
-                // Close all open submenus
-                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-                parentLi.classList.add('active');
-            }
-        });
-    });
-
-    // Close submenu if clicking outside of menu
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-wrapper')) {
-            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-        }
-    });
-
-    // Prevent submenu closing when clicking inside submenu
-    const subMenus = document.querySelectorAll('.sub-menu');
-    subMenus.forEach(subMenu => {
-        subMenu.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelector('.overlay .overlay-title').textContent = this.getAttribute('data-mission');
+        document.querySelector('.overlay .overlay-description').textContent = this.getAttribute('data-description');
+        document.querySelector('.overlay').style.display = 'flex';
     });
 });
+
+document.querySelector('.overlay-close').addEventListener('click', function() {
+    document.querySelector('.overlay').style.display = 'none';
+});
+
+document.querySelector('.overlay').addEventListener('click', function(e) {
+    if (e.target === this) {
+        document.querySelector('.overlay').style.display = 'none';
+    }
+});
+
+
 </script>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>

@@ -355,6 +355,20 @@ setInterval(nextSlide, 4000); // Automatically switch slides every 8 seconds
 showSlide(currentSlide);
 
 </script>
+<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelector('.overlay .overlay-title').textContent = this.getAttribute('data-mission');
+        document.querySelector('.overlay .overlay-description').textContent = this.getAttribute('data-description');
+        document.querySelector('.overlay').style.display = 'flex';
+    });
+});
+
+document.querySelector('.overlay-close').addEventListener('click', function() {
+    document.querySelector('.overlay').style.display = 'none';
+});
+
+</script>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 </body>

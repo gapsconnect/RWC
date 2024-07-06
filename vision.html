@@ -96,53 +96,53 @@
         <div class=content></div>
         <div class=innerbanner><h2 class=bannerHeadline>Our <span>Vision</span></h2></div>
     </div>
-    <section class=playerDpage>
-        <div class=container>
-            <div class=row><h2 class=heading>Our <span>Vision</span></h2>
-
-                <p class=headParagraph>Our vision is to be a leading sports club recognized for its excellence in football and its commitment to community service. We aspire to create a thriving and dynamic community where members can pursue their passion for sports and engage in meaningful social activities. Our vision is to build a strong and resilient organization that adapts to the changing needs of our members and the community.
-					We envision a future where, Royal Westerns Club continues to grow and expand its reach, providing opportunities for individuals of all ages and backgrounds to participate in sports and community activities. By fostering a culture of inclusivity, respect, and mutual support, we aim to create a lasting legacy that inspires future generations to stay active, connected, and engaged in their communities.
-					Our club's success is built on the dedication and hard work of our members, volunteers, sponsors and supporters. We are grateful for their contributions and look forward to continuing our journey together, achieving new heights and making a positive difference in the lives of those we serve. Our vision includes the following aspirations:
-					</p>
-
-                <div class=information_section><h4>Excellence in Football</h4>
-
-                    <p>
-						Strive to achieve high performance and success in football tournaments and competitions.
-					
-					</p>
-                    <h4>
-						Community Engagement					</h4>
-
-                    <p>
-						Strengthen our involvement in community service projects and social initiatives, making a positive impact on society.
-					</p>
-
-                    <h4>
-						Inclusive Environment					</h4>
-
-                    <p>
-						Foster a welcoming and supportive atmosphere where all members feel valued and included.
-										</p>
-
-										<h4>
-											Personal and Professional Development									</h4>
-					
-										<p>
-											Offer programs and opportunities that support the personal and professional growth of our members.															</p>
-
-
-										<h4>
-											Sustainable Growth				</h4>
-					
-										<p>
-											Ensure the long-term sustainability and growth of the club through effective management, strategic planning, and community partnerships.															</p>
-
-<p>By adhering to these principles, Royal Westerns Club aims to become a beacon of excellence in sports and community service, inspiring others to join us in our mission and vision.</p>
-
-            </div>
-        </div>
-    </section>
+	<section class="playerDpage">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading">Our <span>Vision</span></h2>
+				<p class="headParagraph">Our vision is to be a leading sports club recognized for its excellence in football and its commitment to community service. We aspire to create a thriving and dynamic community where members can pursue their passion for sports and engage in meaningful social activities. Our vision is to build a strong and resilient organization that adapts to the changing needs of our members and the community. We envision a future where, Royal Westerns Club continues to grow and expand its reach, providing opportunities for individuals of all ages and backgrounds to participate in sports and community activities. By fostering a culture of inclusivity, respect, and mutual support, we aim to create a lasting legacy that inspires future generations to stay active, connected, and engaged in their communities. Our club's success is built on the dedication and hard work of our members, volunteers, sponsors and supporters. We are grateful for their contributions and look forward to continuing our journey together, achieving new heights and making a positive difference in the lives of those we serve. Our vision includes the following aspirations:</p>
+				<div class="information_section">
+					<div class="card" data-vision="Excellence in Football" data-description="Strive to achieve high performance and success in football tournaments and competitions.">
+						<h4>Excellence in Football</h4>
+						<div class="card-hover">
+							<p>Strive to achieve high performance and success in football tournaments and competitions.</p>
+						</div>
+					</div>
+					<div class="card" data-vision="Community Engagement" data-description="Strengthen our involvement in community service projects and social initiatives, making a positive impact on society.">
+						<h4>Community Engagement</h4>
+						<div class="card-hover">
+							<p>Strengthen our involvement in community service projects and social initiatives, making a positive impact on society.</p>
+						</div>
+					</div>
+					<div class="card" data-vision="Inclusive Environment" data-description="Foster a welcoming and supportive atmosphere where all members feel valued and included.">
+						<h4>Inclusive Environment</h4>
+						<div class="card-hover">
+							<p>Foster a welcoming and supportive atmosphere where all members feel valued and included.</p>
+						</div>
+					</div>
+					<div class="card" data-vision="Personal and Professional Development" data-description="Offer programs and opportunities that support the personal and professional growth of our members.">
+						<h4>Personal and Professional Development</h4>
+						<div class="card-hover">
+							<p>Offer programs and opportunities that support the personal and professional growth of our members.</p>
+						</div>
+					</div>
+					<div class="card" data-vision="Sustainable Growth" data-description="Ensure the long-term sustainability and growth of the club through effective management, strategic planning, and community partnerships.">
+						<h4>Sustainable Growth</h4>
+						<div class="card-hover">
+							<p>Ensure the long-term sustainability and growth of the club through effective management, strategic planning, and community partnerships.</p>
+						</div>
+					</div>
+					<div class="card" data-vision="Beacon of Excellence" data-description="By adhering to these principles, Royal Westerns Club aims to become a beacon of excellence in sports and community service, inspiring others to join us in our mission and vision.">
+						<h4>Beacon of Excellence</h4>
+						<div class="card-hover">
+							<p>By adhering to these principles, Royal Westerns Club aims to become a beacon of excellence in sports and community service, inspiring others to join us in our mission and vision.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 
     <footer class=footer-type01>
 
@@ -227,6 +227,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+</script>
+	<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelector('.overlay .overlay-title').textContent = this.getAttribute('data-mission');
+        document.querySelector('.overlay .overlay-description').textContent = this.getAttribute('data-description');
+        document.querySelector('.overlay').style.display = 'flex';
+    });
+});
+
+document.querySelector('.overlay-close').addEventListener('click', function() {
+    document.querySelector('.overlay').style.display = 'none';
+});
+
+document.querySelector('.overlay').addEventListener('click', function(e) {
+    if (e.target === this) {
+        document.querySelector('.overlay').style.display = 'none';
+    }
+});
+
+
 </script>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>

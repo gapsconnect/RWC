@@ -7198,8 +7198,83 @@ h6 {
 	.banner .nav-btn:hover {
 		background: rgba(0, 0, 0, 0.7);
 	}
+	.playerDpage {
+		padding: 50px 0;
+		background: #f9f9f9;
+	}
 	
-
+	.heading {
+		text-align: center;
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	
+	.heading span {
+		color: #b82128;
+	}
+	
+	.headParagraph {
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 18px;
+		color: #333;
+	}
+	
+	.information_section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+	
+	.card {
+		background: #fff;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		padding: 20px;
+		width: calc(25% - 20px);
+		position: relative;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		cursor: pointer;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	.card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	}
+	
+	.card h4 {
+		font-size: 20px;
+		color: #b82128;
+		margin-bottom: 20px;
+	}
+	
+	.card-hover {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.card:hover .card-hover {
+		display: flex;
+	}
+	
+	.card-hover p {
+		margin: 0;
+	}
+	
+	
 .layercontent01 {
   left: 0% !important;
   top: 150px !important; }
@@ -10290,7 +10365,7 @@ ul.slick-dots {
     @media (min-width: 992px) {
       .gallery-list:nth-of-type(odd) {
         float: left;
-        width: 40%; } }
+        width: 35%; } }
   .gallery-list:nth-of-type(even) {
     position: relative;
     min-height: 1px;
@@ -10299,7 +10374,7 @@ ul.slick-dots {
     @media (min-width: 992px) {
       .gallery-list:nth-of-type(even) {
         float: left;
-        width: 60%; } }
+        width: 65%; } }
 
 .galleryListwrap:nth-of-type(odd) .gallery-list {
   margin-bottom: 30px; }
@@ -10311,7 +10386,7 @@ ul.slick-dots {
     @media (min-width: 992px) {
       .galleryListwrap:nth-of-type(odd) .gallery-list:nth-of-type(even) {
         float: left;
-        width: 40%; } }
+        width: 35%; } }
   .galleryListwrap:nth-of-type(odd) .gallery-list:nth-of-type(odd) {
     position: relative;
     min-height: 1px;
@@ -10320,7 +10395,7 @@ ul.slick-dots {
     @media (min-width: 992px) {
       .galleryListwrap:nth-of-type(odd) .gallery-list:nth-of-type(odd) {
         float: left;
-        width: 60%; } }
+        width: 65%; } }
 
 .galleryMenu {
   text-align: center; }
@@ -10362,14 +10437,7 @@ ul.slick-dots {
   position: relative;
   display: block; }
 
-  .image_eg {
-	width: 100%;
-	height: 400px;
-	background: #b82128;
-	background-repeat: no-repeat !important;
-	background-position: center !important;
-	position: relative;
-	display: block; }
+
 .column_g {
   position: relative;
   overflow: hidden;
