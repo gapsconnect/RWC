@@ -11,6 +11,186 @@
     <link rel=stylesheet href=style.css>
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
+	<style>
+		/* General Styles */
+.innerpage_all_wrap {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.activity-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activity-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: calc(25% - 30px);
+    min-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.activity-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity-card ul li {
+    margin-bottom: 8px;
+}
+
+.activity-card ul li:before {
+    content: "\2022";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-timeline {
+    margin-top: 20px;
+}
+
+.achievement-timeline h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.merchandise-categories {
+    margin-top: 20px;
+}
+
+.merchandise-categories h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.merchandise-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.merchandise-categories ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .activity-card {
+        width: calc(33.33% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    .activity-card {
+        width: 100%;
+    }
+}.achievement-timeline {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.year {
+    flex: 1 1 20%;
+    max-width: 20%;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.year h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.year ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.year ul li {
+    margin-bottom: 8px;
+}
+
+.year ul li:before {
+    content: "\2022";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+	</style>
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -94,330 +274,132 @@
     </header>
     <div class=innerbannerwrap>
         <div class=content></div>
-        <div class=innerbanner><h2 class=bannerHeadline><span>blog</span></h2></div>
+        <div class=innerbanner><h2 class=bannerHeadline><span>Activities</span></h2></div>
     </div>
-    <section class="innerpage_all_wrap bg-white">
-        <div class=container>
-            <div class=row><h2 class=heading>this is our <span>blog page</span></h2>
+	<section class="innerpage_all_wrap bg-white">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading">Activities</h2>
+				<div class="activity-card-container">
+					<!-- Community Welfare -->
+					<div class="activity-card">
+						<h3>Community Welfare</h3>
+						<ul>
+							<li>Blood and Plasma Donation:</li>
+							<li>Total Number of donations 2023-2024: 85</li>
+							<li>Blood Donations: 32</li>
+							<li>Plasma Donations: 53</li>
+							<li>Total Life Saved: 255</li>
+							<li>Total Plasma/Whole Blood Donation Till Date: 237 & 146</li>
+							<li>Total Live Saved Till Date: 1149</li>
+						</ul>
+					</div>
+	
+					<!-- Sporting Events -->
+					<div class="activity-card">
+						<h3>Sporting Events</h3>
+						<ul>
+							<li>Multicultural Soccer Tournament</li>
+							<!-- Add image here -->
+							<li>Expert Cup</li>
+							<!-- Add images here -->
+						</ul>
+					</div>
+	
+					<section class="achievement-timeline">
+						<div class="container">
+							<h2 class="heading">Our Achievements</h2>
+					
+							<div class="timeline">
+								<div class="year">
+									<h3>2017</h3>
+									<ul>
+										<li>GNCV LEAGUE THIRD</li>
+										<li>EXPERT CUP SEMI-FINAL</li>
+										<li>DHADKAN CUP RUNNER UP</li>
+										<li>NEPCITY FUTSAL TOURNAMENT SEMI-FINAL</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2018</h3>
+									<ul>
+										<li>CANBERRA NEPALESE NATIONAL CUP SEMI-FINAL</li>
+										<li>FFV DIVISION 5 LEAGUE FIFTH</li>
+										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2019</h3>
+									<ul>
+										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
+										<li>VIC SOCCER DIVISION 1 LEAGUE WINNER</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2020</h3>
+									<ul>
+										<li>MULTICULTURAL CUP RUNNER UP</li>
+										<li>GNCV LEAGUE THIRD</li>
+										<li>GNCV LEAGUE (35+) Winner</li>
+										<li>NRNA FUTSAL TOURNAMENT 1ST RUNNER UP</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2021</h3>
+									<ul>
+										<li>NRNA Futsal Tournament 1ST RUNNER UP</li>
+										<li>MCSA league Participation</li>
+										<li>2nd NAV Multicultural Tournament 1ST Runner UP</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2022/2023</h3>
+									<ul>
+										<li>NRNA Futsal</li>
+										<li>Kandel Cup</li>
+										<li>Canberra Cup</li>
+										<li>Adelaide Dashain Cup</li>
+										<li>Expert Cup</li>
+										<li>Machhapuchhre Cup (Sydney)</li>
+										<li>AMEC Royale Cup</li>
+										<li>Mini World Cup</li>
+										<li>United Cup</li>
+										<li>NAV Multicultural Soccer Tournament</li>
+										<li>NRNA Futsal Tournament</li>
+										<li>Metro League 2</li>
+									</ul>
+								</div>
+					
+								<div class="year">
+									<h3>2023/2024</h3>
+									<ul>
+										<li>4th NRNA Futsal (Open) - Runner up</li>
+										<li>4th NRNA Futsal (35+) - Runner up</li>
+										<li>Kandel Cup (Open) - Pre-Quarter final</li>
+										<li>Kandel Cup (35+) - Group Stage</li>
+										<li>United Cup (Open) - Group Stage</li>
+										<li>NAV Multicultural Soccer Tournament - Semi-Final</li>
+										<li>Expert Cup (Open) - Semi-Final</li>
+										<li>Better Choice Cup (35+) - Semi-Final</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+	
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam
-                    reprehenderit, blanditiis nam debitis libero facilis illum repudiandae eveniet voluptatibus
-                    quibusdam illo ea nisi ipsa accusantium nobis animi asperiores quaerat ,Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Fugiat quisquam reprehenderit, blanditiis nam debitis libero facilis
-                    illum repudiandae eveniet voluptatibus quibusdam illo ea nisi ipsa accusantium nobis animi
-                    asperiores quaerat .</p>
-
-                <div class=innerWrapper>
-                    <main class=contentinner>
-                        <div class=blogDetails>
-                            <div class=blogimg><a class="prv blog_prev"></a> <a class="nxt blog_next"></a>
-                                <ul class=blog_slider>
-                                    <li><img src=images/blog/blog01.jpg alt=image></li>
-                                    <li><img src=images/blog/blog01.jpg alt=image></li>
-                                </ul>
-                            </div>
-                            <div class=blog_info>
-                                <div class=clearfix>
-                                    <div class=headlineimgwrap01><img src=images/icons/chart.png alt=image></div>
-                                    <div class=headlinewrap01><h4 class=headline02>the best <span
-                                            class=red>moments</span> in the seasons</h4>
-
-                                        <p class="paragraph02 uppercaseheading">october 27 ,<span class=red>2015</span>
-                                        </p></div>
-                                </div>
-                                <p class=blog-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Dignissimos, rerum ea odit rem soluta iure, animi deleniti, cupiditate quibusdam
-                                    culpa ab eum. Error consequatur, pariatur tenetur distinctio cumque suscipit
-                                    tempore.</p>
-
-                                <div class="blog-detailsfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/ROYALWESTERNSFC
-                                                                                  class="social_link facebook"><i
-                                            class="fa fa-facebook"></i></a> <a href=https://www.youtube.com/@RoyalWesternsClub
-                                                                               class="social_link twitter"><i
-                                            class="fa fa-youtube"></i></a> <a href=https://www.instagram.com/royalwesternsclub
-                                                                              class="social_link behance"><i
-                                            class="fa fa-instagram"></i></a></div>
-                                    <div class=blog-detailsfooter02><a href=blogDetails.html
-                                                                       class="btn-small01 btn-red">view more</a></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=blogDetails>
-                            <div class=blogimg>
-								<iframe src="https://www.youtube.com/embed/Bq-PnvWfAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class=blog_info>
-                                <div class=clearfix>
-                                    <div class=headlineimgwrap01><img src=images/icons/video.png alt=image></div>
-                                    <div class=headlinewrap01><h4 class=headline02>the best <span
-                                            class=red>moments</span> in the seasons</h4>
-
-                                        <p class="paragraph02 uppercaseheading">october 27 ,<span class=red>2015</span>
-                                        </p></div>
-                                </div>
-                                <p class=blog-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Dignissimos, rerum ea odit rem soluta iure, animi deleniti, cupiditate quibusdam
-                                    culpa ab eum. Error consequatur, pariatur tenetur distinctio cumque suscipit
-                                    tempore.</p>
-
-                                <div class="blog-detailsfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/ROYALWESTERNSFC
-                                                                                  class="social_link facebook"><i
-                                            class="fa fa-facebook"></i></a> <a href=https://www.youtube.com/@RoyalWesternsClub
-                                                                               class="social_link twitter"><i
-                                            class="fa fa-youtube"></i></a> <a href=https://www.instagram.com/royalwesternsclub
-                                                                              class="social_link behance"><i
-                                            class="fa fa-instagram"></i></a></div>
-                                    <div class=blog-detailsfooter02><a href=blogDetails.html
-                                                                       class="btn-small01 btn-red">view more</a></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=blogDetails>
-                            <div class=blogimg>
-								<iframe src="https://www.youtube.com/embed/Bq-PnvWfAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class=blog_info>
-                                <div class=clearfix>
-                                    <div class=headlineimgwrap01><img src=images/icons/video.png alt=image></div>
-                                    <div class=headlinewrap01><h4 class=headline02>the best <span
-                                            class=red>moments</span> in the seasons</h4>
-
-                                        <p class="paragraph02 uppercaseheading">october 27 ,<span class=red>2015</span>
-                                        </p></div>
-                                </div>
-                                <p class=blog-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Dignissimos, rerum ea odit rem soluta iure, animi deleniti, cupiditate quibusdam
-                                    culpa ab eum. Error consequatur, pariatur tenetur distinctio cumque suscipit
-                                    tempore.</p>
-
-                                <div class="blog-detailsfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/ROYALWESTERNSFC
-                                                                                  class="social_link facebook"><i
-                                            class="fa fa-facebook"></i></a> <a href=https://www.youtube.com/@RoyalWesternsClub
-                                                                               class="social_link twitter"><i
-                                            class="fa fa-youtube"></i></a> <a href=https://www.facebook.com/ROYALWESTERNSFC
-                                                                              class="social_link behance"><i
-                                            class="fa fa-instagram"></i></a></div>
-                                    <div class=blog-detailsfooter02><a href=blogDetails.html
-                                                                       class="btn-small01 btn-red">view more</a></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-                    <aside class="widgetinner clearfix">
-                        <div class=row>
-                            <div class=blog_widget><h4 class=oswald16>search</h4>
-
-                                <div class=search_box><input type=text placeholder="Enter your keyword"></div>
-                            </div>
-                            <div class=blog_widget><h4 class=oswald16>blog catagories</h4>
-
-                                <div class="body-catagories panel-group paragraph02" id=accordion>
-                                    <div class="panel panel-default">
-                                        <div class=panel-heading><h4 class=panel-title><a data-toggle=collapse
-                                                                                          data-parent=#accordion
-                                                                                          href=#collapseOne
-                                                                                          class="collapsed paragraph02"
-                                                                                          aria-expanded=false><i
-                                                class="fa fa-plus"></i> <i class="fa fa-minus"></i> general
-                                            questions</a></h4></div>
-                                        <div id=collapseOne class="panel-collapse collapse" aria-expanded=false
-                                             role=tabpanel style="height: 0px;">
-                                            <ul class=inner-list-items>
-                                                <li><a href=# class=paragraph02>Sub-category 01</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 02</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 03</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 04</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 05</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 06</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 07</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class=panel-heading><h4 class=panel-title><a data-toggle=collapse
-                                                                                          data-parent=#accordion
-                                                                                          href=#collapseTwo
-                                                                                          class="collapsed paragraph02"
-                                                                                          aria-expanded=false><i
-                                                class="fa fa-plus"></i> <i class="fa fa-minus"></i> licensing and
-                                            payement</a></h4></div>
-                                        <div id=collapseTwo class="panel-collapse collapse" aria-expanded=false
-                                             role=tabpanel style="height: 0px;">
-                                            <ul class=inner-list-items>
-                                                <li><a href=# class=paragraph02>Sub-category 01</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 02</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 03</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 04</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class=panel-heading><h4 class=panel-title><a data-toggle=collapse
-                                                                                          data-parent=#accordion
-                                                                                          href=#collapseThree
-                                                                                          class="collapsed paragraph02"
-                                                                                          aria-expanded=false><i
-                                                class="fa fa-plus"></i> <i class="fa fa-minus"></i>best matches</a></h4>
-                                        </div>
-                                        <div id=collapseThree class="panel-collapse collapse" aria-expanded=false
-                                             role=tabpanel style="height: 0px;">
-                                            <ul class=inner-list-items>
-                                                <li><a href=# class=paragraph02>Sub-category 01</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 02</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 03</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 04</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class=panel-heading><h4 class=panel-title><a data-toggle=collapse
-                                                                                          data-parent=#accordion
-                                                                                          href=#collapseFour
-                                                                                          class="collapsed paragraph02"
-                                                                                          aria-expanded=false><i
-                                                class="fa fa-plus"></i><i class="fa fa-minus"></i>technical support</a>
-                                        </h4></div>
-                                        <div id=collapseFour class="panel-collapse collapse" aria-expanded=false
-                                             role=tabpanel style="height: 0px;">
-                                            <ul class=inner-list-items>
-                                                <li><a href=# class=paragraph02>Sub-category 01</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 02</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 03</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 04</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class=panel-heading><h4 class=panel-title><a data-toggle=collapse
-                                                                                          data-parent=#accordion
-                                                                                          href=#collapseFive
-                                                                                          class="collapsed paragraph02"
-                                                                                          aria-expanded=false><i
-                                                class="fa fa-plus"></i> <i class="fa fa-minus"></i>cupons and promotion</a>
-                                        </h4></div>
-                                        <div id=collapseFive class="panel-collapse collapse" style="height: 0px;"
-                                             role=tabpanel aria-expanded=false>
-                                            <ul class=inner-list-items>
-                                                <li><a href=# class=paragraph02>Sub-category 01</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 02</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 03</a></li>
-                                                <li><a href=# class=paragraph02>Sub-category 04</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=blog_widget><h4 class=oswald16>follow us</h4>
-
-                                <div class=blog_social><a href=# class=social_link><i class="fa fa-facebook"></i></a> <a
-                                        href=# class=social_link><i class="fa fa-youtube"></i></a> <a href=#
-                                                                                                      class=social_link><i
-                                        class="fa fa-instagram"></i></a> <a href=# class=social_link><i
-                                        class="fa fa-vine"></i></a> <a href=# class=social_link><i
-                                        class="fa fa-youtube"></i></a></div>
-                            </div>
-                            <div class=blog_widget><h4 class=oswald16>popular posts</h4>
-
-                                <p class=red>@Lorem ipsum dolor sit amet</p>
-                                <ul class=widget_commentDetails>
-                                    <li><a href=# class=clearfix>
-                                        <div class=comment-pic>
-                                            <div class=columnpic><img src=images/widget/comment01.jpg alt=image></div>
-                                        </div>
-                                        <div class=commentinfo><p>Lorem ipsum dolor sit amet, conse ctetur .</p>
-
-                                            <p class=red>@lorem ipsum</p></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div class=comment-pic>
-                                            <div class=columnpic><img src=images/widget/comment02.jpg alt=image></div>
-                                        </div>
-                                        <div class=commentinfo><p>Lorem ipsum dolor sit amet, conse ctetur .</p>
-
-                                            <p class=red>@lorem ipsum</p></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div class=comment-pic>
-                                            <div class=columnpic><img src=images/widget/comment03.jpg alt=image></div>
-                                        </div>
-                                        <div class=commentinfo><p>Lorem ipsum dolor sit amet, conse ctetur .</p>
-
-                                            <p class=red>@lorem ipsum</p></div>
-                                    </a></li>
-                                </ul>
-                            </div>
-                            <div class="blog_widget b_twitter"><h4 class=oswald16>twitter</h4>
-
-                                <p class=red>@Showcase & Discover</p>
-
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam iste amet omnis
-                                    molestiae "</p></div>
-                            <div class="blog_widget b_twitter"><h4 class=oswald16>instagram</h4>
-
-                                <p class=red>@experimental lettering project</p>
-                                <ul class="galleryontent04 clearfix">
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG01.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG02.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG03.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG04.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG05.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG06.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG07.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG01.jpg) no-repeat center"></div>
-                                    </a></li>
-                                    <li><a href=# class=clearfix>
-                                        <div style="background:url(images/widget/widgetG08.jpg) no-repeat center"></div>
-                                    </a></li>
-                                </ul>
-                            </div>
-                            <div class=blog_widget><h4 class=oswald16>tag cloud</h4>
-                                <ul class="cloud_tag clearfix">
-                                    <li><a href=#>sports</a></li>
-                                    <li><a href=#>creative</a></li>
-                                    <li><a href=#>experience</a></li>
-                                    <li><a href=#>development</a></li>
-                                </ul>
-                            </div>
-                            <div class=blog_widget><h4 class=oswald16>subscribe</h4>
-
-                                <p class="red italic01">follow my latest news</p>
-
-                                <div class=mail_input>
-                                    <form class=form_mailSubscribe data-parsley-validate=""><input type=email
-                                                                                                   placeholder="your Email"
-                                                                                                   name=email>
-                                        <button class=mail_subscribe><i class="fa fa-envelope-o"></i></button>
-                                        <div class=form-submessges></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </section>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
     <footer class=footer-type01>
 
         <div class=footer-type02>
