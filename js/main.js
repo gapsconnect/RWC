@@ -1030,8 +1030,8 @@ $(document).ready(function () {
 
     const announcements = [
 		"Announcement: AGM on 07 July 2024",	
-		"Announcement: 3rd Expert Cup ",
-		"Announcement: Expert Cup on 13th and 14th Sept 2024"	
+		"Announcement: 3rd Expert Cup on 13th and 14th Sept 2024",
+		"Announcement: Better Choice Cup 2024"	
     ];
 
     let currentAnnouncementIndex = 0;
