@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuItems.forEach(menuItem => {
         menuItem.addEventListener('click', function(event) {
-            event.preventDefault();
+            
             const parentLi = menuItem.parentElement;
             const submenu = parentLi.querySelector('.sub-menu');
 
