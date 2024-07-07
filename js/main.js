@@ -1042,4 +1042,4 @@ $(document).ready(function () {
         announcementText.textContent = announcements[currentAnnouncementIndex];
     }
 
-    setInterval(updateAnnouncement, 10000); // Change announcement every 13 seconds
+    setInterval(updateAnnouncement, 7000); // Change announcement every 13 seconds
