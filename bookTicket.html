@@ -11,6 +11,101 @@
     <link rel=stylesheet href=style.css>
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
+<style>
+	.innerbanner {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: url(images/background/innerpageBg.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.innerbannerwrap {
+    position: relative;
+}
+
+.innerbannerwrap .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.innerbannerwrap h2 {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    z-index: 2;
+}
+
+.bannerHeadline {
+    font-family: "Oswald", sans-serif;
+    font-size: 80px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.bannerHeadline span {
+    color: #b82128;
+}
+
+/* New CSS for card container */
+.card-container {
+    position: absolute;
+    right: 20px; /* Adjust as needed */
+    bottom: 20px; /* Adjust as needed */
+    text-align: center;
+    z-index: 2;
+}
+
+.card-container .card-title {
+    color: #fff;
+    background-color: #b82128; /* Brighter background color */
+    padding: 7px;
+    border-radius: 10px 10px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-container img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    .bannerHeadline {
+        font-size: 50px;
+    }
+
+    .card-container img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bannerHeadline {
+        font-size: 40px;
+    }
+
+    .card-container img {
+        width: 200px;
+    }
+}
+
+
+
+</style>
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -104,10 +199,19 @@
             </div>
         </div>
     </header>
-    <div class=innerbannerwrap>
-        <div class=content></div>
-        <div class=innerbanner><h2 class=bannerHeadline>Join <span>Us</span></h2></div>
-    </div>
+	<div class="innerbannerwrap">
+		<div class="content"></div>
+		<div class="innerbanner">
+			<h2 class="bannerHeadline">Join <span>Us</span></h2>
+			<div class="card-container">
+				<div class="card-title">Member Card Sample</div>
+				<img src="images/membercard.jpg" alt="Member Card">
+			</div>
+		</div>
+	</div>
+	
+	
+	
     <section class="innerpage_all_wrap bg-white">
         <div class="join-us-form">
             <div class="container">
