@@ -13,7 +13,25 @@ window.requestAnimFrame = (function()
           };
 })();
 
+
 $(document).ready(function () {
+
+    const announcements = [
+		"Announcement: 3rd Expert Cup on 13th and 14th Sept 2024",
+		"Registration Open: Team Registration <a target='_blank' href='https://form.jotform.com/241838299306062'>Form</a>"	
+    ];
+
+    let currentAnnouncementIndex = 0;
+    const announcementText = document.getElementById("announcementText");
+	currentAnnouncementIndex = (currentAnnouncementIndex + 1) % announcements.length;
+	announcementText.innerHTML = announcements[currentAnnouncementIndex];
+    function updateAnnouncement() {
+        currentAnnouncementIndex = (currentAnnouncementIndex + 1) % announcements.length;
+        announcementText.innerHTML = announcements[currentAnnouncementIndex];
+    }
+	
+    setInterval(updateAnnouncement, 8000); // Change announcement every 13 seconds
+
 
     /*------Resize End Event -- Debounces resize of browser event-----------*/
     //http://stackoverflow.com/questions/5489946/jquery-how-to-wait-for-the-end-of-resize-event-and-only-then-perform-an-ac
@@ -1027,19 +1045,3 @@ $(document).ready(function () {
 
 
 
-
-    const announcements = [
-		"Announcement: AGM on 07 July 2024",	
-		"Announcement: 3rd Expert Cup on 13th and 14th Sept 2024",
-		"Announcement: Better Choice Cup 2024"	
-    ];
-
-    let currentAnnouncementIndex = 0;
-    const announcementText = document.getElementById("announcementText");
-
-    function updateAnnouncement() {
-        currentAnnouncementIndex = (currentAnnouncementIndex + 1) % announcements.length;
-        announcementText.textContent = announcements[currentAnnouncementIndex];
-    }
-
-    setInterval(updateAnnouncement, 7000); // Change announcement every 13 seconds

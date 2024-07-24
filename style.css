@@ -9277,7 +9277,9 @@ header-main .header-lower::before {
 	position: relative;
 	width: 100%;
 	height: 500px;
-	overflow: hidden;
+	overflow: visible;
+	background-size: contain;
+
 	background: white;
 }
 @media screen and (min-width: 768px) {
@@ -9285,11 +9287,7 @@ header-main .header-lower::before {
 		height: 950px;
 	}
 }
-.banner .slides {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
+
 .banner .slide {
 	position: absolute;
 	top: 95px;
@@ -9297,6 +9295,8 @@ header-main .header-lower::before {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
+	overflow: visible;
+
 	transition: opacity 0.5s ease-in-out;
 }
 .banner .slide.active {
@@ -9307,7 +9307,8 @@ header-main .header-lower::before {
 	margin: 2px;
 	padding: 2px;
 	height: 100%;
-	object-fit: cover;
+	overflow: visible;
+
 }
 .banner .banner-content {
 	position: absolute;
@@ -14787,7 +14788,7 @@ nav ul li a.active {
 .announcement-container {
 	width: 100%;
 	overflow: hidden;
-	background-color: #ffcc00;
+	background-color: #FFD700;
 	color: #000;
 	font-size: 20px;
 	font-weight: bold;
@@ -14802,7 +14803,7 @@ nav ul li a.active {
 	display: inline-block;
 	white-space: nowrap;
 	padding: 10px 0;
-	animation: slide-left-to-right 7s linear infinite;
+	animation: slide-left-to-right 8s linear infinite;
 }
 
 @keyframes slide-left-to-right {
