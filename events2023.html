@@ -5,139 +5,509 @@
     <meta charset=utf-8>
     <meta name=description content="">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>RWC</title>
-<link rel="shortcut icon" href="logo.png">
+    <title>Community Welfare 2023</title>
+    <link rel="shortcut icon" href="logo.png">
     <link rel=stylesheet href=vendor.css>
     <link rel=stylesheet href=style.css>
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #f4f4f4;
+		}
+	
+		.section-title {
+			text-align: center;
+			font-size: 36px;
+			margin: 20px 0;
+			color: #333;
+			animation: fadeIn 1s ease-in-out;
+		}
+	
+		.achievements {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			animation: slideInUp 1s ease-in-out;
+		}
+	
+		.tabs {
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.tab-header {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			animation: fadeInDown 1s ease-in-out;
+		}
+	
+		.tab-link {
+			padding: 10px 20px;
+			margin: 5px;
+			border: 1px solid #ddd;
+			background: #fff;
+			color: #333;
+			cursor: pointer;
+			transition: background 0.3s, color 0.3s;
+		}
+	
+		.tab-link.active, .tab-link:hover {
+			background: #1d2452;
+			color: #fff;
+		}
+	
+		.tab-content {
+			display: none;
+			background: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+	
+		.tab-content.active {
+			display: block;
+			animation: fadeIn 1s ease-in-out;
+		}
+	
+		.tab-content ul {
+			padding: 0;
+			list-style-type: none;
+			margin: 0;
+		}
+	
+		.tab-content ul li {
+			margin: 10px 0;
+			animation: slideInLeft 1s ease-in-out;
+		}
+	
+		.tab-content ul li strong {
+			color: #b82128;
+		}
+	
+		@media (max-width: 768px) {
+			.tab-link {
+				flex: 1 1 100%;
+			}
+		}
+	
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	
+		@keyframes fadeInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	
+		@keyframes slideInUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	
+		@keyframes slideInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+	
+	</style>
+	<style>
+		.section-title {
+			text-align: center;
+			font-size: 36px;
+			margin: 20px 0;
+			color: #333;
+			animation: fadeIn 1s ease-in-out;
+		}
+	
+		.achievements {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			animation: slideInUp 1s ease-in-out;
+		}
+	
+		.tabs {
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.tab-header {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+			animation: fadeInDown 1s ease-in-out;
+		}
+	
+		.tab-link {
+			padding: 10px 20px;
+			margin: 5px;
+			border: 1px solid #ddd;
+			background: #fff;
+			color: #333;
+			cursor: pointer;
+			transition: background 0.3s, color 0.3s;
+		}
+	
+		.tab-link.active, .tab-link:hover {
+			background: #1d2452;
+			color: #fff;
+		}
+	
+		.tab-content {
+			display: none;
+			background: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+	
+		.tab-content.active {
+			display: block;
+			animation: fadeIn 1s ease-in-out;
+		}
+	
+		.section-container {
+			margin-bottom: 20px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			overflow: hidden;
+			background: #f9f9f9;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			animation: slideInUp 1s ease-in-out;
+		}
+	
+		.section-heading {
+			background: #1d2452;
+			color: #fff;
+			padding: 15px;
+			margin: 0;
+			font-size: 24px;
+			text-align: center;
+			animation: pulse 2s infinite;
+		}
+	
+		.section-content {
+			padding: 15px;
+			animation: fadeInUp 1s ease-in-out;
+		}
+	
+		.section-content ul {
+			padding: 0;
+			list-style-type: none;
+			margin: 0;
+		}
+	
+		.section-content ul li {
+			margin: 10px 0;
+			animation: slideInLeft 1s ease-in-out;
+		}
+	
+		.section-content ul li strong {
+			color: #b82128;
+		}
+	
+		@media (max-width: 768px) {
+			.tab-link {
+				flex: 1 1 100%;
+			}
+		}
+	
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	
+		@keyframes fadeInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	
+		@keyframes slideInUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	
+		@keyframes slideInLeft {
+			from {
+				opacity: 0;
+				transform: translateX(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+	
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.02);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+	
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+	
 </head>
 <body>
-	<div class=wrapper>
-		<div class="announcement-container">
-			<div class="announcement-text" id="announcementText">
-				
-			</div>
-		</div>
-		<header class=header-main>
-			<div class="header-lower clearfix">
-				<div class=container>
-					<div class=row><h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
-	
-						<div class=menubar>
-							<nav class="navbar">
-								<div class="nav-wrapper">
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
-									<div class="nav-menu">
-										<ul class="nav navbar-nav menu-bar">
-											<li><a href="index.html">Home</a></li>
-											<li>
-												<a href="#">About Us</a>
-												<ul class="sub-menu">
-													<li><a href="history.html">History</a></li>
-													<li><a href="mission.html">Mission</a></li>
-													<li><a href="vision.html">Vision</a></li>
-													<li><a href="about.html">Our Executive Team</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="#">Sports</a>
-												<ul class="sub-menu">
-													<li><a href="gallerypage01.html">Images</a></li>
-													<li><a href="gallery02.html">Videos</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="blog.html" class="active">Activities</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="#">Community Welfare</a>
-														<ul class="sub-menu">
-															<li><a href="blog.html">2023</a></li>
-															<li><a href="blog.html">2024</a></li>
-														</ul>
-													</li>
-													<li>
-																			<a href="#">Sporting Events</a>
-														<ul class="sub-menu">
-															<li><a href="blog.html">Multicultural Soccer Tournament </a></li>														<li><a href="blog.html">Expert Cup</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="achievement.html">OUR ACHIEVEMENTS
-														</a>
-	
-												</li>
-	
-												<li>
-													<a href="merchandise.html">Merchandise
-													</a>
-	
-											</li>
-	
-												</ul>
-											</li>
-											<li><a href="sponsors.html">Club Sponsors</a></li>
-	
-											<li><a href="joinus.html">Join Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-										</ul>
-									</div>
-								</div>
-							</nav>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class=wrapper>
+    <div class="announcement-container">
+        <div class="announcement-text" id="announcementText"></div>
+    </div>
+    <header class=header-main>
+        <div class="header-lower clearfix">
+            <div class=container>
+                <div class=row>
+                    <h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
+                    <div class=menubar>
+                        <nav class="navbar">
+                            <div class="nav-wrapper">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="nav-menu">
+                                    <ul class="nav navbar-nav menu-bar">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="history.html">History</a></li>
+                                                <li><a href="mission.html">Mission</a></li>
+                                                <li><a href="vision.html">Vision</a></li>
+                                                <li><a href="about.html">Our Executive Team</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sports</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="gallerypage01.html">Images</a></li>
+                                                <li><a href="gallery02.html">Videos</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html" class="active">Activities</a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">Community Welfare</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="events2023.html">2023</a></li>
+                                                        <li><a href="events2024.html">2024</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sporting Events</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="sporting-event-1.html">Multicultural Soccer Tournament</a></li>
+                                                        <li><a href="sporting-event-2.html">Expert Cup</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="achievement.html">OUR ACHIEVEMENTS</a></li>
+                                                <li><a href="merchandise.html">Merchandise</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="sponsors.html">Club Sponsors</a></li>
+                                        <li><a href="joinus.html">Join Us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class=social>
+                        <a href=https://www.facebook.com/ROYALWESTERNSFC target=_blank class=facebook><i class="fa fa-facebook"></i></a>
+                        <a href=https://www.youtube.com/@RoyalWesternsClub target=_blank class=youtube><i class="fa fa-youtube"></i></a>
+                        <a href=https://www.instagram.com/royalwesternsclub target=_blank class=behance><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class=innerbannerwrap>
+        <div class=content></div>
+        <div class=innerbanner><h2 class=bannerHeadline><span>Community Welfare <br> 2023</span></h2></div>
+    </div>
+	<section class="innerpage_all_wrap bg-white">
+		<div class="container">
+			<div class="row">
+				<h2 class="heading section-title">Community Welfare 2023</h2>
+				<div class="achievements">
+					<div class="tabs">
+						<div class="tab-header">
+							<div class="tab-link active" data-tab="2023">Blood and Plasma Donation</div>
+							<div class="tab-link" data-tab="2024">Community Volunteering</div>
+							<div class="tab-link" data-tab="workshops">Workshops and Training</div>
+							<div class="tab-link" data-tab="health">Health and Wellness</div>
+							<div class="tab-link" data-tab="environmental">Environmental Initiatives</div>
 						</div>
-						<div class=social><a href=https://www.facebook.com/ROYALWESTERNSFC target=_blank class=facebook><i
-							class="fa fa-facebook"></i></a> <a href=https://www.youtube.com/@RoyalWesternsClub target=_blank class=youtube><i
-							class="fa fa-youtube"></i></a> <a href=https://www.instagram.com/royalwesternsclub target=_blank class=behance><i
-							class="fa fa-instagram"></i></a></div>
+	
+						<!-- Blood and Plasma Donation -->
+						<div class="tab-content active" id="2023">
+							<div class="section-container">
+								<h3 class="section-heading">Blood and Plasma Donation</h3>
+								<div class="section-content">
+									<ul>
+										<li><strong>Total Number of Donations 2023:</strong> 85</li>
+										<li><strong>Blood Donations:</strong> 32</li>
+										<li><strong>Plasma Donations:</strong> 53</li>
+										<li><strong>Total Lives Saved:</strong> 255</li>
+										<li><strong>Total Plasma/Whole Blood Donations Till Date:</strong> 237 & 146</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Community Volunteering and Support -->
+						<div class="tab-content" id="2024">
+							<div class="section-container">
+								<h3 class="section-heading">Community Volunteering and Support</h3>
+								<div class="section-content">
+									<ul>
+										<li><strong>Participants:</strong> 34</li>
+										<li><strong>Community Services Provided:</strong></li>
+										<li>School tutoring</li>
+										<li>Elderly assistance</li>
+										<li>Food and Clothing Drives</li>
+										<li>Street Clean-Up Projects</li>
+										<li>Local Charity Collaborations</li>
+										<li><strong>Total Volunteering Hours:</strong> 745</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Workshops and Training -->
+						<div class="tab-content" id="workshops">
+							<div class="section-container">
+								<h3 class="section-heading">Workshops and Training</h3>
+								<div class="section-content">
+									<ul>
+										<li><strong>Workshops Conducted:</strong> 8</li>
+										<li>First Aid and CPR Training</li>
+										<li>Community Leadership Programs</li>
+										<li>Environmental Awareness Sessions</li>
+										<li>Technology and Coding Bootcamps</li>
+										<li><strong>Participants Trained:</strong> 150</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Health and Wellness Programs -->
+						<div class="tab-content" id="health">
+							<div class="section-container">
+								<h3 class="section-heading">Health and Wellness Programs</h3>
+								<div class="section-content">
+									<ul>
+										<li><strong>Health Camps Organized:</strong> 5</li>
+										<li>Mental Health Awareness Campaigns</li>
+										<li>Fitness and Yoga Sessions</li>
+										<li>Nutrition and Diet Workshops</li>
+										<li><strong>Participants Benefited:</strong> 200</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Environmental Initiatives -->
+						<div class="tab-content" id="environmental">
+							<div class="section-container">
+								<h3 class="section-heading">Environmental Initiatives</h3>
+								<div class="section-content">
+									<ul>
+										<li><strong>Tree Plantation Drives:</strong> 3</li>
+										<li>Beach Clean-Up Events</li>
+										<li>Recycling Awareness Programs</li>
+										<li>Workshops on Sustainable Living</li>
+										<li><strong>Volunteers Involved:</strong> 50</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
 					</div>
 				</div>
 			</div>
-		</header>
-
-		<div class=innerbannerwrap>
-			<div class=content></div>
-			<div class=innerbanner><h2 class=bannerHeadline><span>Community Event - 2023</span></h2></div>
 		</div>
-		<h1>Community Welfare 2023</h1>
-
-    <section class="welfare-content">
-        <div class="card">
-            <p>Acknowledged and welcomed Mr. Tika Ram Lama (member of ANFA), President of Makuwanpur District Football.</p>
-        </div>
-        <div class="card">
-            <p>Formation of different Task forces for smooth operations of club's activities:
-            <ul>
-                <li>RWC Community Welfare Taskforce</li>
-                <li>RWC Kids Training Management Taskforce</li>
-                <li>RWC Creative Taskforce</li>
-                <li>RWC Physical Fitness Taskforce</li>
-                <li>RWC 35+ (evergreen) Squad Management Taskforce</li>
-            </ul>
-            </p>
-        </div>
-        <div class="card">
-            <p>Organized second Expert Cup (Interstate Soccer Tournament) with highest cash prize in Australia among Nepalese Communities. -14-15 Oct, 2023</p>
-        </div>
-        <div class="card">
-            <p>Organized Dashain Tihar festival to embrace Nepali culture, festival and tradition – 11 Nov, 2023</p>
-        </div>
-        <div class="card">
-            <p>Acknowledged and facilitated Nepal National CP Football Player and Team – 15 November, 2023</p>
-        </div>
-        <div class="card">
-            <p>Organized information session on Workplace Rights tailored for Nepali Students being associate organization with SDA and Uni Global Union facilitated by SDA and Uni Global Union – 16 Nov, 2023</p>
-        </div>
-        <!-- Add more cards as needed -->
-    </section>
-
+	</section>
+	
 
 	<footer class=footer-type01>
         <div class=footer-type02>
@@ -166,94 +536,52 @@
             </div>
         </div>
     </footer>
+	
+	
 </div>
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.tab-link');
-    const tabContents = document.querySelectorAll('.tab-content');
+		const tabLinks = document.querySelectorAll('.tab-link');
+		const tabContents = document.querySelectorAll('.tab-content');
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+		tabLinks.forEach(link => {
+			link.addEventListener('click', function () {
+				// Remove active class from all tab links
+				tabLinks.forEach(link => link.classList.remove('active'));
+				// Hide all tab contents
+				tabContents.forEach(content => content.classList.remove('active'));
+				
+				// Add active class to the clicked tab link
+				this.classList.add('active');
+				// Show the corresponding tab content
+				const targetId = this.getAttribute('data-tab');
+				document.getElementById(targetId).classList.add('active');
+			});
+		});
+	});
+</script>
 
-            const year = tab.getAttribute('data-year');
-            tabContents.forEach(tc => {
-                tc.classList.remove('active');
-                if (tc.id === `year-${year}`) {
-                    tc.classList.add('active');
+
+<script>
+    // JavaScript for Tabs
+    document.querySelectorAll('.tab-link').forEach((tabLink) => {
+        tabLink.addEventListener('click', function() {
+            document.querySelectorAll('.tab-link').forEach((link) => {
+                link.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            const tabId = this.getAttribute('data-tab');
+            document.querySelectorAll('.tab-content').forEach((tabContent) => {
+                tabContent.classList.remove('active');
+                if (tabContent.getAttribute('id') === tabId) {
+                    tabContent.classList.add('active');
                 }
             });
         });
     });
-});
-
-</script>
-
-<script>
-
-	$(document).ready(function() {
-		$('.menu-bar > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
-		});
-	
-		$('.sub-menu > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
-		});
-	
-		$(document).click(function(e) {
-			if (!$(e.target).closest('.navbar').length) {
-				$('.sub-menu').slideUp('fast');
-			}
-		});
-	});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all menu items that have a submenu
-    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
-
-    menuItems.forEach(menuItem => {
-        menuItem.addEventListener('click', function(event) {
-            
-            const parentLi = menuItem.parentElement;
-            const submenu = parentLi.querySelector('.sub-menu');
-            
-            // Toggle the active class to show/hide the submenu
-            if (parentLi.classList.contains('active')) {
-                parentLi.classList.remove('active');
-            } else {
-                // Close all open submenus
-                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-                parentLi.classList.add('active');
-            }
-        });
-    });
-
-    // Close submenu if clicking outside of menu
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-wrapper')) {
-            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-        }
-    });
-
-    // Prevent submenu closing when clicking inside submenu
-    const subMenus = document.querySelectorAll('.sub-menu');
-    subMenus.forEach(subMenu => {
-        subMenu.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-});
 </script>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 </body>
-
 </html>
