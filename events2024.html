@@ -213,7 +213,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="blog.html" class="active">Activities</a>
+                                            <a href="#" class="active">Activities</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="#">Community Welfare</a>
@@ -261,27 +261,38 @@
                 <div class="achievements">
                     <div class="tabs">
                         <div class="tab-header">
-                            <div class="tab-link" data-tab="2023">Help the Homeless Campaign</div>
-                            <div class="tab-link active" data-tab="2024">Youth Mentorship Program</div>
+                            <div class="tab-link active" data-tab="2023">Help the Homeless Campaign</div>
+                            <div class="tab-link" data-tab="2024">Youth Mentorship Program</div>
+                            <div class="tab-link" data-tab="2025">Senior Citizens Assistance Program</div>
+
+							<div class="tab-link" data-tab="2026">Green City Initiative</div>
+
                         </div>
-                        <div class="tab-content" id="2023">
+                        <div class="tab-content active" id="2023">
                             <ul>
                                 <li><strong>Impact:</strong> Raised $50,000 for local shelters, distributed 2000 meals</li>
                                 <li><strong>Date:</strong> March 2023</li>
                             </ul>
+
+                        </div>
+
+						<div class="tab-content" id="2024">
                             <ul>
                                 <li><strong>Impact:</strong> Mentored 100+ students, provided career guidance workshops</li>
                                 <li><strong>Date:</strong> August 2023</li>
                             </ul>
                         </div>
-                        <div class="tab-content active" id="2024">
+                        <div class="tab-content" id="2026">
                             <ul>
                                 <li><strong>Activity:</strong> Green City Initiative</li>
                                 <li><strong>Impact:</strong> Planted 500 trees, cleaned 5 parks</li>
                                 <li><strong>Date:</strong> April 2024</li>
                             </ul>
+
+                        </div>
+
+						<div class="tab-content" id="2025">
                             <ul>
-                                <li><strong>Activity:</strong> Senior Citizens Assistance Program</li>
                                 <li><strong>Impact:</strong> Assisted 200 senior citizens with daily tasks, organized health camps</li>
                                 <li><strong>Date:</strong> September 2024</li>
                             </ul>
@@ -335,7 +346,70 @@
 
 </script>
 
+<script>
+
+	$(document).ready(function() {
+		$('.menu-bar > li > a').click(function(e) {
+			e.preventDefault();
+			var $submenu = $(this).siblings('.sub-menu');
+			$('.sub-menu').not($submenu).slideUp('fast');
+			$submenu.slideToggle('fast');
+		});
+	
+		$('.sub-menu > li > a').click(function(e) {
+			e.preventDefault();
+			var $submenu = $(this).siblings('.sub-menu');
+			$('.sub-menu').not($submenu).slideUp('fast');
+			$submenu.slideToggle('fast');
+		});
+	
+		$(document).click(function(e) {
+			if (!$(e.target).closest('.navbar').length) {
+				$('.sub-menu').slideUp('fast');
+			}
+		});
+	});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all menu items that have a submenu
+    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
+
+    menuItems.forEach(menuItem => {
+        menuItem.addEventListener('click', function(event) {
+            
+            const parentLi = menuItem.parentElement;
+            const submenu = parentLi.querySelector('.sub-menu');
+            
+            // Toggle the active class to show/hide the submenu
+            if (parentLi.classList.contains('active')) {
+                parentLi.classList.remove('active');
+            } else {
+                // Close all open submenus
+                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+                parentLi.classList.add('active');
+            }
+        });
+    });
+
+    // Close submenu if clicking outside of menu
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-wrapper')) {
+            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+        }
+    });
+
+    // Prevent submenu closing when clicking inside submenu
+    const subMenus = document.querySelectorAll('.sub-menu');
+    subMenus.forEach(subMenu => {
+        subMenu.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+});
+</script>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 </body>
+
 </html>
