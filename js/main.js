@@ -12,6 +12,21 @@ window.requestAnimFrame = (function()
             window.setTimeout(callback, 1000 / 60);
           };
 })();
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all submenu links
+    const submenuLinks = document.querySelectorAll('.menu-bar .sub-menu li a');
+
+    // Add click event listener to each submenu link
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Remove active class from all submenu links
+            submenuLinks.forEach(link => link.classList.remove('active'));
+
+            // Add active class to the clicked submenu link
+            this.classList.add('active');
+        });
+    });
+});
 
 
 $(document).ready(function () {

@@ -12,181 +12,172 @@
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
 	<style>
-		/* General Styles */
-.innerpage_all_wrap {
-    padding: 40px 0;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
 }
 
-.container {
-    max-width: 1200px;
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.achievements {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 20px;
 }
 
-.row {
+.tabs {
     display: flex;
+    flex-direction: column;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tab-link.active, .tab-link:hover {
+    background: #1d2452;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.tab-content ul li {
+    margin: 10px 0;
+}
+
+.tab-content ul li strong {
+    color: #b82128;
+}
+
+@media (max-width: 768px) {
+    .tab-link {
+        flex: 1 1 100%;
+    }
+}
+#merchandise {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1d2452;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #1d2452;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #57606a;
+}
+
+.tab-button.active {
+    background-color: #b82128;
+}
+
+.tab-content {
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.heading {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.activity-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.activity-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 20px;
     margin: 10px;
-    width: 48%;
-    min-width: 250px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.activity-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.activity-card ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.activity-card ul li {
-    margin-bottom: 8px;
-}
-
-.activity-card ul li:before {
-    content: "\2022";
-    color: #4CAF50;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
-.activity-card:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.achievement-timeline {
-    margin-top: 20px;
-}
-
-.achievement-timeline h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.merchandise-categories {
-    margin-top: 20px;
-}
-
-.merchandise-categories h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.merchandise-categories ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.merchandise-categories ul li {
-    margin-bottom: 8px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .activity-card {
-        width: calc(33.33% - 30px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
 @media (max-width: 768px) {
-    .activity-card {
-        width: calc(50% - 30px);
+    .tabs {
+        flex-direction: column;
     }
-}
-
-@media (max-width: 576px) {
-    .activity-card {
+    .tab-button {
+        margin-bottom: 10px;
+    }
+    .card {
         width: 100%;
     }
-}.achievement-timeline {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.heading {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.timeline {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.year {
-    flex: 1 1 20%;
-    max-width: 35%;
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.year h3 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.year ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.year ul li {
-    margin-bottom: 8px;
-}
-
-.year ul li:before {
-    content: "\2022";
-    color: #4CAF50;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
 }
 
 
@@ -254,13 +245,13 @@
 													</ul>
 												</li>
 												<li>
-													<a href="blog.html">OUR ACHIEVEMENTS
+													<a href="achievement.html">OUR ACHIEVEMENTS
 													</a>
 
 											</li>
 
 											<li>
-												<a href="blog.html">Merchandise
+												<a href="merchandise.html">Merchandise
 												</a>
 
 										</li>
@@ -319,96 +310,8 @@
 					</div>
 	
 
-					
-					<section class="achievement-timeline">
-						<div class="container">
-							<h2 class="heading">Our Achievements</h2>
-					
-							<div class="timeline">
-								<div class="year">
-									<h3>2017</h3>
-									<ul>
-										<li>GNCV LEAGUE THIRD</li>
-										<li>EXPERT CUP SEMI-FINAL</li>
-										<li>DHADKAN CUP RUNNER UP</li>
-										<li>NEPCITY FUTSAL TOURNAMENT SEMI-FINAL</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2018</h3>
-									<ul>
-										<li>CANBERRA NEPALESE NATIONAL CUP SEMI-FINAL</li>
-										<li>FFV DIVISION 5 LEAGUE FIFTH</li>
-										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2019</h3>
-									<ul>
-										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
-										<li>VIC SOCCER DIVISION 1 LEAGUE WINNER</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2020</h3>
-									<ul>
-										<li>MULTICULTURAL CUP RUNNER UP</li>
-										<li>GNCV LEAGUE THIRD</li>
-										<li>GNCV LEAGUE (35+) Winner</li>
-										<li>NRNA FUTSAL TOURNAMENT 1ST RUNNER UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2021</h3>
-									<ul>
-										<li>NRNA Futsal Tournament 1ST RUNNER UP</li>
-										<li>MCSA league Participation</li>
-										<li>2nd NAV Multicultural Tournament 1ST Runner UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2022/2023</h3>
-									<ul>
-										<li>NRNA Futsal</li>
-										<li>Kandel Cup</li>
-										<li>Canberra Cup</li>
-										<li>Adelaide Dashain Cup</li>
-										<li>Expert Cup</li>
-										<li>Machhapuchhre Cup (Sydney)</li>
-										<li>AMEC Royale Cup</li>
-										<li>Mini World Cup</li>
-										<li>United Cup</li>
-										<li>NAV Multicultural Soccer Tournament</li>
-										<li>NRNA Futsal Tournament</li>
-										<li>Metro League 2</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2023/2024</h3>
-									<ul>
-										<li>4th NRNA Futsal (Open) - Runner up</li>
-										<li>4th NRNA Futsal (35+) - Runner up</li>
-										<li>Kandel Cup (Open) - Pre-Quarter final</li>
-										<li>Kandel Cup (35+) - Group Stage</li>
-										<li>United Cup (Open) - Group Stage</li>
-										<li>NAV Multicultural Soccer Tournament - Semi-Final</li>
-										<li>Expert Cup (Open) - Semi-Final</li>
-										<li>Better Choice Cup (35+) - Semi-Final</li>
-									</ul>
-								</div>
-							</div>
-						</div>
 
 
-						
-					</section>
-					
 
 
 				</div>
@@ -416,58 +319,6 @@
 		</div>
 	</section>
 	
-
-
-		<section class="innerpage_all_wrap bg-white">
-		<div class="container">
-			<div class="row">
-				<h2 class="heading">Merchandise</h2>
-				<div class="activity-card-container">
-					<!-- Community Welfare -->
-					<div class="activity-card">
-						<h3>Apparel</h3>
-						<ul>
-							<li>Club T-shirts
- </li>
-							<li>Hoodies
-								</li>
-							<li>Hats 
-							</li>
-							<li>Jackets</li>
-
-						</ul>
-					</div>
-	
-					<!-- Sporting Events -->
-					<div class="activity-card">
-						<h3>Accessories</h3>
-						<ul>
-							<li>Bags</li>
-							<!-- Add image here -->
-							<li>Mugs</li>
-							<li>Keychains</li><li>Pins</li><li>Badges</li>
-							<!-- Add images here -->
-						</ul>
-					</div>
-	
-
-					
-					<section class="achievement-timeline">
-						<div class="container">
-					
-
-						</div>
-
-
-						
-					</section>
-					
-
-
-				</div>
-			</div>
-		</div>
-	</section>
 	
     <footer class=footer-type01>
         <div class=footer-type02>
@@ -497,6 +348,8 @@
         </div>
     </footer>
 </div>
+
+
 <script>
 
 	$(document).ready(function() {

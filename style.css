@@ -9260,6 +9260,20 @@ header-main .header-lower::before {
 		color: #b82128;
 	}
 }
+/* Existing CSS rules... */
+
+.menu-bar .sub-menu li a {
+    color: #000; /* Default submenu link color */
+}
+
+.menu-bar .sub-menu li a:hover {
+    color: #b82128; /* Change color on hover */
+}
+
+.menu-bar .sub-menu li a.active {
+    color: #b82128; /* Active submenu link color */
+    font-weight: bold; /* Optional: make the active link bold */
+}
 
 @media screen and (max-width: 600px) {
 	.footer-widget .widget-about,
