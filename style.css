@@ -49,10 +49,10 @@ _________________________________
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700");
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
-@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic");
 html {
-	font-family: sans-serif;
+	font-family: "Alfa Slab One";
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
@@ -1431,7 +1431,7 @@ html {
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Alfa Slab One";
 	font-size: 14px;
 	line-height: 1.428571429;
 	color: #333333;
@@ -7109,7 +7109,7 @@ button.close {
 	position: absolute;
 	z-index: 1070;
 	display: block;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Alfa Slab One";
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: normal;
@@ -7238,7 +7238,7 @@ button.close {
 	display: none;
 	max-width: 276px;
 	padding: 1px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Alfa Slab One";
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: normal;
@@ -7974,7 +7974,7 @@ ul {
 }
 
 h2.heading {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 40px;
 	color: #1F2959;
 	font-weight: 400;
@@ -8000,7 +8000,7 @@ h2.heading span:after {
 }
 
 h4 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 24px;
 	color: #b82128;
 	font-weight: 400;
@@ -8011,7 +8011,7 @@ h4 span {
 }
 
 p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -8021,7 +8021,7 @@ p.headParagraph {
 	text-align: center;
 }
 p.red_p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 13px;
 	color: #b82128;
 	font-weight: 400;
@@ -8061,7 +8061,7 @@ p.red_p {
 }
 
 h6 {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: white;
 	font-weight: 700;
@@ -8079,7 +8079,7 @@ h6 a:hover {
 }
 
 .oswald16 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: white;
 	font-weight: 400;
@@ -8134,7 +8134,7 @@ h6 a:hover {
 }
 
 .footerheading {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: black;
 	font-weight: 400;
@@ -8212,7 +8212,7 @@ h6 a:hover {
 
 /*-------------- headline banner ---------------*/
 .bannerHeadline {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 80px;
 	color: white;
 	font-weight: 400;
@@ -8251,7 +8251,7 @@ h6 a:hover {
 
 /*------------  headingall ----------*/
 .headline01 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: white;
 	font-weight: 400;
@@ -8259,7 +8259,7 @@ h6 a:hover {
 }
 
 .headline02 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 27px;
 	color: black;
 	font-weight: 400;
@@ -8267,7 +8267,7 @@ h6 a:hover {
 }
 
 .paragraph02 {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: white;
 	font-weight: 400;
@@ -8278,7 +8278,7 @@ h6 a:hover {
 }
 
 .headline03 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 30px;
 	color: white;
 	font-weight: 400;
@@ -8314,14 +8314,14 @@ h6 a:hover {
 }
 .search_box input::-webkit-input-placeholder {
 	text-transform: capitalize;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #b82128;
 	font-weight: 400;
 }
 .search_box:after {
 	position: absolute;
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	content: "\f002";
 	right: 10px;
 	top: 6px;
@@ -8358,14 +8358,14 @@ h6 a:hover {
 }
 .mail_input input::-webkit-input-placeholder {
 	text-transform: capitalize;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
 }
 .mail_input button {
 	position: absolute;
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	content: "\f003";
 	right: 1px;
 	width: 32px;
@@ -8381,7 +8381,7 @@ h6 a:hover {
 }
 
 .form-submessges {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #b82128;
 	font-weight: 400;
@@ -8406,7 +8406,7 @@ h6 a:hover {
 	.nxt:after {
 		position: absolute;
 		content: "";
-		font-family: FontAwesome;
+		font-family: Roboto;
 		top: 50%;
 		left: 0;
 		right: 0;
@@ -8484,8 +8484,8 @@ h6 a:hover {
 	float: left;
 	width: 16.6666666667%;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .header-main .logo a {
 	display: block;
@@ -8512,7 +8512,7 @@ h6 a:hover {
 	float: left;
 }
 .header-main .header-upper ul li a {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 400;
@@ -8618,8 +8618,6 @@ header-main .header-lower::before {
 	float: left;
 	width: 41.6666666667%;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
 	position: relative;
 	min-height: 1px;
 	padding-left: 15px;
@@ -8628,7 +8626,7 @@ header-main .header-lower::before {
 @media (min-width: 992px) {
 	.header-main .menubar {
 		float: left;
-		width: 66.6666666667%;
+		width: 83%;
 	}
 }
 
@@ -8789,7 +8787,7 @@ header-main .header-lower::before {
 	font-size: 22px;
 	font-weight: 700;
 	color: #1d2452;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	text-transform: uppercase;
 	padding: 1vh 20px;
 	margin: 1vh 0;
@@ -8799,9 +8797,9 @@ header-main .header-lower::before {
 @media screen and (min-width: 992px) {
 	.header-main nav ul li a {
 		display: block;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: 400;
-		font-family: "Open Sans", sans-serif;
+		font-family: "Roboto", "Alfa Slab One";
 		padding: 11px;
 		margin: 0;
 	}
@@ -9166,7 +9164,7 @@ header-main .header-lower::before {
 	position: relative;
 }
 .widget_productdetails li a {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -9181,7 +9179,7 @@ header-main .header-lower::before {
 .widget_productdetails li:after {
 	position: absolute;
 	content: "\f105";
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	font-size: 20px;
 	color: #b82128;
 	width: 26px;
@@ -9314,7 +9312,7 @@ header-main .header-lower::before {
 
 .banner .slide {
 	position: absolute;
-	top: 95px;
+	top: 87px;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -9328,8 +9326,7 @@ header-main .header-lower::before {
 }
 .banner .slide img {
 	width: 100%;
-	margin: 2px;
-	padding: 2px;
+
 	height: 100%;
 	overflow: visible;
 
@@ -9343,7 +9340,7 @@ header-main .header-lower::before {
 	z-index: 2;
 }
 .banner .bannertext {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 120px;
 	color: #57606a;
 	font-weight: 400;
@@ -9360,12 +9357,12 @@ header-main .header-lower::before {
 	background: #b82128;
 	color: white;
 	padding: 13px 20px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
 	font-weight: 400;
 }
 .banner .bannertext03 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 23px;
 	color: #1d2452;
 	font-weight: 400;
@@ -9556,7 +9553,7 @@ header-main .header-lower::before {
 .btn {
 	padding: 15px 20px;
 	border: 1px solid grey;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #625959;
 	font-weight: 400;
@@ -9648,7 +9645,7 @@ header-main .header-lower::before {
 }
 .btn-addcart:after {
 	position: absolute;
-	font-family: FontAwesome;
+	font-family: Roboto;
 	content: "\f07a";
 	right: -23px;
 	color: white;
@@ -9667,12 +9664,12 @@ header-main .header-lower::before {
 	right: 15px;
 }
 .btn-fav {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
 	font-size: 16px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	height: 40px;
 	width: 200px;
 	line-height: 40px;
@@ -9687,7 +9684,7 @@ header-main .header-lower::before {
 }
 .btn-fav:before {
 	position: absolute;
-	font-family: FontAwesome;
+	font-family: Roboto;
 	content: "\f004";
 	color: #b82128;
 	left: 15px;
@@ -9739,7 +9736,7 @@ header-main .header-lower::before {
 	}
 }
 .booking-fig h2 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 30px;
 	color: #232a32;
 	font-weight: 400;
@@ -9852,7 +9849,7 @@ header-main .header-lower::before {
 }
 .about .nav-content p {
 	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -9878,7 +9875,7 @@ header-main .header-lower::before {
 	padding: 20px;
 	display: block;
 	background: #e7e7e7;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: #b82128;
 	font-weight: 400;
@@ -10072,7 +10069,7 @@ header-main .header-lower::before {
 	left: 0;
 }
 .latestResult .result .content p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.7);
 	font-weight: 400;
@@ -10093,7 +10090,7 @@ header-main .header-lower::before {
 	padding: 40px 0 30px;
 }
 .latestResult .result .count-number span {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 110px;
 	color: white;
 	font-weight: 700;
@@ -10101,7 +10098,7 @@ header-main .header-lower::before {
 	padding: 0 5px;
 }
 .latestResult .result .dateTime {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.7);
 	font-weight: 400;
@@ -10118,7 +10115,7 @@ header-main .header-lower::before {
 	text-transform: uppercase;
 }
 .latestResult .result .dateTime .country-wrap span {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.7);
 	font-weight: 400;
@@ -10332,7 +10329,7 @@ header-main .header-lower::before {
 }
 .video-selector a {
 	display: inline-block;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: white;
 	font-weight: 400;
@@ -10343,7 +10340,7 @@ header-main .header-lower::before {
 .video-selector a:after {
 	position: absolute;
 	color: white;
-	font-family: FontAwesome;
+	font-family: Roboto;
 	content: "";
 	font-size: 14px;
 }
@@ -10381,7 +10378,7 @@ ul.videoLive li {
 ul.videoLive li a {
 	padding: 39px 50px 19px 90px;
 	display: block;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: white;
 	font-weight: 400;
@@ -10396,7 +10393,7 @@ ul.videoLive li a div span {
 ul.videoLive li a:after {
 	position: absolute;
 	content: "\f04b";
-	font-family: FontAwesome;
+	font-family: Roboto;
 	font-size: 33px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -10440,7 +10437,7 @@ ul.videoLive li a a.active {
 		bottom: 25px;
 	}
 	.btn-down:after {
-		font-family: FontAwesome;
+		font-family: Roboto;
 		position: absolute;
 		content: "\f078";
 	}
@@ -10449,7 +10446,7 @@ ul.videoLive li a a.active {
 		z-index: 9;
 	}
 	.btn-up:after {
-		font-family: FontAwesome;
+		font-family: Roboto;
 		position: absolute;
 		content: "\f077";
 	}
@@ -10651,7 +10648,7 @@ section {
 .accordion-news li a {
 	padding: 20px 65px;
 	display: block;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: white;
 	font-weight: 400;
@@ -10741,7 +10738,7 @@ section {
 	background: #b82128;
 }
 .news_display_container .news_date span {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 12px;
 	color: rgba(255, 255, 255, 0.7);
 	font-weight: 400;
@@ -10770,7 +10767,7 @@ section {
 	color: inherit;
 }
 .news_display_container .news_date span.like:after {
-	font-family: FontAwesome;
+	font-family: Roboto;
 	position: absolute;
 	content: "\f004";
 	left: 0px;
@@ -10959,7 +10956,7 @@ section {
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: white;
 	font-weight: 400;
@@ -11262,7 +11259,7 @@ section {
 	float: left;
 	background: #b82128;
 	position: relative;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: rgba(255, 255, 255, 0.8);
 	font-weight: 400;
@@ -11514,7 +11511,7 @@ section {
 	padding: 15px 0;
 	border-right: 2px solid #b82128;
 	text-align: center;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
 	color: white;
 	font-weight: 400;
@@ -11527,7 +11524,7 @@ section {
 }
 .counter-wrap li span {
 	display: block;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 30px;
 	color: white;
 	font-weight: 400;
@@ -11604,7 +11601,7 @@ section {
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 50px;
 	color: white;
 	font-weight: 400;
@@ -11732,7 +11729,7 @@ section {
 .widgetinfowrap .bg-blackimg {
 	padding: 20px 0;
 	text-align: center;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: white;
 	font-weight: 300;
@@ -11740,7 +11737,7 @@ section {
 }
 .widgetinfowrap a {
 	text-transform: uppercase;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 13px;
 	color: #b82128;
 	font-weight: 400;
@@ -11748,7 +11745,7 @@ section {
 }
 
 .vm-book {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #232a32;
 	font-weight: 400;
@@ -11764,7 +11761,7 @@ section {
 }
 .vm-book:after {
 	position: absolute;
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	content: "\f078";
 	top: 100%;
 	left: 50%;
@@ -11778,7 +11775,7 @@ section {
 	padding: 80px 0 40px;
 }
 .buymatchticket h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #fff;
 	font-weight: 400;
@@ -11813,7 +11810,7 @@ section {
 }
 .widgetinfo li {
 	padding: 5px 0px 10px 50px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 13px;
 	color: #1d2452;
 	font-weight: 400;
@@ -11825,7 +11822,7 @@ section {
 .info01 li:after {
 	position: absolute;
 	content: "\f00c";
-	font-family: FontAwesome;
+	font-family: Roboto;
 	top: 5px;
 	left: 20px;
 	color: #b82128;
@@ -11839,7 +11836,7 @@ section {
 
 a.blacklrnmore {
 	background: #232a32;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 12px;
 	color: white;
 	font-weight: 400;
@@ -12143,7 +12140,7 @@ a.blacklrnmore:focus {
 	position: relative;
 }
 .wrap-slide h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #b82128;
 	font-weight: 400;
@@ -12170,7 +12167,7 @@ a.blacklrnmore:focus {
 	position: absolute;
 	font-size: 18px;
 	content: "";
-	font-family: FontAwesome;
+	font-family: Roboto;
 	color: white;
 }
 
@@ -12281,7 +12278,7 @@ a.blacklrnmore:focus {
 	width: 50%;
 	float: left;
 	position: relative;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -12356,7 +12353,7 @@ a.blacklrnmore:focus {
 }
 
 .rate-item > div {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 40px;
 	color: #b82128;
 	font-weight: 400;
@@ -12365,7 +12362,7 @@ a.blacklrnmore:focus {
 .rate-item span {
 	width: 50px;
 	height: 50px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 12px;
 	color: #1d2452;
 	font-weight: 600;
@@ -12378,7 +12375,7 @@ a.blacklrnmore:focus {
 }
 
 .item-size h6 {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 20px;
 	color: #1d2452;
 	font-weight: 400;
@@ -12397,7 +12394,7 @@ a.blacklrnmore:focus {
 	text-align: center;
 	border-radius: 4px;
 	padding: 8px 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -12426,7 +12423,7 @@ a.blacklrnmore:focus {
 	margin-top: 30px;
 }
 .product-list h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #b82128;
 	font-weight: 400;
@@ -12436,7 +12433,7 @@ a.blacklrnmore:focus {
 	width: 100%;
 	position: relative;
 	padding: 10px 20px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -12463,7 +12460,7 @@ a.blacklrnmore:focus {
 	padding: 40px 15px;
 }
 .shop-feedback h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #b82128;
 	font-weight: 400;
@@ -12484,7 +12481,7 @@ a.blacklrnmore:focus {
 }
 .shop-feedback button {
 	line-height: 37px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #eee8e8;
 	font-weight: 400;
@@ -12650,7 +12647,7 @@ a.blacklrnmore:focus {
 	font-size: 26px;
 }
 .social-share .share-cont span {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #232a32;
 	font-weight: 400;
@@ -12684,7 +12681,7 @@ a.blacklrnmore:focus {
 	margin: 20px 0;
 }
 .contact-form h6 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #b82128;
 	font-weight: 400;
@@ -12722,7 +12719,7 @@ a.blacklrnmore:focus {
 .contact-form .form-group1::-webkit-input-placeholder {
 	color: white;
 	font-size: 14px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-weight: 400;
 	text-transform: capitalize;
 }
@@ -12756,7 +12753,7 @@ a.blacklrnmore:focus {
 	border: 0;
 	background: #b82128;
 	text-transform: uppercase;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: white;
 	font-weight: 700;
@@ -12803,7 +12800,7 @@ a.blacklrnmore:focus {
 .comment_share li {
 	float: left;
 	padding: 15px;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 13px;
 	color: #1d2452;
 	font-weight: 400;
@@ -12899,7 +12896,7 @@ a.blacklrnmore:focus {
 }
 .cloud_tag li a {
 	display: block;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -13043,7 +13040,7 @@ a.blacklrnmore:focus {
 	text-align: center;
 	z-index: 2;
 	width: 100%;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 15px;
 	color: white;
 	font-weight: 400;
@@ -13209,7 +13206,7 @@ ul.slick-dots li button:hover {
 .player02info a {
 	display: block;
 	float: right;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 18px;
 	color: #b82128;
 	font-weight: 400;
@@ -13252,7 +13249,7 @@ ul.slick-dots li button:hover {
 	transition: all 0.4s ease-in-out;
 }
 .player02info01 h6 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 18px;
 	color: white;
 	font-weight: 400;
@@ -13419,7 +13416,7 @@ ul.slick-dots li button:hover {
 }
 .galleryMenu a {
 	display: block;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 13px;
 	color: white;
 	font-weight: 400;
@@ -13440,7 +13437,7 @@ ul.slick-dots li button:hover {
 }
 
 .mfp-title {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #fff;
 	font-weight: 400;
@@ -13469,7 +13466,7 @@ ul.slick-dots li button:hover {
 	padding: 15px;
 }
 .gallery-info h6 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #ff5e5b; /* Brighter red color */
 	font-weight: 400;
@@ -13477,7 +13474,7 @@ ul.slick-dots li button:hover {
 }
 
 .gallery-info p a {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452; /* Brighter blue color */
 	font-weight: 400;
@@ -13599,7 +13596,7 @@ ul.slick-dots li button:hover {
 	}
 	.magnificPopupParent a:after {
 		position: absolute;
-		font-family: "FontAwesome";
+		font-family: "Roboto";
 		content: "\f002";
 		width: 100%;
 		height: 100%;
@@ -13645,7 +13642,7 @@ ul.slick-dots li button:hover {
 .contact_icon li span {
 	float: left;
 	padding: 20px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 16px;
 	color: #1d2452;
 	font-weight: 400;
@@ -13689,7 +13686,7 @@ ul.slick-dots li button:hover {
 .formcontact .form-group input {
 	height: 60px;
 	background: transparent;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 700;
@@ -13702,7 +13699,7 @@ ul.slick-dots li button:hover {
 .formcontact .form-group1 textarea {
 	height: 150px;
 	background: transparent;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 700;
@@ -13714,7 +13711,7 @@ ul.slick-dots li button:hover {
 .parsley-required {
 	width: 50%;
 	padding: 5px 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #b82128;
 	font-weight: 700;
@@ -13777,14 +13774,14 @@ ul.slick-dots li button:hover {
 	background-repeat: no-repeat;
 }
 .playerDetailsPage-info li:first-of-type h2 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 80px;
 	color: #b82128;
 	font-weight: 400;
 	line-height: 80px;
 }
 .playerDetailsPage-info li:first-of-type h3 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 40px;
 	color: #eee8e8;
 	font-weight: 400;
@@ -13805,7 +13802,7 @@ ul.slick-dots li button:hover {
 	padding: 0;
 }
 .playerDetailsPage-info li:last-of-type h5 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 40px;
 	color: #707b8c;
 	font-weight: 400;
@@ -13827,7 +13824,7 @@ ul.slick-dots li button:hover {
 }
 
 .evntp {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 30px;
 	color: #b82128;
 	font-weight: 400;
@@ -13835,7 +13832,7 @@ ul.slick-dots li button:hover {
 }
 
 .eventsub {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #6b7c8f;
 	font-weight: 400;
@@ -13847,7 +13844,7 @@ ul.slick-dots li button:hover {
 	border-bottom: 1px solid #707b8c;
 }
 .bio_player div {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: #eee8e8;
 	font-weight: 400;
@@ -13875,7 +13872,7 @@ ul.slick-dots li button:hover {
 }
 .player_cart span {
 	margin-left: 20px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #707b8c;
 	font-weight: 400;
@@ -13911,7 +13908,7 @@ ul.slick-dots li button:hover {
 	border-top: 10px solid #b82128;
 }
 .sb_header h4 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 26px;
 	color: #232a32;
 	font-weight: 400;
@@ -13925,7 +13922,7 @@ ul.slick-dots li button:hover {
 .first-column {
 	width: 20%;
 	float: left;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 15px;
 	color: #232a32;
 	font-weight: 400;
@@ -13973,7 +13970,7 @@ ul.slick-dots li button:hover {
 	border-right: 1px solid #e7e7e7;
 	height: 60px;
 	text-transform: uppercase;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 15px;
 	color: #b82128;
 	font-weight: 400;
@@ -13983,7 +13980,7 @@ ul.slick-dots li button:hover {
 	position: absolute;
 	color: #e7e7e7;
 	content: "";
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	color: #b82128;
 	font-size: 15px;
 	top: 0;
@@ -13999,7 +13996,7 @@ ul.slick-dots li button:hover {
 .second-column ul {
 	width: 100%;
 	float: left;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
 	color: #79828d;
 	font-weight: 600;
@@ -14012,7 +14009,7 @@ ul.slick-dots li button:hover {
 	border-right: 1px solid #e7e7e7;
 }
 .second-column ul:first-of-type {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
 	color: #b82128;
 	font-weight: 400;
@@ -14097,7 +14094,7 @@ nav ul li a.active {
 	margin-right: 2px;
 }
 .yr_accordion li a {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #232a32;
 	font-weight: 400;
@@ -14148,13 +14145,13 @@ nav ul li a.active {
 }
 .achivement-dtl li:first-of-type h3 {
 	text-transform: uppercase;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 35px;
 	color: white;
 	font-weight: 400;
 }
 .achivement-dtl li:first-of-type h6 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: #b82128;
 	font-weight: 400;
@@ -14180,13 +14177,13 @@ nav ul li a.active {
 	border: none;
 }
 .achivement-dtl li .bio_player div {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 20px;
 	color: #707b8c;
 	font-weight: 400;
 }
 .achivement-dtl li .bio_player span {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 16px;
 	color: #b82128;
 	font-weight: 400;
@@ -14195,7 +14192,7 @@ nav ul li a.active {
 
 .award_tag {
 	text-align: center;
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 28px;
 	color: white;
 	font-weight: 400;
@@ -14214,7 +14211,7 @@ nav ul li a.active {
 	padding: 0 15px;
 }
 .clubHistoryWrapper h4 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 28px;
 	color: #b82128;
 	font-weight: 400;
@@ -14243,7 +14240,7 @@ nav ul li a.active {
 }
 .accordion-history .clubHead a {
 	display: block;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 14px;
 	color: #1d2452;
 	font-weight: 400;
@@ -14253,7 +14250,7 @@ nav ul li a.active {
 	position: relative;
 }
 .accordion-history .clubHead a:after {
-	font-family: "FontAwesome";
+	font-family: "Roboto";
 	content: "\f0d7";
 	position: absolute;
 	left: 5px;
@@ -14323,14 +14320,14 @@ nav ul li a.active {
 	transform: scale(0.4);
 }
 .errorHolder h2 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 100px;
 	color: white;
 	font-weight: 400;
 	line-height: 100px;
 }
 .errorHolder h4 {
-	font-family: "Oswald", sans-serif;
+	font-family: "Oswald", "Alfa Slab One";
 	font-size: 40px;
 	color: #b82128;
 	font-weight: 400;
@@ -14400,10 +14397,10 @@ nav ul li a.active {
 .card-item h4 {
 	color: white;
 	font-size: 16px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 }
 .card-item h5 {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
 	text-transform: uppercase;
 	margin: 20px 0;
@@ -14425,7 +14422,7 @@ nav ul li a.active {
 	position: relative;
 	padding: 0 30px;
 	margin-bottom: 20px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", "Alfa Slab One";
 }
 
 .cart-total {
