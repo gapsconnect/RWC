@@ -16,6 +16,10 @@
 
     <script src=js/vendor/modernizr.js></script>
 	<style>
+.container {
+    position: relative;
+}
+
 .event-announcement {
     text-align: center;
     background-color: #f9f9f9;
@@ -23,10 +27,17 @@
     margin: 20px 10px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; /* Ensure content is above the pseudo-element */
 }
-
-
-
+.event-title {
+    font-size: 28px;
+    font-family: 'Alfa Slab One', serif;
+    margin-bottom: 20px;
+    color: #FFD700; /* Royal Gold for a highlight effect */
+}
 .event-content {
     display: flex;
     justify-content: space-between;
@@ -44,7 +55,7 @@
 .register-link {
     display: inline-block;
     background-color: #FFD700;
-    color: #b82128;
+    color: #991B28;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -60,11 +71,12 @@
 .qr-image {
     max-width: 200px;
     width: 100%;
-    border: 1px solid #ddd;
+    border: 2px solid #FFD700;
     padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
 }
+
 @media (max-width: 768px) {
     .event-text, .event-qr {
         max-width: 100%;
@@ -91,7 +103,39 @@
         font-size: 14px;
     }
 }
-    </style>
+
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.event-announcement::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid transparent;
+    border-image:  linear-gradient(90deg, #FFD700, #1F2959, #991B28, #FFD700, #1F2959, #991B28);
+    border-image-slice: 1;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3), rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3));
+    background-size: 200% 200%;
+    z-index: -1;
+    border-radius: 15px;
+    animation: borderAnimation 5s linear infinite;
+    pointer-events: none;
+}
+
+
+
+		</style>
+		
 
 </head>
 <body><!--[if lt IE 10]>
@@ -224,21 +268,21 @@
 
 	</div>
 	<div class="container">
-	<div class="event-announcement">
-		
-		<h2 class="event-title heading">Third Expert Cup Registration Open</h2>
-		<div class="event-content">
-			<div class="event-text">
-				<p class="headParagraph">Registration for the Third Expert Cup is now open! Teams can register using the QR code or the provided form link.
-				<br><a href="https://form.jotform.com/241838299306062" target="_blank" rel="no-follow" class="register-link">Register Here</a></p>
-			</div>
-			<div class="event-qr">
-				<a href="https://form.jotform.com/241838299306062" rel="no-follow">
-					<img src="https://www.jotform.com/uploads/ujjwalad10/form_files/241838299306062_1720410122_qrcode_muse.png" alt="QR Code for Jotform form" class="qr-image"/>
-				</a>
+		<div class="event-announcement">
+			<h2 class="event-title heading">Third Expert Cup Registration Open</h2>
+			<div class="event-content">
+				<div class="event-text">
+					<p class="headParagraph">Registration for the Third Expert Cup is now open! Teams can register using the QR code or the provided form link.
+					<br><a href="https://form.jotform.com/241838299306062" target="_blank" rel="no-follow" class="register-link">Register Here</a></p>
+				</div>
+				<div class="event-qr">
+					<a href="https://form.jotform.com/241838299306062" rel="no-follow">
+						<img src="https://www.jotform.com/uploads/ujjwalad10/form_files/241838299306062_1720410122_qrcode_muse.png" alt="QR Code for Jotform form" class="qr-image"/>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
+		
 	</div>
 	<section class="latestvideo">
 		
@@ -313,10 +357,10 @@
 							</ul>
 							<li >
 		
-									<p><span class=uppercaseheading>Address:</span><span class=red> 31</span> president road, Albanvale, VIC, Australia, Victoria.</p>
+									<p><span>Address:</span><span class=red> 31</span> president road, Albanvale, VIC</p>
 		
 		
-								<p><span class=uppercaseheading>Call:</span> <span class=red> +61451375100</span></p></li>
+								<p><span>Call:</span> <span class=red> +61451375100</span></p></li>
 							</div>
 	
 					</div>
