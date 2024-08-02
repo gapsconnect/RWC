@@ -12,120 +12,142 @@
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
 <style>
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.custom_sponsors_section {
-    padding: 50px 0;
-    background-color: #f8f9fa;
-}
 
-.custom_container {
-    width: 75%; /* Cover 75% of screen width */
-    max-width: 1200px;
-    margin: 0 auto; /* Center align container */
-    padding: 0 20px; /* Adjust gap on both sides */
-    box-sizing: border-box;
-}
-
-.custom_row {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-}
-
-.custom_galleryPage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.custom_gallery_list {
-    width: 100%; /* Full width for one card per row */
-    margin: 20px 0; /* Adjust vertical gap between cards */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
-}
-
-.custom_gallery_list:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.custom_column_g {
-    display: flex;
-    padding: 20px;
-}
-
-.custom_image_g {
-    width: 350px;
-    height: 350px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 20px; /* Add spacing between image and text */
-}
-
-.custom_gallery_info {
-    flex: 1;
-}
-
-.custom_gallery_info h6 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.custom_gallery_info p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.custom_gallery_info a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.custom_gallery_info a:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 769px) {
-    .custom_gallery_list {
-        width: calc(75% - 40px); /* Adjust width for one card per row and 75% of screen width */
-        margin: 20px; /* Adjust vertical and horizontal gap between cards */
-        display: flex;
-        align-items: center;
-    }
-
-    .custom_column_g {
-        flex-direction: row; /* Ensure image on left and description on right */
-        align-items: center;
-    }
-
-    .custom_image_g {
-        width: 290px;
-        height: 260px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-right: 20px; /* Add spacing between image and text */
-    }
-}
-
-h6{
-	color: #b82128;
-}
-
-</style>
+		.custom_sponsors_section {
+			padding: 50px 0;
+			background-color: #f8f9fa;
+		}
+		
+		.custom_container {
+			width: 75%; /* Cover 75% of screen width */
+			max-width: 1000px;
+			margin: 0 auto; /* Center align container */
+			padding: 0 20px; /* Adjust gap on both sides */
+			box-sizing: border-box;
+		}
+		
+		.custom_row {
+			display: flex;
+			flex-direction: column;
+			align-items: center; /* Center content horizontally */
+		}
+		
+		.custom_galleryPage {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.custom_gallery_list {
+			width: 100%; /* Full width for one card per row */
+			margin: 20px 0; /* Adjust vertical gap between cards */
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-sizing: border-box;
+		}
+		
+		.custom_gallery_list:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		
+		.custom_column_g {
+			display: flex;
+			padding: 10px;
+		}
+		
+		.custom_image_g {
+			width: 350px;
+			height: 350px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-right: 20px; /* Add spacing between image and text */
+		}
+		
+		.custom_gallery_info {
+			flex: 1;
+		}
+		
+		.custom_gallery_info h6 {
+			margin: 0 0 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		
+		.custom_gallery_info p {
+			margin: 0;
+			font-size: 14px;
+		}
+		
+		.custom_gallery_info a {
+			color: #007BFF;
+			text-decoration: none;
+		}
+		
+		.custom_gallery_info a:hover {
+			text-decoration: underline;
+		}
+		
+		/* For screens larger than 769px */
+		@media (min-width: 769px) {
+			.custom_gallery_list {
+				width: calc(100% - 40px); /* Adjust width for one card per row and 75% of screen width */
+				margin: 20px; /* Adjust vertical and horizontal gap between cards */
+				display: flex;
+				align-items: center;
+			}
+		
+			.custom_column_g {
+				flex-direction: row; /* Ensure image on left and description on right */
+				align-items: center;
+			}
+		
+			.custom_image_g {
+				width: 290px;
+				height: 260px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin-right: 20px; /* Add spacing between image and text */
+			}
+			.custom_gallery_list {
+				flex: 1 1 calc(100% - 20px);
+			}
+		}
+		
+		/* For screens smaller than 769px */
+		@media (max-width: 768px) {
+			.custom_gallery_list {
+				width: calc(100% - 20px); /* Ensure full width */
+				margin: 10px;
+				flex-direction: column; /* Change layout to vertical */
+				align-items: center;
+			}
+		
+			.custom_column_g {
+				flex-direction: column; /* Ensure logo on top and other information below */
+				align-items: center;
+				padding: 10px; /* Adjust padding for smaller screens */
+			}
+		
+			.custom_image_g {
+				width: 100%;
+				height: 150px; /* Adjust height */
+				margin-bottom: 15px; /* Add spacing between image and text */
+			}
+		}
+		
+		h6{
+			color: #b82128;
+		}
+		
+		</style>
+		
 </head>
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -231,7 +253,7 @@ h6{
 							<div class="custom_gallery_info">
 								<h6  style="color:#1d2452; font-size: 15px;">Title sponsor</h6><h6>Expert Education and Visa Services</h6>
 								<p>
-									Address: Level 3, 313 Flinders Lane, Melbourne, VIC, Australia, Victoria<br>
+									Address: Level 3, 313 Flinders Lane, Melbourne, Australia<br>
 									Phone: (03) 9642 0138<br>
 									Email: melbourne@experteducation.com.au<br>
 									Website: <a href="https://experteducation.com/australia/melbourne" target="_blank">experteducation.com.au</a>
@@ -245,8 +267,8 @@ h6{
 							<div class="custom_image_g" style="background-image: url('images/sponsors/kathmandu_properties_logo.jpg');"></div>
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Powered By</h6><h6>Kathmandu Properties</h6>
-								<p>									Address: U19 882-900 Cooper Street, Somerton, Victoria, VIC, Australia, Victoria<br>
-									Phone: 0413 743 452<br>
+								<p>									Address: U19 882-900 Cooper Street, Somerton, Australia<br>
+									Phone: (04) 1374 3452<br>
 									Email: info@kathmanduproperties.com.au<br>
 									Website: <a href="https://kathmanduproperties.com.au" target="_blank">kathmanduproperties.com.au</a>
 								</p>
@@ -260,7 +282,7 @@ h6{
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Education Partner</h6><h6>Winslow</h6>
 								<p>
-									Address:  Level 7, 440 Elizabeth Street, Melbourne, VIC, Australia<br>
+									Address:  Level 7, 440 Elizabeth Street, Melbourne, Australia<br>
 									Phone: 1800 961 580							   <br>
 									Email: contact@winslow.edu.au<br>
 									Website: <a href="https://winslow.edu.au/" target="_blank">winslow.edu.au</a>
@@ -302,8 +324,8 @@ h6{
 							<div class="custom_image_g" style="background-image: url('images/sponsors/rcon_homes.jpg');"></div>
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Building Partner</h6><h6>RCON Homes</h6>
-								<p>									Address: Unit 8/2 Fastline Rd, Truganina, Melbourne, VIC, Australia, Victoria<br>
-									Phone: 0470 634 008<br>
+								<p>									Address: Unit 8/2 Fastline Rd, Truganina, Melbourne, Australia<br>
+									Phone: (04) 7063 4008<br>
 									Email: info@rconhomes.com.au<br>
 									Website: <a href="https://RCONhomes.com.au" target="_blank">RCONhomes.com.au</a>
 								</p>
@@ -317,7 +339,7 @@ h6{
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">IT Partner</h6><h6>Extra Techs Melbourne</h6>
 								<p> 
-									Address: Level 1, 422 Sydney Road, Coburg, VIC, Australia, Victoria<br>
+									Address: Level 1, 422 Sydney Road, Coburg, VIC<br>
 									Phone: (02) 9171 7742<br>
 									Email: melbourne@extratechs.com.au<br>
 									Website: <a href="https://extratechs.com.au" target="_blank">extratechs.com.au</a>
@@ -356,29 +378,28 @@ h6{
 							</div>
 						</div>
 					</div>
-					<!-- Sponsor 10 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/awti.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Training Partner</h6><h6>AWTI</h6>
-								<p>
-										Address: 3/95 Bell St, Coburg VIC 3058
-										<br>
-										Phone: 1300 145 298<br>
-										Email: melbourne@awticollege.com<br>
-										Website: <a href="https://awti.edu.au/" target="_blank">awti.edu.au</a>
-																	</p>
-							</div>
-						</div>
-					</div>
+										<!-- Sponsor 10 -->
+										<div class="custom_gallery_list">
+											<div class="custom_column_g">
+												<div class="custom_image_g" style="background-image: url('images/sponsors/awti.png');"></div>
+												<div class="custom_gallery_info">
+													<h6 style="color:#1d2452; font-size: 15px;">Training Partner</h6><h6>AWTI</h6>
+													<p>Address: 3/95 Bell St, Coburg VIC 3058
+														<br>Phone: 1300 145 298<br>Email: melbourne@awticollege.com<br>
+														Website: <a href="https://awti.edu.au/" target="_blank">awti.edu.au</a>
+																					</p>
+												</div>
+											</div>
+										</div>
+
+
 					<!-- Sponsor 11 -->
 					<div class="custom_gallery_list">
 						<div class="custom_column_g">
 							<div class="custom_image_g" style="background-image: url('images/sponsors/apb_partners.png');"></div>
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Accounting Partner</h6><h6>APB Partners</h6>
-								<p>									Address: U8 95 Bell Street, Melbourne, VIC, Australia, Victoria<br>
+								<p>									Address: U8 95 Bell Street, Melbourne, Australia<br>
 									Phone: (03) 5902 6322<br>
 									Email: info@apbpartners.com.au<br>
 									Website: <a href="https://apbizsolution.com.au" target="_blank">apbizsolution.com.au</a>
@@ -408,7 +429,7 @@ h6{
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Ticketing Partner</h6><h6>Kantipur Holidays</h6>
 								<p>Kantipur Holidays<br>
-									Address: 10/785 Pascoe Vale Road, Glenroy, VIC, Australia, Victoria<br>
+									Address: 10/785 Pascoe Vale Road, Glenroy, Australia<br>
 									Phone: (03) 8322 0351<br>
 									Email: hari@kantipurholidays.com.au<br>
 									Website: <a href="https://kantipurholidays.com.au" target="_blank">kantipurholidays.com.au</a>
@@ -423,7 +444,7 @@ h6{
 							<div class="custom_gallery_info">
 								<h6 style="color:#1d2452; font-size: 15px;">Automotive Partner</h6><h6>Car Tech Melbourne</h6>
 								<p>
-									Address: 5/23 Lentini Street, Hoppers Crossing, VIC, Australia, Victoria<br>
+									Address: 5/23 Lentini Street, Hoppers Crossing, Australia<br>
 									Phone: (03) 9369 3291<br>
 									Email: info@cartechmelbourne.com.au<br>
 									Website: <a href="https://cartechmelbourne.com.au" target="_blank">cartechmelbourne.com.au</a>
