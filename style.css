@@ -9299,7 +9299,7 @@ header-main .header-lower::before {
 	position: relative;
 	width: 100%;
 	height: 500px;
-	overflow: hidden;
+	overflow: visible;
 	background-size: contain;
 
 	background: white;
