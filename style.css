@@ -13406,6 +13406,22 @@ ul.slick-dots li button:hover {
 		width: 65%;
 	}
 }
+.galleryMenu1 {
+	text-align: center;
+}
+.galleryMenu1 li {
+	display: inline-block;
+	background-color: #b82128;
+}
+.galleryMenu1 a {
+	display: block;
+	font-family: "Roboto", "Alfa Slab One";
+	font-size: 23px;
+	color: white;
+	font-weight: 400;
+	padding: 5px;
+	text-transform: uppercase;
+}
 
 .galleryMenu {
 	text-align: center;
