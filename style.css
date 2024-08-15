@@ -9342,7 +9342,7 @@ header-main .header-lower::before {
 .banner .bannertext {
 	font-family: "Roboto", "Alfa Slab One";
 	font-size: 120px;
-	color: #57606a;
+	color: #FFD700;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-style: italic;
@@ -9355,7 +9355,7 @@ header-main .header-lower::before {
 }
 .banner .bannertext02 {
 	background: #b82128;
-	color: white;
+	color: #FFD700;
 	padding: 13px 20px;
 	font-family: "Roboto", "Alfa Slab One";
 	font-size: 15px;
