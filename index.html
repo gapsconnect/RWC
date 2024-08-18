@@ -132,6 +132,113 @@
     pointer-events: none;
 }
 
+/* New Announcement Css */
+
+.announcement-wrapper{
+	padding-top: 40px;
+	padding-left: 50px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #1F2959;
+	color: white;
+
+}
+
+.top-main{
+	display: flex;
+	align-content: space-between;
+	padding-left: 40px;
+}
+.description-container{
+	padding-left: 100px;
+	flex-grow: 2;
+}
+.description-container p{
+    text-transform: uppercase;
+	align-content: center;
+    font-size: 2.5vw;
+    font-weight: 550;
+    line-height: 1.2;
+}
+
+.register-now{
+	display: flex;
+	justify-content: center;
+	margin-left: 340px;
+}
+.scan-now{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.scan-now a{
+	width: 100%;
+}
+.register-now a{
+	background-color: #991B28;
+	align-items: center; 
+	padding: 4px 20px;
+    color: white;
+	
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.goal-wrapper{
+	padding-left: 60px;
+}
+
+.qr-wrapper a{
+	background-color: #991B28;
+	align-items: center; 
+	padding: 4px 20px;
+    color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.scan-button{
+	margin-top: 20px;
+
+}
+.goal-wrapper{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+@media (max-width: 957px) {
+
+  .register-now a {
+    margin-left: 0; 
+    transform: none; 
+  }
+  .register-now{
+	margin: 0;
+	padding: 0;
+  }
+  .top-main{
+	padding: 0;
+	margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+  }
+  .goal-wrapper{
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  
+}
+
 
 
 		</style>
@@ -270,24 +377,49 @@
 	<br>	<br>
 	<br>
 	<br>
+<!-- Announcement Wrapper -->
+	<div class="announcement-wrapper" >
 
-	<div class="container">
-		<div class="event-announcement">
-			<h2 class="event-title heading">Third Expert Cup Registration Open</h2>
-			<div class="event-content">
-				<div class="event-text">
-					<p class="headParagraph">Registration for the Third Expert Cup is now open! Teams can register using the QR code or the provided form link.
-					<br><a href="https://form.jotform.com/241838299306062" target="_blank" rel="no-follow" class="register-link">Register Here</a></p>
+		<div class="top-main" >
+			<div class="mic-container">
+				<img src="images/mic.png"width="320" height="250">
+			</div>
+			<div class="description-container">
+				<div class="top-description">
+				<p >THIRD EXPERT CUP <br>REGISTRATION IS <span style="color: #b82128;">OPEN!!</span></p>
 				</div>
-				<div class="event-qr">
-					<a href="https://form.jotform.com/241838299306062" rel="no-follow">
-						<img src="https://www.jotform.com/uploads/ujjwalad10/form_files/241838299306062_1720410122_qrcode_muse.png" alt="QR Code for Jotform form" class="qr-image"/>
-					</a>
+				<div class="sub-description" style="padding-top: 25px; padding-bottom: 25px;">
+					<p class="description-sub" style="font-size: 14px; font-weight: 400;">Registration for the Third Expert Cup is now <br>open! Teams can register using the QR or <br>the provided form link</p>
 				</div>
 			</div>
+
+		</div>
+		<div class="register-now" >
+			<a href="#" class="register-btn">REGISTER NOW</a>
+		</div>
+
+		<div class="goal-wrapper" >
+			<div class="qr-wrapper" >
+				<div class="qr-container" >
+					<img src="images/qr.png" height="300px" width="250px" style="background-color: white;">
+				</div>
+				<div class="scan-now">
+					<a href="#">SCAN THIS CODE</a>
+				</div>
+
+			</div>
+
+			<div class="goal-container" >
+
+				<img src="images/goal net.png" alt="Right Image" class="right-image" height="450px" width="400">
+
+			</div>
+
 		</div>
 		
 	</div>
+
+	<!-- Announcement Wrapper End -->
 	<section class="latestvideo">
 		
 		<div class="container">
