@@ -9297,7 +9297,9 @@ header-main .header-lower::before {
 
 .banner {
 	position: relative;
-	width: 100%;
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 500px;
 	overflow: visible;
 	background-size: contain;
@@ -9387,6 +9389,42 @@ header-main .header-lower::before {
 .banner .nav-btn:hover {
 	background: rgba(0, 0, 0, 0.7);
 }
+.announcement-wrapper{
+	padding-top: 40px;
+	padding-left: 50px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #1F2959;
+	color: white;
+
+}
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 767px) {
+    .banner .slide {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+	.banner {
+		position: relative;
+		width: 100%;
+
+	}
+
+	.announcement-wrapper {
+		padding-top: 40px;
+		padding-left: 50px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #1F2959;
+		color: white;
+	}
+
+    .banner .banner-content {
+        width: 100%; /* Fit the full width of the screen */
+    }
+}
+
 .playerDpage {
 	padding: 50px 0;
 	background: #f9f9f9;
