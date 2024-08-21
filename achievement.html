@@ -10,7 +10,10 @@
     <link rel=stylesheet href=vendor.css>
     <link rel=stylesheet href=style.css>
     <link rel=stylesheet type=text/css href=css/layerslider.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script src=js/vendor/modernizr.js></script>
+
 	<style>
 body {
     font-family: 'Montserrat', sans-serif;
@@ -27,9 +30,8 @@ body {
 }
 
 .achievements {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+	padding: 0;
 }
 
 .tabs {
@@ -41,7 +43,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .tab-link {
@@ -86,6 +87,75 @@ body {
 .tab-content ul li strong {
     color: #b82128;
 }
+
+/* New Achievement CSS Start */
+.heading-ach{
+	font-family: "Oswald", "Alfa Slab One";
+    font-size: 40px;
+	color: #1F2959;
+    font-weight: 400;
+	line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+	margin-bottom: 20px;
+}
+.achievements-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    gap: 20px;
+	margin-top: 20px;
+}
+.achievement-card {
+    background-color: #b89eab;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 40px);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card h4 {
+    font-size: 1.4em;
+    color: #1F2959;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+.achievement-card i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #991B28;
+}
+
+
+
+/* New Achievement CSS End */
+
+/* Responsive for Achievement  */
+@media (max-width: 768px) {
+    .achievement-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+	.heading-ach{
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+    .achievement-card {
+        flex: 1 1 100%;
+    }
+}
+/* Responsive for Achievement  END*/
 
 @media (max-width: 768px) {
     .tab-link {
@@ -196,88 +266,208 @@ body {
 			<div class="row">
 				<div class="activity-card-container">
 					
-					<section class="achievements">
-						<h2 class="heading">Our Achievements</h2>
-						<div class="tabs">
-							<div class="tab-header">
-								<button class="tab-link active" data-year="2017">2017</button>
-								<button class="tab-link" data-year="2018">2018</button>
-								<button class="tab-link" data-year="2019">2019</button>
-								<button class="tab-link" data-year="2020">2020</button>
-								<button class="tab-link" data-year="2021">2021</button>
-								<button class="tab-link" data-year="2022-2023">2022-2023</button>
-								<button class="tab-link" data-year="2023-2024">2023-2024</button>
+					<section class="achievements" >
+						<div class="achievement-top">
+							<div class="achievement-heading">
+								<h2 class="heading-ach">Our Achievements</h2>
 							</div>
-							<div class="tab-content active" id="year-2017">
-								<ul>
-									<li><strong>GNCV League:</strong> Third</li>
-									<li><strong>Expert Cup:</strong> Semi-Final</li>
-									<li><strong>Dhadkan Cup:</strong> Runner Up</li>
-									<li><strong>Nepcity Futsal Tournament:</strong> Semi-Final</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2018">
-								<ul>
-									<li><strong>Canberra Nepalese National Cup:</strong> Semi-Final</li>
-									<li><strong>FFV Division 5 League:</strong> Fifth</li>
-									<li><strong>Nepcity Futsal Tournament:</strong> Runner Up</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2019">
-								<ul>
-									<li><strong>Nepcity Futsal Tournament:</strong> Runner Up</li>
-									<li><strong>Vic Soccer Division 1 League:</strong> Winner</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2020">
-								<ul>
-									<li><strong>Multicultural Cup:</strong> Runner Up</li>
-									<li><strong>GNCV League:</strong> Third</li>
-									<li><strong>GNCV League (35+):</strong> Winner</li>
-									<li><strong>NRNA Futsal Tournament:</strong> 1st Runner Up</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2021">
-								<ul>
-									<li><strong>NRNA Futsal Tournament:</strong> 1st Runner Up</li>
-									<li><strong>MCSA League:</strong> Participation</li>
-									<li><strong>NAV Multicultural Tournament:</strong> 1st Runner Up</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2022-2023">
-								<ul>
-									<li><strong>NRNA Futsal:</strong> Quarter Final</li>
-									<li><strong>Kandel Cup:</strong> Quarter Final</li>
-									<li><strong>Canberra Cup:</strong> Quarter Final</li>
-									<li><strong>Adelaide Dashin Cup:</strong> Runner Up</li>
-									<li><strong>Expert Cup:</strong> Semi Final</li>
-									<li><strong>Machhapuchhre Cup (Sydney):</strong> Quarter Final</li>
-									<li><strong>AMEC Royale Cup:</strong> Winner</li>
-									<li><strong>Mini World Cup:</strong> Winner</li>
-									<li><strong>United Cup:</strong> Participation</li>
-									<li><strong>NAV Multicultural Soccer Tournament:</strong> Winner</li>
-									<li><strong>NRNA Futsal Tournament:</strong> Winner/Participation</li>
-									<li><strong>Metro League 2:</strong> On Process</li>
-								</ul>
-							</div>
-							<div class="tab-content" id="year-2023-2024">
-								<ul>
-									<li><strong>4th NRNA Futsal (Open):</strong> Runner Up</li>
-									<li><strong>4th NRNA Futsal (35+):</strong> Runner Up</li>
-									<li><strong>Kandel Cup (Open):</strong> Pre-Quarter Final</li>
-									<li><strong>Kandel Cup (35+):</strong> Group Stage</li>
-									<li><strong>United Cup (Open):</strong> Group Stage</li>
-									<li><strong>United Cup (35+):</strong> Group Stage</li>
-									<li><strong>NAV Multicultural Soccer Tournament:</strong> Semi Final</li>
-									<li><strong>Expert Cup (Open):</strong> Semi Final</li>
-									<li><strong>Better Choice Cup (35+):</strong> Semi Final</li>
-								</ul>
+							<div class="tabs">
+								<div class="tab-header" style="margin-bottom: 20px;">
+									<button class="tab-link active" data-year="2017">2017</button>
+									<button class="tab-link" data-year="2018">2018</button>
+									<button class="tab-link" data-year="2019">2019</button>
+									<button class="tab-link" data-year="2020">2020</button>
+									<button class="tab-link" data-year="2021">2021</button>
+									<button class="tab-link" data-year="2022-2023">2022-2023</button>
+									<button class="tab-link" data-year="2023-2024">2023-2024</button>
+								</div>
+								<div class="tab-content active" id="year-2017">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2018">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2019">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2020">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2021">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2022-2023">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content" id="year-2023-2024">
+									<div class="achievements-container">
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>GNCV League</h4>
+											<p>Third</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Expert Cup</h4>
+											<p>Semi-Final</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-trophy"></i>
+											<h4>Dhadkan Cup</h4>
+											<p>Runner Up</p>
+										</div>
+										<div class="achievement-card">
+											<i class="fas fa-medal"></i>
+											<h4>Nepcity Futsal Tournament</h4>
+											<p>Semi-Final</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+
 					</section>
-					
-
-
 
 				</div>
 			</div>
