@@ -158,6 +158,7 @@
 			margin: 0 auto;
 			padding: 20px;
 			background: #fff;
+			/* background: linear-gradient(135deg, #1F2959, #B89EAB, #D3D3D3); */
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 			animation: slideInUp 1s ease-in-out;
@@ -179,7 +180,6 @@
 		.tab-link {
 			padding: 10px 20px;
 			margin: 5px;
-			border: 1px solid #ddd;
 			background: #fff;
 			color: #333;
 			cursor: pointer;
@@ -192,9 +192,10 @@
 		}
 	
 		.tab-content {
+			margin: 0;
+			padding: 0;
 			display: none;
 			background: #fff;
-			padding: 20px;
 			border: 1px solid #ddd;
 			border-radius: 8px;
 			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -317,6 +318,110 @@
 			}
 		}
 	</style>
+
+	<style>
+
+
+    /* Reset and Font Import */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+
+
+/* Card Styling */
+.card {
+  background: linear-gradient(135deg, #1F2959, #BF1E2E);
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-content{
+	display: none;
+}
+
+.card-content.active{
+	display: block;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Headers */
+.tabs h2 {
+  margin-bottom: 25px;
+  font-size: 3.6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2 i {
+  margin-right: 10px;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.stat {
+  margin: 15px;
+  text-align: center;
+  width: 25%;
+}
+
+.stat-number {
+  display: block;
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.stat-icon {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+/* Workshop List */
+.workshop-list {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.workshop-list li {
+  margin: 15px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.workshop-list i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+</style>
+
 	
 </head>
 <body>
@@ -409,7 +514,7 @@
 				<div class="achievements">
 					<div class="tabs">
 						<div class="tab-header">
-							<div class="tab-link active" data-tab="2023">Blood and Plasma Donation</div>
+							<div class="tab-link active" data-tab="2023" >Blood and Plasma Donation</div>
 							<div class="tab-link" data-tab="2024">Community Volunteering</div>
 							<div class="tab-link" data-tab="workshops">Workshops and Training</div>
 							<div class="tab-link" data-tab="health">Health and Wellness</div>
@@ -417,89 +522,145 @@
 						</div>
 	
 						<!-- Blood and Plasma Donation -->
-						<div class="tab-content active" id="2023">
-							<div class="section-container">
-								<h3 class="section-heading">Blood and Plasma Donation</h3>
-								<div class="section-content">
-									<ul>
-										<li><strong>Total Number of Donations 2023:</strong> 85</li>
-										<li><strong>Blood Donations:</strong> 32</li>
-										<li><strong>Plasma Donations:</strong> 53</li>
-										<li><strong>Total Lives Saved:</strong> 255</li>
-										<li><strong>Total Plasma/Whole Blood Donations Till Date:</strong> 237 & 146</li>
-									</ul>
+						 
+						<div class="card-content active" id="2023">
+							<div class="card donation-card" >
+								<h2>Blood and Plasma Donation</h2>
+								<div class="statistics">
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-tint"></i></span>
+									<span class="stat-number">85</span>
+									<p>Total Number of Donations 2023</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-water"></i></span>
+									<span class="stat-number">32</span>
+									<p>Blood Donations</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-plug"></i></span>
+									<span class="stat-number">53</span>
+									<p>Plasma Donations</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-heart"></i></span>
+									<span class="stat-number">255</span>
+									<p>Total Lives Saved</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-tint"></i></span>
+									<span class="stat-number">237 & 146</span>
+									<p>Total Plasma/Whole Blood Donations Till Date</p>
+								  </div>
 								</div>
-							</div>
+							  </div>
 						</div>
-	
-						<!-- Community Volunteering and Support -->
-						<div class="tab-content" id="2024">
-							<div class="section-container">
-								<h3 class="section-heading">Community Volunteering and Support</h3>
-								<div class="section-content">
-									<ul>
-										<li><strong>Participants:</strong> 34</li>
-										<li><strong>Community Services Provided:</strong></li>
-										<li>School tutoring</li>
-										<li>Elderly assistance</li>
-										<li>Food and Clothing Drives</li>
-										<li>Street Clean-Up Projects</li>
-										<li>Local Charity Collaborations</li>
-										<li><strong>Total Volunteering Hours:</strong> 745</li>
-									</ul>
+
+						<!-- Worksjop and Training -->
+						 <div class="card-content" id="workshops">
+							<div class="card workshop-card">
+								<h2>Workshops and Training</h2>
+								<div class="statistics">
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-calendar-alt"></i></span>
+									<span class="stat-number">8</span>
+									<p>Workshops Conducted</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-users"></i></span>
+									<span class="stat-number">150</span>
+									<p>Participants Trained</p>
+								  </div>
 								</div>
+								<ul class="workshop-list">
+								  <li><i class="fas fa-first-aid"></i> First Aid and CPR Training</li>
+								  <li><i class="fas fa-user-friends"></i> Community Leadership Programs</li>
+								  <li><i class="fas fa-leaf"></i> Environmental Awareness Sessions</li>
+								  <li><i class="fas fa-code"></i> Technology and Coding Bootcamps</li>
+								</ul>
 							</div>
-						</div>
-	
-						<!-- Workshops and Training -->
-						<div class="tab-content" id="workshops">
-							<div class="section-container">
-								<h3 class="section-heading">Workshops and Training</h3>
-								<div class="section-content">
-									<ul>
-										<li><strong>Workshops Conducted:</strong> 8</li>
-										<li>First Aid and CPR Training</li>
-										<li>Community Leadership Programs</li>
-										<li>Environmental Awareness Sessions</li>
-										<li>Technology and Coding Bootcamps</li>
-										<li><strong>Participants Trained:</strong> 150</li>
-									</ul>
+						 </div>
+
+						 <!-- Community Volunteering -->
+						  <div class="card-content" id="2024">
+							<div class="card workshop-card">
+								<h2>Community Volunteering and Support</h2>
+								<div class="statistics">
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-users"></i></span>
+									<span class="stat-number">34</span>
+									<p>Participants</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-clock"></i></span>
+									<span class="stat-number">745</span>
+									<p>Total Volunteering Hours</p>
+								  </div>
 								</div>
+								<ul class="workshop-list" >
+								  <li><i class="fas fa-first-aid"></i> School tutoring</li>
+								  <li><i class="fas fa-user-friends"></i>Elderly assistance</li>
+								  <li><i class="fas fa-utensils"></i>Food and Clothing Drives</li>
+								  <li><i class="fas fa-hands"></i>Street Clean-Up Projects</li>
+								  <li><i class="fas fa-handshake"></i>Local Charity Collaborations</li>
+								</ul>
 							</div>
-						</div>
-	
-						<!-- Health and Wellness Programs -->
-						<div class="tab-content" id="health">
-							<div class="section-container">
-								<h3 class="section-heading">Health and Wellness Programs</h3>
-								<div class="section-content">
-									<ul>
-										<li><strong>Health Camps Organized:</strong> 5</li>
-										<li>Mental Health Awareness Campaigns</li>
-										<li>Fitness and Yoga Sessions</li>
-										<li>Nutrition and Diet Workshops</li>
-										<li><strong>Participants Benefited:</strong> 200</li>
-									</ul>
+
+						  </div>
+
+						  <!-- Health and Wellness -->
+
+						  <div class="card-content" id="health">
+							<div class="card workshop-card">
+								<h2>Health and Wellness Programs</h2>
+								<div class="statistics">
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-medkit"></i></span>
+									<span class="stat-number">5</span>
+									<p>Health Camps Organized</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-users"></i></span>
+									<span class="stat-number">200</span>
+									<p>Participants Benefited</p>
+								  </div>
 								</div>
+								<ul class="workshop-list" >
+								  <li><i class="fas fa-brain"></i>Mental Health Awareness Campaigns</li>
+								  <li><i class="fas fa-user-friends"></i>Fitness and Yoga Sessions</li>
+								  <li><i class="fas fa-apple-alt"></i>Nutrition and Diet Workshops</li>
+								</ul>
 							</div>
-						</div>
-	
-						<!-- Environmental Initiatives -->
-						<div class="tab-content" id="environmental">
-							<div class="section-container">
-								<h3 class="section-heading">Environmental Initiatives</h3>
-								<div class="section-content">
-									<ul>
-										<li><strong>Tree Plantation Drives:</strong> 3</li>
-										<li>Beach Clean-Up Events</li>
-										<li>Recycling Awareness Programs</li>
-										<li>Workshops on Sustainable Living</li>
-										<li><strong>Volunteers Involved:</strong> 50</li>
-									</ul>
+
+						  </div>
+
+						<!-- Environment  -->
+
+						<div class="card-content" id="environmental">
+							<div class="card workshop-card">
+								<h2>Environmental Initiatives</h2>
+								<div class="statistics">
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-tree"></i></span>
+									<span class="stat-number">3</span>
+									<p>Tree Plantation Drives</p>
+								  </div>
+								  <div class="stat">
+									<span class="stat-icon"><i class="fas fa-users"></i></span>
+									<span class="stat-number">50</span>
+									<p>Volunteers Involved</p>
+								  </div>
 								</div>
+								<ul class="workshop-list" >
+								  <li><i class="fas fa-trash-alt"></i>Beach Clean-Up Events</li>
+								  <li><i class="fas fa-recycle"></i>Recycling Awareness Programs</li>
+								  <li><i class="fas fa-seedling"></i>Workshops on Sustainable Living</li>
+								</ul>
 							</div>
+
 						</div>
-	
+						
+
 					</div>
 				</div>
 			</div>
@@ -537,48 +698,34 @@
 	
 	
 </div>
+
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-		const tabLinks = document.querySelectorAll('.tab-link');
-		const tabContents = document.querySelectorAll('.tab-content');
-
-		tabLinks.forEach(link => {
-			link.addEventListener('click', function () {
-				// Remove active class from all tab links
-				tabLinks.forEach(link => link.classList.remove('active'));
-				// Hide all tab contents
-				tabContents.forEach(content => content.classList.remove('active'));
-				
-				// Add active class to the clicked tab link
-				this.classList.add('active');
-				// Show the corresponding tab content
-				const targetId = this.getAttribute('data-tab');
-				document.getElementById(targetId).classList.add('active');
-			});
+	  const tabs = document.querySelectorAll('.tab-link');
+	  const contents = document.querySelectorAll('.card-content');
+	
+	  tabs.forEach(tab => {
+		tab.addEventListener('click', function () {
+		  // Remove active class from all tabs
+		  tabs.forEach(t => t.classList.remove('active'));
+		  // Hide all content sections
+		  contents.forEach(content => content.classList.remove('active'));
+	
+		  // Add active class to the clicked tab
+		  tab.classList.add('active');
+	
+		  // Show the respective content section
+		  const tabId = tab.getAttribute('data-tab');
+		  const activeContent = document.getElementById(tabId);
+		  if (activeContent) {
+			activeContent.classList.add('active');
+		  }
 		});
+	  });
 	});
-</script>
+	</script>
+	
 
-
-<script>
-    // JavaScript for Tabs
-    document.querySelectorAll('.tab-link').forEach((tabLink) => {
-        tabLink.addEventListener('click', function() {
-            document.querySelectorAll('.tab-link').forEach((link) => {
-                link.classList.remove('active');
-            });
-            this.classList.add('active');
-
-            const tabId = this.getAttribute('data-tab');
-            document.querySelectorAll('.tab-content').forEach((tabContent) => {
-                tabContent.classList.remove('active');
-                if (tabContent.getAttribute('id') === tabId) {
-                    tabContent.classList.add('active');
-                }
-            });
-        });
-    });
-</script>
 <script>
 
 	$(document).ready(function() {
