@@ -1,47 +1,54 @@
 <!doctype html>
 <html class=no-js lang="">
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
-    <meta charset=utf-8>
-    <meta name=description content="">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>RWC</title>
-<link rel="shortcut icon" href="logo.png">
-    <link rel=stylesheet href=vendor.css>
-    <link rel=stylesheet href=style.css>
-    <link rel=stylesheet type=text/css href=css/layerslider.css>
-    <script src=js/vendor/modernizr.js></script>
-<style>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>RWC</title>
+	<link rel="shortcut icon" href="logo.png">
+	<link rel=stylesheet href=vendor.css>
+	<link rel=stylesheet href=style.css>
+	<link rel=stylesheet type=text/css href=css/layerslider.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
+	<script src=js/vendor/modernizr.js></script>
+	<style>
 		.custom_sponsors_section {
 			padding: 50px 0;
 			background-color: #f8f9fa;
 		}
-		
+
 		.custom_container {
-			width: 75%; /* Cover 75% of screen width */
+			width: 75%;
+			/* Cover 75% of screen width */
 			max-width: 1000px;
-			margin: 0 auto; /* Center align container */
-			padding: 0 20px; /* Adjust gap on both sides */
+			margin: 0 auto;
+			/* Center align container */
+			padding: 0 20px;
+			/* Adjust gap on both sides */
 			box-sizing: border-box;
 		}
-		
+
 		.custom_row {
 			display: flex;
 			flex-direction: column;
-			align-items: center; /* Center content horizontally */
+			align-items: center;
+			/* Center content horizontally */
 		}
-		
+
 		.custom_galleryPage {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		
+
 		.custom_gallery_list {
-			width: 100%; /* Full width for one card per row */
-			margin: 20px 0; /* Adjust vertical gap between cards */
+			width: 100%;
+			/* Full width for one card per row */
+			margin: 20px 0;
+			/* Adjust vertical gap between cards */
 			background-color: #fff;
 			border: 1px solid #ddd;
 			border-radius: 8px;
@@ -49,509 +56,568 @@
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 			box-sizing: border-box;
 		}
-		
+
 		.custom_gallery_list:hover {
 			transform: scale(1.05);
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
-		
+
 		.custom_column_g {
 			display: flex;
 			padding: 10px;
 		}
-		
+
 		.custom_image_g {
 			width: 350px;
 			height: 350px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
-			margin-right: 20px; /* Add spacing between image and text */
+			margin-right: 20px;
+			/* Add spacing between image and text */
 		}
-		
+
 		.custom_gallery_info {
 			flex: 1;
 		}
-		
+
 		.custom_gallery_info h6 {
 			margin: 0 0 10px;
 			font-size: 18px;
 			font-weight: bold;
 		}
-		
+
 		.custom_gallery_info p {
 			margin: 0;
 			font-size: 14px;
 		}
-		
+
 		.custom_gallery_info a {
 			color: #007BFF;
 			text-decoration: none;
 		}
-		
+
 		.custom_gallery_info a:hover {
 			text-decoration: underline;
 		}
-		
+
 		/* For screens larger than 769px */
 		@media (min-width: 769px) {
 			.custom_gallery_list {
-				width: calc(100% - 40px); /* Adjust width for one card per row and 75% of screen width */
-				margin: 20px; /* Adjust vertical and horizontal gap between cards */
+				width: calc(100% - 40px);
+				/* Adjust width for one card per row and 75% of screen width */
+				margin: 20px;
+				/* Adjust vertical and horizontal gap between cards */
 				display: flex;
 				align-items: center;
 			}
-		
+
 			.custom_column_g {
-				flex-direction: row; /* Ensure image on left and description on right */
+				flex-direction: row;
+				/* Ensure image on left and description on right */
 				align-items: center;
 			}
-		
+
 			.custom_image_g {
 				width: 290px;
 				height: 260px;
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-				margin-right: 20px; /* Add spacing between image and text */
+				margin-right: 20px;
+				/* Add spacing between image and text */
 			}
+
 			.custom_gallery_list {
 				flex: 1 1 calc(100% - 20px);
 			}
 		}
-		
+
 		/* For screens smaller than 769px */
 		@media (max-width: 768px) {
 			.custom_gallery_list {
-				width: calc(100% - 20px); /* Ensure full width */
+				width: calc(100% - 20px);
+				/* Ensure full width */
 				margin: 10px;
-				flex-direction: column; /* Change layout to vertical */
+				flex-direction: column;
+				/* Change layout to vertical */
 				align-items: center;
 			}
-		
+
 			.custom_column_g {
-				flex-direction: column; /* Ensure logo on top and other information below */
+				flex-direction: column;
+				/* Ensure logo on top and other information below */
 				align-items: center;
-				padding: 10px; /* Adjust padding for smaller screens */
+				padding: 10px;
+				/* Adjust padding for smaller screens */
 			}
-		
+
 			.custom_image_g {
 				width: 100%;
-				height: 150px; /* Adjust height */
-				margin-bottom: 15px; /* Add spacing between image and text */
+				height: 150px;
+				/* Adjust height */
+				margin-bottom: 15px;
+				/* Add spacing between image and text */
 			}
 		}
-		
-		h6{
+
+		h6 {
 			color: #b82128;
 		}
-		
-		</style>
-		
+	</style>
+
 </head>
+
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<div class=wrapper>
-	<div class="announcement-container">
-		<div class="announcement-text" id="announcementText">
-			
+	<div class=wrapper>
+		<div class="announcement-container">
+			<div class="announcement-text" id="announcementText">
+
+			</div>
 		</div>
-	</div>
-    <header class=header-main>
-        <div class="header-lower clearfix">
-            <div class=container>
-                <div class=row><h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
+		<header class=header-main>
+			<div class="header-lower clearfix">
+				<div class=container>
+					<div class=row>
+						<h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
 
-                    <div class=menubar>
-						<nav class="navbar">
-							<div class="nav-wrapper">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-								<div class="nav-menu">
-									<ul class="nav navbar-nav menu-bar">
-										<li><a href="index.html">Home</a></li>
-										<li>
-											<a href="#">About Us</a>
-											<ul class="sub-menu">
-												<li><a href="history.html">History</a></li>
-												<li><a href="mission.html">Mission</a></li>
-												<li><a href="vision.html">Vision</a></li>
-												<li><a href="about.html">Our Executive Team</a></li>
-											</ul>
-										</li>
-										<li>
-											<a href="#">Sports</a>
-											<ul class="sub-menu">
-												<li><a href="team.html">Team</a></li>
-												<li><a href="training.html">Training</a></li>
-												<li><a href="training.html">Matches</a></li>
-
-											</ul>
-										</li>
-										<li>
-											<a href="#">Activities</a>
-											<ul class="sub-menu">
-												<li>
-													<a href="#">Community Welfare</a>
-													<ul class="sub-menu">
-                                                        <li><a href="events2023.html">2023</a></li>
-                                                        <li><a href="events2024.html">2024</a></li>
-													</ul>
-												</li>
-												<li>
-																		<a href="#">Sporting Events</a>
-													<ul class="sub-menu">
-														<li><a href="blog.html">Multicultural Soccer Tournament </a></li>														<li><a href="blog.html">Expert Cup</a></li><li><a href="blog.html">Better Choice Cup</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="achievement.html">OUR ACHIEVEMENTS
-													</a>
-
-											</li>
-
+						<div class=menubar>
+							<nav class="navbar">
+								<div class="nav-wrapper">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<div class="nav-menu">
+										<ul class="nav navbar-nav menu-bar">
+											<li><a href="index.html">Home</a></li>
 											<li>
-												<a href="merchandise.html">Merchandise
-												</a>
+												<a href="#">About Us</a>
+												<ul class="sub-menu">
+													<li><a href="history.html">History</a></li>
+													<li><a href="mission.html">Mission</a></li>
+													<li><a href="vision.html">Vision</a></li>
+													<li><a href="about.html">Our Executive Team</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Sports</a>
+												<ul class="sub-menu">
+													<li><a href="team.html">Team</a></li>
+													<li><a href="training.html">Training</a></li>
+													<li><a href="training.html">Matches</a></li>
 
-										</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Activities</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="#">Community Welfare</a>
+														<ul class="sub-menu">
+															<li><a href="events2023.html">2023</a></li>
+															<li><a href="events2024.html">2024</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Sporting Events</a>
+														<ul class="sub-menu">
+															<li><a href="blog.html">Multicultural Soccer Tournament </a>
+															</li>
+															<li><a href="blog.html">Expert Cup</a></li>
+															<li><a href="blog.html">Better Choice Cup</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="achievement.html">OUR ACHIEVEMENTS
+														</a>
 
-											</ul>
-										</li>
-										<li><a class="active" href="sponsors.html">Club Sponsors</a></li>
+													</li>
 
-										<li><a href="joinus.html">Join Us</a></li>
-										<li><a href="contact.html">Contact Us</a></li>
-									</ul>
+													<li>
+														<a href="merchandise.html">Merchandise
+														</a>
+
+													</li>
+
+												</ul>
+											</li>
+											<li><a class="active" href="sponsors.html">Club Sponsors</a></li>
+
+											<li><a href="joinus.html">Join Us</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class=innerbannerwrap>
+			<div class=content></div>
+			<div class=innerbanner>
+				<h2 class=bannerHeadline>Our <span>Sponsors</span></h2>
+			</div>
+		</div>
+		<section class="custom_sponsors_section">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_galleryPage">
+						<!-- Sponsor 1 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/Expert_Secondary_Logo.png'); scale: 143%;">
+								</div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Title sponsor</h6>
+									<h6>Expert Education and Visa Services</h6>
+									<p>
+										Address: Level 3, 313 Flinders Lane, Melbourne, Australia<br>
+										Phone: (03) 9642 0138<br>
+										Email: melbourne@experteducation.com.au<br>
+										Website: <a href="https://experteducation.com/australia/melbourne"
+											target="_blank">experteducation.com.au</a>
+									</p>
 								</div>
 							</div>
-						</nav>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class=innerbannerwrap>
-        <div class=content></div>
-        <div class=innerbanner><h2 class=bannerHeadline>Our <span>Sponsors</span></h2></div>
-    </div>
-	<section class="custom_sponsors_section">
-		<div class="custom_container">
-			<div class="custom_row">
-				<div class="custom_galleryPage">
-					<!-- Sponsor 1 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/Expert_Secondary_Logo.png'); scale: 143%;"></div>
-							<div class="custom_gallery_info">
-								<h6  style="color:#1d2452; font-size: 15px;">Title sponsor</h6><h6>Expert Education and Visa Services</h6>
-								<p>
-									Address: Level 3, 313 Flinders Lane, Melbourne, Australia<br>
-									Phone: (03) 9642 0138<br>
-									Email: melbourne@experteducation.com.au<br>
-									Website: <a href="https://experteducation.com/australia/melbourne" target="_blank">experteducation.com.au</a>
-								</p>
-							</div>
 						</div>
-					</div>
-					<!-- Sponsor 2 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/kathmandu_properties_logo.jpg');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Powered By</h6><h6>Kathmandu Properties</h6>
-								<p>									Address: U19 882-900 Cooper Street, Somerton, Australia<br>
-									Phone: (04) 1374 3452<br>
-									Email: info@kathmanduproperties.com.au<br>
-									Website: <a href="https://kathmanduproperties.com.au" target="_blank">kathmanduproperties.com.au</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- Sponsor 3 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/wilson_college.jpeg');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Education Partner</h6><h6>Winslow</h6>
-								<p>
-									Address:  Level 7, 440 Elizabeth Street, Melbourne, Australia<br>
-									Phone: 1800 961 580							   <br>
-									Email: contact@winslow.edu.au<br>
-									Website: <a href="https://winslow.edu.au/" target="_blank">winslow.edu.au</a>
-									
+						<!-- Sponsor 2 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/kathmandu_properties_logo.jpg');">
+								</div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Powered By</h6>
+									<h6>Kathmandu Properties</h6>
+									<p> Address: U19 882-900 Cooper Street, Somerton, Australia<br>
+										Phone: (04) 1374 3452<br>
+										Email: info@kathmanduproperties.com.au<br>
+										Website: <a href="https://kathmanduproperties.com.au"
+											target="_blank">kathmanduproperties.com.au</a>
 									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Sponsor 4 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/tinkune.jpeg');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Hospitality Partner</h6><h6>Tinkune</h6>
-								<p>									Address:  31B Sun Cres, Sunshine VIC 3020<br>
-									Phone: (04) 3031 5733<br>
-									Website: <a href="https://tinkune.com.au/lander" target="_blank">tinkune.com.au</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- Sponsor 5 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/better_choice.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Mortgage Partner</h6><h6>Better Choice Finance</h6>
-								<p>									Address: 12 Ormond Blvd, Bundoora VIC 3083<br>
-									Phone: (04) 2388 7386<br>
-									Email: info@betterchoice.com.au<br>
-									Website: <a href="https://betterchoice.com.au/" target="_blank">betterchoice.com.au</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- Sponsor 6 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/rcon_homes.jpg');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Building Partner</h6><h6>RCON Homes</h6>
-								<p>									Address: Unit 8/2 Fastline Rd, Truganina, Melbourne, Australia<br>
-									Phone: (04) 7063 4008<br>
-									Email: info@rconhomes.com.au<br>
-									Website: <a href="https://RCONhomes.com.au" target="_blank">RCONhomes.com.au</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- Sponsor 7 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/extratech_melbourne.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">IT Partner</h6><h6>Extra Techs Melbourne</h6>
-								<p> 
-									Address: Level 1, 422 Sydney Road, Coburg, VIC<br>
-									Phone: (02) 9171 7742<br>
-									Email: melbourne@extratechs.com.au<br>
-									Website: <a href="https://extratechs.com.au" target="_blank">extratechs.com.au</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<!-- Sponsor 8 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/payru.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Remit Partner</h6><h6>Payru</h6>
-								<p>
-									Address: 22 Brunning Rise, Wollert VIC 3750 <br>
-									Phone: (03) 8413 7372<br>
-									Email: contact@payru.com.au<br>
-									Website: <a href="https://payru.com.au/" target="_blank">payru.com.au</a>
+						<!-- Sponsor 3 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/wilson_college.jpeg');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Education Partner</h6>
+									<h6>Winslow</h6>
+									<p>
+										Address: Level 7, 440 Elizabeth Street, Melbourne, Australia<br>
+										Phone: 1800 961 580 <br>
+										Email: contact@winslow.edu.au<br>
+										Website: <a href="https://winslow.edu.au/" target="_blank">winslow.edu.au</a>
 
-									
-								</p>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Sponsor 9 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/indreni.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Groceries Partner</h6><h6>Indreni</h6>
-								<p>
-									Address: 800 Pascoe vale Road, Glenroy, VIC 3046 <br>
-									Phone: (04) 8042 1626 <br>
-									Website: <a href="https://indreni-restaurant.com.au/" target="_blank">indreni-restaurant.com.au</a>
-								</p>
+						<!-- Sponsor 4 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/tinkune.jpeg');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Hospitality Partner</h6>
+									<h6>Tinkune</h6>
+									<p> Address: 31B Sun Cres, Sunshine VIC 3020<br>
+										Phone: (04) 3031 5733<br>
+										Website: <a href="https://tinkune.com.au/lander"
+											target="_blank">tinkune.com.au</a>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-										<!-- Sponsor 10 -->
-										<div class="custom_gallery_list">
-											<div class="custom_column_g">
-												<div class="custom_image_g" style="background-image: url('images/sponsors/awti.png');"></div>
-												<div class="custom_gallery_info">
-													<h6 style="color:#1d2452; font-size: 15px;">Training Partner</h6><h6>AWTI</h6>
-													<p>Address: 3/95 Bell St, Coburg VIC 3058
-														<br>Phone: 1300 145 298<br>Email: melbourne@awticollege.com<br>
-														Website: <a href="https://awti.edu.au/" target="_blank">awti.edu.au</a>
-																					</p>
-												</div>
-											</div>
-										</div>
+						<!-- Sponsor 5 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/better_choice.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Mortgage Partner</h6>
+									<h6>Better Choice Finance</h6>
+									<p> Address: 12 Ormond Blvd, Bundoora VIC 3083<br>
+										Phone: (04) 2388 7386<br>
+										Email: info@betterchoice.com.au<br>
+										Website: <a href="https://betterchoice.com.au/"
+											target="_blank">betterchoice.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 6 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/rcon_homes.jpg');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Building Partner</h6>
+									<h6>RCON Homes</h6>
+									<p> Address: Unit 8/2 Fastline Rd, Truganina, Melbourne, Australia<br>
+										Phone: (04) 7063 4008<br>
+										Email: info@rconhomes.com.au<br>
+										Website: <a href="https://RCONhomes.com.au" target="_blank">RCONhomes.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 7 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/extratech_melbourne.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">IT Partner</h6>
+									<h6>Extra Techs Melbourne</h6>
+									<p>
+										Address: Level 1, 422 Sydney Road, Coburg, VIC<br>
+										Phone: (02) 9171 7742<br>
+										Email: melbourne@extratechs.com.au<br>
+										Website: <a href="https://extratechs.com.au"
+											target="_blank">extratechs.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 8 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g" style="background-image: url('images/sponsors/payru.png');">
+								</div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Remit Partner</h6>
+									<h6>Payru</h6>
+									<p>
+										Address: 22 Brunning Rise, Wollert VIC 3750 <br>
+										Phone: (03) 8413 7372<br>
+										Email: contact@payru.com.au<br>
+										Website: <a href="https://payru.com.au/" target="_blank">payru.com.au</a>
 
 
-					<!-- Sponsor 11 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/apb_partners.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Accounting Partner</h6><h6>APB Partners</h6>
-								<p>									Address: U8 95 Bell Street, Melbourne, Australia<br>
-									Phone: (03) 5902 6322<br>
-									Email: info@apbpartners.com.au<br>
-									Website: <a href="https://apbizsolution.com.au" target="_blank">apbizsolution.com.au</a>
-								</p>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Sponsor 12 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/your_dream_home.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Conveyancing Partner</h6><h6>Your Dream Home Conveyancing</h6>
-								<p>
-									Address: Unit 3/198 Newbury Blvd, Craigieburn VIC 3064<br>
-									Phone: 0450 300 737<br>
-									Email: info@ydhconveyancing.com.au									<br>
-									Website: <a href="https://ydhconveyancing.com.au/" target="_blank">ydhconveyancing.com.au</a>
-								</p>
+						<!-- Sponsor 9 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/indreni.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Groceries Partner</h6>
+									<h6>Indreni</h6>
+									<p>
+										Address: 800 Pascoe vale Road, Glenroy, VIC 3046 <br>
+										Phone: (04) 8042 1626 <br>
+										Website: <a href="https://indreni-restaurant.com.au/"
+											target="_blank">indreni-restaurant.com.au</a>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Sponsor 13 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/kantipur_holidays.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Ticketing Partner</h6><h6>Kantipur Holidays</h6>
-								<p>Kantipur Holidays<br>
-									Address: 10/785 Pascoe Vale Road, Glenroy, Australia<br>
-									Phone: (03) 8322 0351<br>
-									Email: hari@kantipurholidays.com.au<br>
-									Website: <a href="https://kantipurholidays.com.au" target="_blank">kantipurholidays.com.au</a>
-								</p>
+						<!-- Sponsor 10 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g" style="background-image: url('images/sponsors/awti.png');">
+								</div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Training Partner</h6>
+									<h6>AWTI</h6>
+									<p>Address: 3/95 Bell St, Coburg VIC 3058
+										<br>Phone: 1300 145 298<br>Email: melbourne@awticollege.com<br>
+										Website: <a href="https://awti.edu.au/" target="_blank">awti.edu.au</a>
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Sponsor 14 -->
-					<div class="custom_gallery_list">
-						<div class="custom_column_g">
-							<div class="custom_image_g" style="background-image: url('images/sponsors/car_tech.png');"></div>
-							<div class="custom_gallery_info">
-								<h6 style="color:#1d2452; font-size: 15px;">Automotive Partner</h6><h6>Car Tech Melbourne</h6>
-								<p>
-									Address: 5/23 Lentini Street, Hoppers Crossing, Australia<br>
-									Phone: (03) 9369 3291<br>
-									Email: info@cartechmelbourne.com.au<br>
-									Website: <a href="https://cartechmelbourne.com.au" target="_blank">cartechmelbourne.com.au</a>
-								</p>
+
+
+						<!-- Sponsor 11 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/apb_partners.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Accounting Partner</h6>
+									<h6>APB Partners</h6>
+									<p> Address: U8 95 Bell Street, Melbourne, Australia<br>
+										Phone: (03) 5902 6322<br>
+										Email: info@apbpartners.com.au<br>
+										Website: <a href="https://apbizsolution.com.au"
+											target="_blank">apbizsolution.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 12 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/your_dream_home.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Conveyancing Partner</h6>
+									<h6>Your Dream Home Conveyancing</h6>
+									<p>
+										Address: Unit 3/198 Newbury Blvd, Craigieburn VIC 3064<br>
+										Phone: 0450 300 737<br>
+										Email: info@ydhconveyancing.com.au <br>
+										Website: <a href="https://ydhconveyancing.com.au/"
+											target="_blank">ydhconveyancing.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 13 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/kantipur_holidays.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Ticketing Partner</h6>
+									<h6>Kantipur Holidays</h6>
+									<p>Kantipur Holidays<br>
+										Address: 10/785 Pascoe Vale Road, Glenroy, Australia<br>
+										Phone: (03) 8322 0351<br>
+										Email: hari@kantipurholidays.com.au<br>
+										Website: <a href="https://kantipurholidays.com.au"
+											target="_blank">kantipurholidays.com.au</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Sponsor 14 -->
+						<div class="custom_gallery_list">
+							<div class="custom_column_g">
+								<div class="custom_image_g"
+									style="background-image: url('images/sponsors/car_tech.png');"></div>
+								<div class="custom_gallery_info">
+									<h6 style="color:#1d2452; font-size: 15px;">Automotive Partner</h6>
+									<h6>Car Tech Melbourne</h6>
+									<p>
+										Address: 5/23 Lentini Street, Hoppers Crossing, Australia<br>
+										Phone: (03) 9369 3291<br>
+										Email: info@cartechmelbourne.com.au<br>
+										Website: <a href="https://cartechmelbourne.com.au"
+											target="_blank">cartechmelbourne.com.au</a>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	
+		</section>
 
-	<footer class=footer-type01>
-		<div class=footer-type02>
-			<div class=container>
-				<div class=row><a href=index.html class=footer-logo><img src=images/logo.png alt=image></a>
 
-					<div class=footer-container>
-						<ul class=clearfix>
-							<li><a href=https://www.facebook.com/ROYALWESTERNSFC class=bigsocial-link><i
-									class="fa fa-facebook"></i></a></li>
-							<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link target=_blank><i
-									class="fa fa-youtube"></i></a></li>
-							<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link target=_blank><i
-									class="fa fa-instagram"></i></a></li>
+		<footer class=footer-type01>
+			<div class=footer-type02>
+				<div class=container>
+					<div class=row><a href=index.html class=footer-logo><img src=images/logo.png alt=image></a>
 
-						</ul>
-						<li >
-	
+						<div class=footer-container>
+							<ul class=clearfix>
+								<li><a href=https://www.facebook.com/ROYALWESTERNSFC class=bigsocial-link><i
+											class="fab fa-facebook"></i></a></li>
+								<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link
+										target=_blank><i class="fab fa-youtube"></i></a></li>
+								<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link
+										target=_blank><i class="fab fa-instagram"></i></a></li>
+
+							</ul>
+							<li>
+
 								<p><span>Address:</span><span class=red> 31</span> president road, Albanvale, VIC</p>
-	
-	
-							<p><span>Call:</span> <span class=red> +61451375100</span></p></li>
+
+
+								<p><span>Call:</span> <span class=red> +61451375100</span></p>
+							</li>
 						</div>
 
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</div>
-<script>
+		</footer>
+	</div>
+	<script>
 
-	$(document).ready(function() {
-		$('.menu-bar > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
+		$(document).ready(function () {
+			$('.menu-bar > li > a').click(function (e) {
+				e.preventDefault();
+				var $submenu = $(this).siblings('.sub-menu');
+				$('.sub-menu').not($submenu).slideUp('fast');
+				$submenu.slideToggle('fast');
+			});
+
+			$('.sub-menu > li > a').click(function (e) {
+				e.preventDefault();
+				var $submenu = $(this).siblings('.sub-menu');
+				$('.sub-menu').not($submenu).slideUp('fast');
+				$submenu.slideToggle('fast');
+			});
+
+			$(document).click(function (e) {
+				if (!$(e.target).closest('.navbar').length) {
+					$('.sub-menu').slideUp('fast');
+				}
+			});
 		});
-	
-		$('.sub-menu > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Get all menu items that have a submenu
+			const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
+
+			menuItems.forEach(menuItem => {
+				menuItem.addEventListener('click', function (event) {
+
+					const parentLi = menuItem.parentElement;
+					const submenu = parentLi.querySelector('.sub-menu');
+
+					// Toggle the active class to show/hide the submenu
+					if (parentLi.classList.contains('active')) {
+						parentLi.classList.remove('active');
+					} else {
+						// Close all open submenus
+						document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+						parentLi.classList.add('active');
+					}
+				});
+			});
+
+			// Close submenu if clicking outside of menu
+			document.addEventListener('click', function (event) {
+				if (!event.target.closest('.nav-wrapper')) {
+					document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+				}
+			});
+
+			// Prevent submenu closing when clicking inside submenu
+			const subMenus = document.querySelectorAll('.sub-menu');
+			subMenus.forEach(subMenu => {
+				subMenu.addEventListener('click', function (event) {
+					event.stopPropagation();
+				});
+			});
 		});
-	
-		$(document).click(function(e) {
-			if (!$(e.target).closest('.navbar').length) {
-				$('.sub-menu').slideUp('fast');
-			}
-		});
-	});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all menu items that have a submenu
-    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
-
-    menuItems.forEach(menuItem => {
-        menuItem.addEventListener('click', function(event) {
-            
-            const parentLi = menuItem.parentElement;
-            const submenu = parentLi.querySelector('.sub-menu');
-            
-            // Toggle the active class to show/hide the submenu
-            if (parentLi.classList.contains('active')) {
-                parentLi.classList.remove('active');
-            } else {
-                // Close all open submenus
-                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-                parentLi.classList.add('active');
-            }
-        });
-    });
-
-    // Close submenu if clicking outside of menu
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-wrapper')) {
-            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-        }
-    });
-
-    // Prevent submenu closing when clicking inside submenu
-    const subMenus = document.querySelectorAll('.sub-menu');
-    subMenus.forEach(subMenu => {
-        subMenu.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-});
-</script>
-<script src=js/vendor/vendor.js></script>
-<script src=js/main.js></script>
+	</script>
+	<script src=js/vendor/vendor.js></script>
+	<script src=js/main.js></script>
 </body>
 
 </html>

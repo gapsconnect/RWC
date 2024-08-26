@@ -1,565 +1,578 @@
 <!doctype html>
 <html class=no-js lang="">
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
-    <meta charset=utf-8>
-    <meta name=description content="">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>RWC</title>
-<link rel="shortcut icon" href="logo.png">
-    <link rel=stylesheet href=vendor.css>
-    <link rel=stylesheet href=style.css>
-    <link rel=stylesheet type=text/css href=css/layerslider.css>
-    <script src=js/vendor/modernizr.js></script>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>RWC</title>
+	<link rel="shortcut icon" href="logo.png">
+	<link rel=stylesheet href=vendor.css>
+	<link rel=stylesheet href=style.css>
+	<link rel=stylesheet type=text/css href=css/layerslider.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<script src=js/vendor/modernizr.js></script>
 	<style>
 		/* General Styles */
-.innerpage_all_wrap {
-    padding: 40px 0;
-}
+		.innerpage_all_wrap {
+			padding: 40px 0;
+		}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 
-.heading {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: bold;
-}
+		.heading {
+			text-align: center;
+			margin-bottom: 30px;
+			font-size: 32px;
+			font-weight: bold;
+		}
 
-.activity-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+		.activity-card-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
 
-.activity-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 48%;
-    min-width: 250px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+		.activity-card {
+			background-color: #f9f9f9;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			padding: 20px;
+			margin: 10px;
+			width: 48%;
+			min-width: 250px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+		}
 
-.activity-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: center;
-}
+		.activity-card h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+			text-align: center;
+		}
 
-.activity-card ul {
-    list-style-type: none;
-    padding: 0;
-}
+		.activity-card ul {
+			list-style-type: none;
+			padding: 0;
+		}
 
-.activity-card ul li {
-    margin-bottom: 8px;
-}
+		.activity-card ul li {
+			margin-bottom: 8px;
+		}
 
-.activity-card ul li:before {
-    content: "\2022";
-    color: #4CAF50;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
+		.activity-card ul li:before {
+			content: "\2022";
+			color: #4CAF50;
+			font-weight: bold;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
+		}
 
-.activity-card:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
+		.activity-card:hover {
+			transform: translateY(-5px);
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+		}
 
-.achievement-timeline {
-    margin-top: 20px;
-}
+		.achievement-timeline {
+			margin-top: 20px;
+		}
 
-.achievement-timeline h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+		.achievement-timeline h4 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
 
-.merchandise-categories {
-    margin-top: 20px;
-}
+		.merchandise-categories {
+			margin-top: 20px;
+		}
 
-.merchandise-categories h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+		.merchandise-categories h4 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
 
-.merchandise-categories ul {
-    list-style-type: none;
-    padding: 0;
-}
+		.merchandise-categories ul {
+			list-style-type: none;
+			padding: 0;
+		}
 
-.merchandise-categories ul li {
-    margin-bottom: 8px;
-}
+		.merchandise-categories ul li {
+			margin-bottom: 8px;
+		}
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .activity-card {
-        width: calc(33.33% - 30px);
-    }
-}
+		/* Responsive Design */
+		@media (max-width: 1024px) {
+			.activity-card {
+				width: calc(33.33% - 30px);
+			}
+		}
 
-@media (max-width: 768px) {
-    .activity-card {
-        width: calc(50% - 30px);
-    }
-}
+		@media (max-width: 768px) {
+			.activity-card {
+				width: calc(50% - 30px);
+			}
+		}
 
-@media (max-width: 576px) {
-    .activity-card {
-        width: 100%;
-    }
-}.achievement-timeline {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
+		@media (max-width: 576px) {
+			.activity-card {
+				width: 100%;
+			}
+		}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+		.achievement-timeline {
+			background-color: #f9f9f9;
+			padding: 40px 0;
+		}
 
-.heading {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: bold;
-}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
 
-.timeline {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+		.heading {
+			text-align: center;
+			margin-bottom: 30px;
+			font-size: 32px;
+			font-weight: bold;
+		}
 
-.year {
-    flex: 1 1 20%;
-    max-width: 35%;
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+		.timeline {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
 
-.year h3 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
+		.year {
+			flex: 1 1 20%;
+			max-width: 35%;
+			margin: 10px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			padding: 20px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+		}
 
-.year ul {
-    list-style-type: none;
-    padding: 0;
-}
+		.year h3 {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 10px;
+		}
 
-.year ul li {
-    margin-bottom: 8px;
-}
+		.year ul {
+			list-style-type: none;
+			padding: 0;
+		}
 
-.year ul li:before {
-    content: "\2022";
-    color: #4CAF50;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
+		.year ul li {
+			margin-bottom: 8px;
+		}
 
-
+		.year ul li:before {
+			content: "\2022";
+			color: #4CAF50;
+			font-weight: bold;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
+		}
 	</style>
 </head>
+
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<div class=wrapper>
-	<div class="announcement-container">
-		<div class="announcement-text" id="announcementText">
-			
+	<div class=wrapper>
+		<div class="announcement-container">
+			<div class="announcement-text" id="announcementText">
+
+			</div>
 		</div>
-	</div>
-    <header class=header-main>
-        <div class="header-lower clearfix">
-            <div class=container>
-                <div class=row><h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
+		<header class=header-main>
+			<div class="header-lower clearfix">
+				<div class=container>
+					<div class=row>
+						<h1 class=logo><a href=index.html><img src=images/logo.png alt=image></a></h1>
 
-                    <div class=menubar>
-						<nav class="navbar">
-							<div class="nav-wrapper">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-								<div class="nav-menu">
-									<ul class="nav navbar-nav menu-bar">
-										<li><a href="index.html">Home</a></li>
-										<li>
-											<a href="#">About Us</a>
-											<ul class="sub-menu">
-												<li><a href="history.html">History</a></li>
-												<li><a href="mission.html">Mission</a></li>
-												<li><a href="vision.html">Vision</a></li>
-												<li><a href="about.html">Our Executive Team</a></li>
-											</ul>
-										</li>
-										<li>
-											<a href="#">Sports</a>
-											<ul class="sub-menu">
-												<li><a href="team.html">Team</a></li>
-												<li><a href="training.html">Training</a></li>
-												<li><a href="training.html">Matches</a></li>
-
-											</ul>
-										</li>
-										<li>
-											<a href="#" class="active">Activities</a>
-											<ul class="sub-menu">
-												<li>
-													<a href="#">Community Welfare</a>
-													<ul class="sub-menu">
-                                                        <li><a href="events2023.html">2023</a></li>
-                                                        <li><a href="events2024.html">2024</a></li>
-													</ul>
-												</li>
-												<li>
-																		<a href="#">Sporting Events</a>
-													<ul class="sub-menu">
-														<li><a href="blog.html">Multicultural Soccer Tournament </a></li><li><a href="blog.html">Expert Cup</a></li><li><a href="blog.html">Better Choice Cup</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="achievement.html">OUR ACHIEVEMENTS
-													</a>
-
-											</li>
-
+						<div class=menubar>
+							<nav class="navbar">
+								<div class="nav-wrapper">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+									<div class="nav-menu">
+										<ul class="nav navbar-nav menu-bar">
+											<li><a href="index.html">Home</a></li>
 											<li>
-												<a href="merchandise.html">Merchandise
-												</a>
+												<a href="#">About Us</a>
+												<ul class="sub-menu">
+													<li><a href="history.html">History</a></li>
+													<li><a href="mission.html">Mission</a></li>
+													<li><a href="vision.html">Vision</a></li>
+													<li><a href="about.html">Our Executive Team</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Sports</a>
+												<ul class="sub-menu">
+													<li><a href="team.html">Team</a></li>
+													<li><a href="training.html">Training</a></li>
+													<li><a href="training.html">Matches</a></li>
 
-										</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#" class="active">Activities</a>
+												<ul class="sub-menu">
+													<li>
+														<a href="#">Community Welfare</a>
+														<ul class="sub-menu">
+															<li><a href="events2023.html">2023</a></li>
+															<li><a href="events2024.html">2024</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Sporting Events</a>
+														<ul class="sub-menu">
+															<li><a href="blog.html">Multicultural Soccer Tournament </a>
+															</li>
+															<li><a href="blog.html">Expert Cup</a></li>
+															<li><a href="blog.html">Better Choice Cup</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="achievement.html">OUR ACHIEVEMENTS
+														</a>
 
-											</ul>
-										</li>
-										<li><a href="sponsors.html">Club Sponsors</a></li>
+													</li>
 
-										<li><a href="joinus.html">Join Us</a></li>
-										<li><a href="contact.html">Contact Us</a></li>
-									</ul>
+													<li>
+														<a href="merchandise.html">Merchandise
+														</a>
+
+													</li>
+
+												</ul>
+											</li>
+											<li><a href="sponsors.html">Club Sponsors</a></li>
+
+											<li><a href="joinus.html">Join Us</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</div>
 								</div>
-							</div>
-						</nav>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class=innerbannerwrap>
-        <div class=content></div>
-        <div class=innerbanner><h2 class=bannerHeadline><span>Activities</span></h2></div>
-    </div>
-	<section class="innerpage_all_wrap bg-white">
-		<div class="container">
-			<div class="row">
-				<h2 class="heading">Activities</h2>
-				<div class="activity-card-container">
-					<!-- Community Welfare -->
-					<div class="activity-card">
-						<h3>Community Welfare</h3>
-						<ul>
-							<li>Blood and Plasma Donation:</li>
-							<li>Total Number of donations 2023-2024: 85</li>
-							<li>Blood Donations: 32</li>
-							<li>Plasma Donations: 53</li>
-							<li>Total Life Saved: 255</li>
-							<li>Total Plasma/Whole Blood Donation Till Date: 237 & 146</li>
-							<li>Total Live Saved Till Date: 1149</li>
-						</ul>
+							</nav>
+						</div>
+
 					</div>
-	
-					<!-- Sporting Events -->
-					<div class="activity-card">
-						<h3>Sporting Events</h3>
-						<ul>
-							<li>Multicultural Soccer Tournament</li>
-							<!-- Add image here -->
-							<li>Expert Cup</li>
-							<!-- Add images here -->
-						</ul>
-					</div>
-	
+				</div>
+			</div>
+		</header>
+		<div class=innerbannerwrap>
+			<div class=content></div>
+			<div class=innerbanner>
+				<h2 class=bannerHeadline><span>Activities</span></h2>
+			</div>
+		</div>
+		<section class="innerpage_all_wrap bg-white">
+			<div class="container">
+				<div class="row">
+					<h2 class="heading">Activities</h2>
+					<div class="activity-card-container">
+						<!-- Community Welfare -->
+						<div class="activity-card">
+							<h3>Community Welfare</h3>
+							<ul>
+								<li>Blood and Plasma Donation:</li>
+								<li>Total Number of donations 2023-2024: 85</li>
+								<li>Blood Donations: 32</li>
+								<li>Plasma Donations: 53</li>
+								<li>Total Life Saved: 255</li>
+								<li>Total Plasma/Whole Blood Donation Till Date: 237 & 146</li>
+								<li>Total Live Saved Till Date: 1149</li>
+							</ul>
+						</div>
 
-					
-					<section class="achievement-timeline">
-						<div class="container">
-							<h2 class="heading">Our Achievements</h2>
-					
-							<div class="timeline">
-								<div class="year">
-									<h3>2017</h3>
-									<ul>
-										<li>GNCV LEAGUE THIRD</li>
-										<li>EXPERT CUP SEMI-FINAL</li>
-										<li>DHADKAN CUP RUNNER UP</li>
-										<li>NEPCITY FUTSAL TOURNAMENT SEMI-FINAL</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2018</h3>
-									<ul>
-										<li>CANBERRA NEPALESE NATIONAL CUP SEMI-FINAL</li>
-										<li>FFV DIVISION 5 LEAGUE FIFTH</li>
-										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2019</h3>
-									<ul>
-										<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
-										<li>VIC SOCCER DIVISION 1 LEAGUE WINNER</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2020</h3>
-									<ul>
-										<li>MULTICULTURAL CUP RUNNER UP</li>
-										<li>GNCV LEAGUE THIRD</li>
-										<li>GNCV LEAGUE (35+) Winner</li>
-										<li>NRNA FUTSAL TOURNAMENT 1ST RUNNER UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2021</h3>
-									<ul>
-										<li>NRNA Futsal Tournament 1ST RUNNER UP</li>
-										<li>MCSA league Participation</li>
-										<li>2nd NAV Multicultural Tournament 1ST Runner UP</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2022/2023</h3>
-									<ul>
-										<li>NRNA Futsal</li>
-										<li>Kandel Cup</li>
-										<li>Canberra Cup</li>
-										<li>Adelaide Dashain Cup</li>
-										<li>Expert Cup</li>
-										<li>Machhapuchhre Cup (Sydney)</li>
-										<li>AMEC Royale Cup</li>
-										<li>Mini World Cup</li>
-										<li>United Cup</li>
-										<li>NAV Multicultural Soccer Tournament</li>
-										<li>NRNA Futsal Tournament</li>
-										<li>Metro League 2</li>
-									</ul>
-								</div>
-					
-								<div class="year">
-									<h3>2023/2024</h3>
-									<ul>
-										<li>4th NRNA Futsal (Open) - Runner up</li>
-										<li>4th NRNA Futsal (35+) - Runner up</li>
-										<li>Kandel Cup (Open) - Pre-Quarter final</li>
-										<li>Kandel Cup (35+) - Group Stage</li>
-										<li>United Cup (Open) - Group Stage</li>
-										<li>NAV Multicultural Soccer Tournament - Semi-Final</li>
-										<li>Expert Cup (Open) - Semi-Final</li>
-										<li>Better Choice Cup (35+) - Semi-Final</li>
-									</ul>
-								</div>
-							</div>
+						<!-- Sporting Events -->
+						<div class="activity-card">
+							<h3>Sporting Events</h3>
+							<ul>
+								<li>Multicultural Soccer Tournament</li>
+								<!-- Add image here -->
+								<li>Expert Cup</li>
+								<!-- Add images here -->
+							</ul>
 						</div>
 
 
-						
-					</section>
-					
+
+						<section class="achievement-timeline">
+							<div class="container">
+								<h2 class="heading">Our Achievements</h2>
+
+								<div class="timeline">
+									<div class="year">
+										<h3>2017</h3>
+										<ul>
+											<li>GNCV LEAGUE THIRD</li>
+											<li>EXPERT CUP SEMI-FINAL</li>
+											<li>DHADKAN CUP RUNNER UP</li>
+											<li>NEPCITY FUTSAL TOURNAMENT SEMI-FINAL</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2018</h3>
+										<ul>
+											<li>CANBERRA NEPALESE NATIONAL CUP SEMI-FINAL</li>
+											<li>FFV DIVISION 5 LEAGUE FIFTH</li>
+											<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2019</h3>
+										<ul>
+											<li>NEPCITY FUTSAL TOURNAMENT RUNNER UP</li>
+											<li>VIC SOCCER DIVISION 1 LEAGUE WINNER</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2020</h3>
+										<ul>
+											<li>MULTICULTURAL CUP RUNNER UP</li>
+											<li>GNCV LEAGUE THIRD</li>
+											<li>GNCV LEAGUE (35+) Winner</li>
+											<li>NRNA FUTSAL TOURNAMENT 1ST RUNNER UP</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2021</h3>
+										<ul>
+											<li>NRNA Futsal Tournament 1ST RUNNER UP</li>
+											<li>MCSA league Participation</li>
+											<li>2nd NAV Multicultural Tournament 1ST Runner UP</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2022/2023</h3>
+										<ul>
+											<li>NRNA Futsal</li>
+											<li>Kandel Cup</li>
+											<li>Canberra Cup</li>
+											<li>Adelaide Dashain Cup</li>
+											<li>Expert Cup</li>
+											<li>Machhapuchhre Cup (Sydney)</li>
+											<li>AMEC Royale Cup</li>
+											<li>Mini World Cup</li>
+											<li>United Cup</li>
+											<li>NAV Multicultural Soccer Tournament</li>
+											<li>NRNA Futsal Tournament</li>
+											<li>Metro League 2</li>
+										</ul>
+									</div>
+
+									<div class="year">
+										<h3>2023/2024</h3>
+										<ul>
+											<li>4th NRNA Futsal (Open) - Runner up</li>
+											<li>4th NRNA Futsal (35+) - Runner up</li>
+											<li>Kandel Cup (Open) - Pre-Quarter final</li>
+											<li>Kandel Cup (35+) - Group Stage</li>
+											<li>United Cup (Open) - Group Stage</li>
+											<li>NAV Multicultural Soccer Tournament - Semi-Final</li>
+											<li>Expert Cup (Open) - Semi-Final</li>
+											<li>Better Choice Cup (35+) - Semi-Final</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
 
+
+						</section>
+
+
+
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	
+		</section>
+
 
 
 		<section class="innerpage_all_wrap bg-white">
-		<div class="container">
-			<div class="row">
-				<h2 class="heading">Merchandise</h2>
-				<div class="activity-card-container">
-					<!-- Community Welfare -->
-					<div class="activity-card">
-						<h3>Apparel</h3>
-						<ul>
-							<li>Club T-shirts
- </li>
-							<li>Hoodies
+			<div class="container">
+				<div class="row">
+					<h2 class="heading">Merchandise</h2>
+					<div class="activity-card-container">
+						<!-- Community Welfare -->
+						<div class="activity-card">
+							<h3>Apparel</h3>
+							<ul>
+								<li>Club T-shirts
 								</li>
-							<li>Hats 
-							</li>
-							<li>Jackets</li>
+								<li>Hoodies
+								</li>
+								<li>Hats
+								</li>
+								<li>Jackets</li>
 
-						</ul>
-					</div>
-	
-					<!-- Sporting Events -->
-					<div class="activity-card">
-						<h3>Accessories</h3>
-						<ul>
-							<li>Bags</li>
-							<!-- Add image here -->
-							<li>Mugs</li>
-							<li>Keychains</li><li>Pins</li><li>Badges</li>
-							<!-- Add images here -->
-						</ul>
-					</div>
-	
+							</ul>
+						</div>
 
-					
-					<section class="achievement-timeline">
-						<div class="container">
-					
-
+						<!-- Sporting Events -->
+						<div class="activity-card">
+							<h3>Accessories</h3>
+							<ul>
+								<li>Bags</li>
+								<!-- Add image here -->
+								<li>Mugs</li>
+								<li>Keychains</li>
+								<li>Pins</li>
+								<li>Badges</li>
+								<!-- Add images here -->
+							</ul>
 						</div>
 
 
-						
-					</section>
-					
+
+						<section class="achievement-timeline">
+							<div class="container">
 
 
+							</div>
+
+
+
+						</section>
+
+
+
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	
-	<footer class=footer-type01>
-		<div class=footer-type02>
-			<div class=container>
-				<div class=row><a href=index.html class=footer-logo><img src=images/logo.png alt=image></a>
+		</section>
 
-					<div class=footer-container>
-						<ul class=clearfix>
-							<li><a href=https://www.facebook.com/ROYALWESTERNSFC class=bigsocial-link><i
-									class="fa fa-facebook"></i></a></li>
-							<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link target=_blank><i
-									class="fa fa-youtube"></i></a></li>
-							<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link target=_blank><i
-									class="fa fa-instagram"></i></a></li>
+		<footer class=footer-type01>
+			<div class=footer-type02>
+				<div class=container>
+					<div class=row><a href=index.html class=footer-logo><img src=images/logo.png alt=image></a>
 
-						</ul>
-						<li >
-	
+						<div class=footer-container>
+							<ul class=clearfix>
+								<li><a href=https://www.facebook.com/ROYALWESTERNSFC class=bigsocial-link><i
+											class="fab fa-facebook"></i></a></li>
+								<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link
+										target=_blank><i class="fab fa-youtube"></i></a></li>
+								<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link
+										target=_blank><i class="fab fa-instagram"></i></a></li>
+
+							</ul>
+							<li>
+
 								<p><span>Address:</span><span class=red> 31</span> president road, Albanvale, VIC</p>
-	
-	
-							<p><span>Call:</span> <span class=red> +61451375100</span></p></li>
+
+
+								<p><span>Call:</span> <span class=red> +61451375100</span></p>
+							</li>
 						</div>
 
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</div>
-<script>
+		</footer>
+	</div>
+	<script>
 
-	$(document).ready(function() {
-		$('.menu-bar > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
+		$(document).ready(function () {
+			$('.menu-bar > li > a').click(function (e) {
+				e.preventDefault();
+				var $submenu = $(this).siblings('.sub-menu');
+				$('.sub-menu').not($submenu).slideUp('fast');
+				$submenu.slideToggle('fast');
+			});
+
+			$('.sub-menu > li > a').click(function (e) {
+				e.preventDefault();
+				var $submenu = $(this).siblings('.sub-menu');
+				$('.sub-menu').not($submenu).slideUp('fast');
+				$submenu.slideToggle('fast');
+			});
+
+			$(document).click(function (e) {
+				if (!$(e.target).closest('.navbar').length) {
+					$('.sub-menu').slideUp('fast');
+				}
+			});
 		});
-	
-		$('.sub-menu > li > a').click(function(e) {
-			e.preventDefault();
-			var $submenu = $(this).siblings('.sub-menu');
-			$('.sub-menu').not($submenu).slideUp('fast');
-			$submenu.slideToggle('fast');
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Get all menu items that have a submenu
+			const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
+
+			menuItems.forEach(menuItem => {
+				menuItem.addEventListener('click', function (event) {
+
+					const parentLi = menuItem.parentElement;
+					const submenu = parentLi.querySelector('.sub-menu');
+
+					// Toggle the active class to show/hide the submenu
+					if (parentLi.classList.contains('active')) {
+						parentLi.classList.remove('active');
+					} else {
+						// Close all open submenus
+						document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+						parentLi.classList.add('active');
+					}
+				});
+			});
+
+			// Close submenu if clicking outside of menu
+			document.addEventListener('click', function (event) {
+				if (!event.target.closest('.nav-wrapper')) {
+					document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+				}
+			});
+
+			// Prevent submenu closing when clicking inside submenu
+			const subMenus = document.querySelectorAll('.sub-menu');
+			subMenus.forEach(subMenu => {
+				subMenu.addEventListener('click', function (event) {
+					event.stopPropagation();
+				});
+			});
 		});
-	
-		$(document).click(function(e) {
-			if (!$(e.target).closest('.navbar').length) {
-				$('.sub-menu').slideUp('fast');
-			}
-		});
-	});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all menu items that have a submenu
-    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
-
-    menuItems.forEach(menuItem => {
-        menuItem.addEventListener('click', function(event) {
-            
-            const parentLi = menuItem.parentElement;
-            const submenu = parentLi.querySelector('.sub-menu');
-            
-            // Toggle the active class to show/hide the submenu
-            if (parentLi.classList.contains('active')) {
-                parentLi.classList.remove('active');
-            } else {
-                // Close all open submenus
-                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-                parentLi.classList.add('active');
-            }
-        });
-    });
-
-    // Close submenu if clicking outside of menu
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.nav-wrapper')) {
-            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-        }
-    });
-
-    // Prevent submenu closing when clicking inside submenu
-    const subMenus = document.querySelectorAll('.sub-menu');
-    subMenus.forEach(subMenu => {
-        subMenu.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-});
-</script>
-<script src=js/vendor/vendor.js></script>
-<script src=js/main.js></script>
+	</script>
+	<script src=js/vendor/vendor.js></script>
+	<script src=js/main.js></script>
 </body>
 
 </html>
