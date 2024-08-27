@@ -1,356 +1,372 @@
 <!doctype html>
 <html class=no-js lang="">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 <head>
-	<meta charset=utf-8>
-	<meta name=description content="">
-	<meta name="viewport"
-		content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<title>RWC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset=utf-8>
+    <meta name=description content="">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>RWC</title>
 
-	<link rel="shortcut icon" href="logo.png">
-	<link rel=stylesheet href=vendor.css>
-	<link rel=stylesheet href=style.css>
-	<link rel=stylesheet type=text/css href=css/layerslider.css>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel=stylesheet href=vendor.css>
+    <link rel=stylesheet href=style.css>
+    <link rel=stylesheet type=text/css href=css/layerslider.css>
 	<link rel="stylesheet" href="css/navbar.css">
 
-	<script src=js/vendor/modernizr.js></script>
+    <script src=js/vendor/modernizr.js></script>
 	<style>
-		.container {
-			position: relative;
-		}
+.container {
+    position: relative;
+}
 
-		.event-announcement {
-			text-align: center;
-			background-color: #f9f9f9;
-			padding: 20px;
-			margin: 20px 10px;
-			width: 100%;
-			box-sizing: border-box;
-			border-radius: 10px;
-			overflow: hidden;
-			position: relative;
-			z-index: 1;
-			/* Ensure content is above the pseudo-element */
-		}
+.event-announcement {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; /* Ensure content is above the pseudo-element */
+}
+.event-title {
+    font-size: 28px;
+    font-family: 'Alfa Slab One', serif;
+    margin-bottom: 20px;
+    color: #FFD700; /* Royal Gold for a highlight effect */
+}
+.event-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-		.event-title {
-			font-size: 28px;
-			font-family: 'Alfa Slab One', serif;
-			margin-bottom: 20px;
-			color: #FFD700;
-			/* Royal Gold for a highlight effect */
-		}
+.event-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    box-sizing: border-box;
+}
 
-		.event-content {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: wrap;
-		}
+.register-link {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #991B28;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-		.event-text {
-			flex: 1;
-			max-width: 50%;
-			text-align: left;
-			box-sizing: border-box;
-		}
+.or {
+    font-size: 14px;
+    color: #991B28;
+    margin: 0 10px;
+}
+.or-container {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0 20px; /* Adjust spacing between OR and other elements as needed */
+}
 
-		.register-link {
-			display: inline-block;
-			background-color: #FFD700;
-			color: #991B28;
-			padding: 10px 20px;
-			text-decoration: none;
-			border-radius: 5px;
-		}
+.register-now {
+    text-align: center;
+}
 
-		.event-qr {
-			flex: 1;
-			max-width: 50%;
-			text-align: right;
-			box-sizing: border-box;
-		}
+.event-qr {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+    box-sizing: border-box;
+}
 
-		.qr-image {
-			max-width: 200px;
-			width: 100%;
-			border: 2px solid #FFD700;
-			padding: 10px;
-			background-color: #FFFFFF;
-			border-radius: 8px;
-		}
+.qr-image {
+    max-width: 200px;
+    width: 100%;
+    border: 2px solid #FFD700;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
 
-		@media (max-width: 768px) {
+@media (max-width: 768px) {
+    .event-text, .event-qr {
+        max-width: 100%;
+        text-align: center;
+    }
 
-			.event-text,
-			.event-qr {
-				max-width: 100%;
-				text-align: center;
-			}
+    .event-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-			.event-content {
-				flex-direction: column;
-				align-items: center;
-			}
+    .event-text {
+        margin-bottom: 20px;
+    }
+}
 
-			.event-text {
-				margin-bottom: 20px;
-			}
-		}
+@media (max-width: 480px) {
+    .event-title {
+        font-size: 20px;
+    }
 
-		@media (max-width: 480px) {
-			.event-title {
-				font-size: 20px;
-			}
-
-			.register-link {
-				padding: 8px 16px;
-				font-size: 14px;
-			}
-		}
-
-
-		@keyframes borderAnimation {
-			0% {
-				background-position: 0% 50%;
-			}
-
-			100% {
-				background-position: 200% 50%;
-			}
-		}
-
-		.event-announcement::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			border: 8px solid transparent;
-			border-image: linear-gradient(90deg, #FFD700, #1F2959, #991B28, #FFD700, #1F2959, #991B28);
-			border-image-slice: 1;
-			background: linear-gradient(90deg, rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3), rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3));
-			background-size: 200% 200%;
-			z-index: -1;
-			border-radius: 15px;
-			animation: borderAnimation 5s linear infinite;
-			pointer-events: none;
-		}
-
-		/* New Announcement Css */
-
-		.announcement-wrapper {
-			padding-top: 40px;
-			padding-left: 50px;
-			width: 80%;
-			margin: 0 auto;
-			background-color: #1F2959;
-			color: white;
-
-		}
-
-		.top-main {
-			display: flex;
-			align-content: space-between;
-			padding-left: 40px;
-		}
-
-		.description-container {
-			padding-left: 100px;
-			flex-grow: 2;
-		}
-
-		.description-container p {
-			text-transform: uppercase;
-			align-content: center;
-			font-size: 2.5vw;
-			font-weight: 550;
-			line-height: 1.2;
-		}
-
-		.register-now {
-			display: flex;
-			justify-content: center;
-			margin-left: 340px;
-		}
-
-		.scan-now {
-			margin-top: 20px;
-			display: flex;
-			justify-content: center;
-		}
-
-		.scan-now a {
-			width: 100%;
-		}
-
-		.register-now a {
-			background-color: #991B28;
-			align-items: center;
-			padding: 4px 20px;
-			color: white;
-			font-size: 1.5vw;
-			font-weight: bold;
-			text-align: center;
-		}
-
-		.goal-wrapper {
-			padding-left: 60px;
-		}
-
-		.qr-wrapper a {
-			background-color: #991B28;
-			align-items: center;
-			padding: 4px 20px;
-			color: white;
-			font-size: 20px;
-			font-weight: bold;
-			text-align: center;
-		}
-
-		.scan-button {
-			margin-top: 20px;
-
-		}
-
-		.goal-wrapper {
-			margin-top: 20px;
-			display: flex;
-			justify-content: space-between;
-		}
+    .register-link {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
 
 
-		@media (max-width: 957px) {
+@keyframes borderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
 
-			.register-now a {
-				margin-left: 0;
-				transform: none;
-			}
+.event-announcement::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 8px solid transparent;
+    border-image:  linear-gradient(90deg, #FFD700, #1F2959, #991B28, #FFD700, #1F2959, #991B28);
+    border-image-slice: 1;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3), rgba(255, 215, 0, 0.3), rgba(31, 41, 89, 0.3), rgba(153, 27, 40, 0.3));
+    background-size: 200% 200%;
+    z-index: -1;
+    border-radius: 15px;
+    animation: borderAnimation 5s linear infinite;
+    pointer-events: none;
+}
+/* New Announcement Css */
+/* Ensure .top-main keeps items aligned and allows wrapping */
+.top-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
 
-			.register-now {
-				margin: 0;
-				padding: 0;
-			}
+/* Prevent the mic-container from shrinking or growing */
+.mic-container {
+    flex: 0 0 auto; /* Prevent the mic-container from shrinking or growing */
+    margin-right: 20px; /* Space between the mic image and the text */
+}
 
-			.top-main {
-				padding: 0;
-				margin: 0;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+/* Adjust image size */
+.mic-container img {
+    width: 120px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
-			}
+/* Adjust font size and line-height for responsiveness */
+.description-container {
+    max-width: 600px; /* Prevent container from growing too wide on larger screens */
+}
 
-			.goal-wrapper {
-				padding: 0;
-				margin: 0;
-				margin-top: 20px;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
+.description-container .top-description p {
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive font size */
+    font-weight: 750;
+    line-height: 1.2; /* Adjust line-height for readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Center content horizontally and ensure responsive width */
+.goal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center all items horizontally */
+    width: 80%; /* Center the content and allow it to be responsive */
+    margin: 20px auto; /* Center the wrapper horizontally */
+    text-align: center;
+}
+
+/* Adjust font size and spacing for responsive layout */
+@media (max-width: 957px) {
+    .top-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mic-container {
+        margin-bottom: 10px; /* Space below the mic image */
+    }
+
+    .description-container {
+        max-width: 100%; /* Ensure container takes full width on small screens */
+    }
+
+    .description-container .top-description p {
+        font-size: clamp(1.5rem, 5vw, 2rem); /* Increase font size for smaller screens */
+    }
+
+    .goal-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 
-		}
-	</style>
+
+.register-now a {
+    background-color: #991B28;
+    padding: 6px 20px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+.qr-container {
+    text-align: center;
+    margin-right: 20px; /* Adjust spacing between QR and OR as needed */
+}
+
+.qr-container img {
+    width: 150px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.scan-now a {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+    text-align: center;
+    background-color: #991B28;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.goal-container img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 957px) {
+    .top-main, .goal-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-container p {
+        font-size: 2vw;
+    }
+
+    .register-now {
+        margin: 10px 0;
+    }
+}
+
+		</style>
+		
 
 </head>
-
 <body><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-	<div class=wrapper>
-		<div class="announcement-container">
-			<div class="announcement-text" id="announcementText">
-
-			</div>
+<div class=wrapper>
+	<div class="announcement-container">
+		<div class="announcement-text" id="announcementText">
+			
 		</div>
+	</div>
+	
+    <header class=header-main>
+        <div class="header-lower clearfix">
+            <div class=container>
+                <div class=row>
+					<h1 class=logo><a href=index.html><img class=logo-img src=images/logo.png alt=image></a>
+					</h1>
 
-		<header class=header-main>
-			<div class="header-lower clearfix">
-				<div class=container>
-					<div class=row>
-						<h1 class=logo><a href=index.html><img class=logo-img src=images/logo.png alt=image></a>
-						</h1>
+                    <div class=menubar>
+						<nav class="navbar">
+							<div class="nav-wrapper">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="nav-menu">
+									<ul class="nav navbar-nav menu-bar">
+										<li><a href="index.html" class="active">Home</a></li>
+										<li>
+											<a href="#">About Us</a>
+											<ul class="sub-menu">
+												<li><a href="history.html">History</a></li>
+												<li><a href="mission.html">Mission</a></li>
+												<li><a href="vision.html">Vision</a></li>
+												<li><a href="about.html">Our Executive Team</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Sports</a>
+											<ul class="sub-menu">
+												<li><a href="team.html">Team</a></li>
+												<li><a href="training.html">Training</a></li>
+												<li><a href="matches.html">Matches</a></li>
 
-						<div class=menubar>
-							<nav class="navbar">
-								<div class="nav-wrapper">
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle">
-											<span class="sr-only">Toggle navigation</span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
-									<div class="nav-menu">
-										<ul class="nav navbar-nav menu-bar">
-											<li><a href="index.html" class="active">Home</a></li>
-											<li>
-												<a href="#">About Us</a>
-												<ul class="sub-menu">
-													<li><a href="history.html">History</a></li>
-													<li><a href="mission.html">Mission</a></li>
-													<li><a href="vision.html">Vision</a></li>
-													<li><a href="about.html">Our Executive Team</a></li>
-												</ul>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Activities</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="#">Community Welfare</a>
+													<ul class="sub-menu">
+                                                        <li><a href="events2023.html">2023</a></li>
+                                                        <li><a href="events2024.html">2024</a></li>
+													</ul>
+												</li>
+												<li>
+																		<a href="#">Sporting Events</a>
+													<ul class="sub-menu">
+														<li><a href="blog.html">Multicultural Soccer Tournament </a></li><li><a href="blog.html">Expert Cup</a></li> <li><a href="blog.html">Better Choice Cup</a></li>
+													</ul>
+												</li>
+
+
+												<li>
+													<a href="achievement.html">OUR ACHIEVEMENTS
+													</a>
+
 											</li>
+
 											<li>
-												<a href="#">Sports</a>
-												<ul class="sub-menu">
-													<li><a href="team.html">Team</a></li>
-													<li><a href="training.html">Training</a></li>
-													<li><a href="matches.html">Matches</a></li>
+												<a href="merchandise.html">Merchandise
+												</a>
 
-												</ul>
-											</li>
-											<li>
-												<a href="#">Activities</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="#">Community Welfare</a>
-														<ul class="sub-menu">
-															<li><a href="events2023.html">2023</a></li>
-															<li><a href="events2024.html">2024</a></li>
-														</ul>
-													</li>
-													<li>
-														<a href="#">Sporting Events</a>
-														<ul class="sub-menu">
-															<li><a href="blog.html">Multicultural Soccer Tournament </a>
-															</li>
-															<li><a href="blog.html">Expert Cup</a></li>
-															<li><a href="blog.html">Better Choice Cup</a></li>
-														</ul>
-													</li>
+										</li>
 
+											</ul>
+										</li>
+										<li><a href="sponsors.html">Club Sponsors</a></li>
 
-													<li>
-														<a href="achievement.html">OUR ACHIEVEMENTS
-														</a>
-
-													</li>
-
-													<li>
-														<a href="merchandise.html">Merchandise
-														</a>
-
-													</li>
-
-												</ul>
-											</li>
-											<li><a href="sponsors.html">Club Sponsors</a></li>
-
-											<li><a href="joinus.html">Join Us</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
-										</ul>
-									</div>
+										<li><a href="joinus.html">Join Us</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
 								</div>
 							</div>
 						</nav>
@@ -409,45 +425,35 @@
 
     </div>
 
-
 </div>
 
-		<!-- Announcement Wrapper End -->
-		<section class="latestvideo">
-
-			<div class="container">
-				<div class="row">
-					<h2 class="heading">latest <span>video</span></h2>
-					<p class="headParagraph">Welcome to the Royal Westerns Club. The Royal Westerns Club was officially
-						registered with Customer Affairs Victoria on September 15, 2015. Our club is proudly rooted in
-						the vibrant and diverse western region of Melbourne. We are a community of sport-loving
-						individuals, primarily Nepali students, who share a passion for teamwork, sportsmanship, and
-						community building.</p>
-
-					<div class="video-wrap clearfix">
-						<div class="video-content clearfix">
-							<a class="btn-up"></a>
-							<ul class="videoLive clearfix" id="videoSlide" role="tablist">
-								<li><a class="changeVideo" data-yt-video="W7qWa52k-nE">
-										<div><span>september 10, 2015</span> Welcome to the Royal Westerns Club:
-											<span>Live audio and video</span>
-										</div>
-									</a></li>
-							</ul>
-							<a class="btn-down"></a>
-						</div>
-						<div class="video-show">
-							<div class="video-container" id="video01" data-current-video="W7qWa52k-nE">
-								<iframe class="liveVideo" src="https://www.youtube.com/embed/Bq-PnvWfAHA"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
-							</div>
+	<!-- Announcement Wrapper End -->
+	<section class="latestvideo">
+		
+		<div class="container">
+			<div class="row">
+				<h2 class="heading">latest <span>video</span></h2>
+				<p class="headParagraph">Welcome to the Royal Westerns Club. The Royal Westerns Club was officially registered with Customer Affairs Victoria on September 15, 2015. Our club is proudly rooted in the vibrant and diverse western region of Melbourne. We are a community of sport-loving individuals, primarily Nepali students, who share a passion for teamwork, sportsmanship, and community building.</p>
+	
+				<div class="video-wrap clearfix">
+					<div class="video-content clearfix">
+						<a class="btn-up"></a>
+						<ul class="videoLive clearfix" id="videoSlide" role="tablist">
+							<li><a class="changeVideo" data-yt-video="W7qWa52k-nE">
+								<div><span>september 10, 2015</span> Welcome to the Royal Westerns Club: <span>Live audio and video</span></div>
+							</a></li>
+						</ul>
+						<a class="btn-down"></a>
+					</div>
+					<div class="video-show">
+						<div class="video-container" id="video01" data-current-video="W7qWa52k-nE">
+							<iframe class="liveVideo" src="https://www.youtube.com/embed/Bq-PnvWfAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 		<section class="social-media">
 			<div class="container">
@@ -455,174 +461,167 @@
 					<ul class="socialinfo">
 						<li>
 							<a href="https://www.youtube.com/channel/UCExample" target="_blank">
-								<div class="sociallink"><i class="fab fa-youtube"></i></div>
-								<p>Subscribe to our YouTube channel for the latest videos and live streams from the
-									Royal Westerns Club. Stay updated with match highlights, training sessions, and
-									exclusive interviews with our players and coaches.</p>
+								<div class="sociallink"><i class="fa fa-youtube"></i></div>
+								<p>Subscribe to our YouTube channel for the latest videos and live streams from the Royal Westerns Club. Stay updated with match highlights, training sessions, and exclusive interviews with our players and coaches.</p>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.facebook.com/RoyalWesternsClub" target="_blank">
-								<div class="sociallink"><i class="fab fa-facebook"></i></div>
-								<p>Join our Facebook community to connect with fellow fans, get the latest news, and
-									participate in exciting discussions about our club's activities. Like our page and
-									stay engaged with regular updates and events.</p>
+								<div class="sociallink"><i class="fa fa-facebook"></i></div>
+								<p>Join our Facebook community to connect with fellow fans, get the latest news, and participate in exciting discussions about our club's activities. Like our page and stay engaged with regular updates and events.</p>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.instagram.com/RoyalWesternsClub" target="_blank">
-								<div class="sociallink"><i class="fab fa-instagram"></i></div>
-								<p>Follow us on Instagram for behind-the-scenes photos and videos, player takeovers, and
-									a glimpse into the daily life at the Royal Westerns Club. Don't miss out on our
-									stories and exclusive content.</p>
+								<div class="sociallink"><i class="fa fa-instagram"></i></div>
+								<p>Follow us on Instagram for behind-the-scenes photos and videos, player takeovers, and a glimpse into the daily life at the Royal Westerns Club. Don't miss out on our stories and exclusive content.</p>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-
+		
 
 
 		<footer class=footer-type01>
 			<div class=footer-type02>
 				<div class=container>
 					<div class=row><a href=index.html class=footer-logo><img src=images/logo.png alt=image></a>
-
+	
 						<div class=footer-container>
 							<ul class=clearfix>
 								<li><a href=https://www.facebook.com/ROYALWESTERNSFC class=bigsocial-link><i
-											class="fab fa-facebook"></i></a></li>
-								<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link
-										target=_blank><i class="fab fa-youtube"></i></a></li>
-								<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link
-										target=_blank><i class="fab fa-instagram"></i></a></li>
-
+										class="fa fa-facebook"></i></a></li>
+								<li><a href=https://www.youtube.com/@RoyalWesternsClub class=bigsocial-link target=_blank><i
+										class="fa fa-youtube"></i></a></li>
+								<li><a href=https://www.instagram.com/royalwesternsclub class=bigsocial-link target=_blank><i
+										class="fa fa-instagram"></i></a></li>
+	
 							</ul>
-							<li>
-
-								<p><span>Address:</span><span class=red> 31</span> president road, Albanvale, VIC</p>
-
-
-								<p><span>Call:</span> <span class=red> +61451375100</span></p>
-							</li>
-						</div>
-
+							<li >
+		
+									<p><span>Address:</span><span class=red> 31</span> president road, Albanvale, VIC</p>
+		
+		
+								<p><span>Call:</span> <span class=red> +61451375100</span></p></li>
+							</div>
+	
 					</div>
 				</div>
 			</div>
 		</footer>
-	</div>
+</div>
 
 
-	<script>
+<script>
 
-		$(document).ready(function () {
-			$('.menu-bar > li > a').click(function (e) {
-				e.preventDefault();
-				var $submenu = $(this).siblings('.sub-menu');
-				$('.sub-menu').not($submenu).slideUp('fast');
-				$submenu.slideToggle('fast');
-			});
-
-			$('.sub-menu > li > a').click(function (e) {
-				e.preventDefault();
-				var $submenu = $(this).siblings('.sub-menu');
-				$('.sub-menu').not($submenu).slideUp('fast');
-				$submenu.slideToggle('fast');
-			});
-
-			$(document).click(function (e) {
-				if (!$(e.target).closest('.navbar').length) {
-					$('.sub-menu').slideUp('fast');
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// Get all menu items that have a submenu
-			const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
-
-			menuItems.forEach(menuItem => {
-				menuItem.addEventListener('click', function (event) {
-
-					const parentLi = menuItem.parentElement;
-					const submenu = parentLi.querySelector('.sub-menu');
-
-					// Toggle the active class to show/hide the submenu
-					if (parentLi.classList.contains('active')) {
-						parentLi.classList.remove('active');
-					} else {
-						// Close all open submenus
-						document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-						parentLi.classList.add('active');
-					}
-				});
-			});
-
-			// Close submenu if clicking outside of menu
-			document.addEventListener('click', function (event) {
-				if (!event.target.closest('.nav-wrapper')) {
-					document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
-				}
-			});
-
-			// Prevent submenu closing when clicking inside submenu
-			const subMenus = document.querySelectorAll('.sub-menu');
-			subMenus.forEach(subMenu => {
-				subMenu.addEventListener('click', function (event) {
-					event.stopPropagation();
-				});
-			});
-		});
-	</script>
-	<script>
-		const slides = document.querySelectorAll('.slide');
-		const nextBtn = document.querySelector('.next-btn');
-		const prevBtn = document.querySelector('.prev-btn');
-		let currentSlide = 0;
-
-		function showSlide(index) {
-			slides.forEach((slide, i) => {
-				slide.style.opacity = i === index ? '1' : '0';
-			});
-		}
-
-		function nextSlide() {
-			currentSlide = (currentSlide + 1) % slides.length;
-			showSlide(currentSlide);
-		}
-
-		function prevSlide() {
-			currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-			showSlide(currentSlide);
-		}
-
-		nextBtn.addEventListener('click', nextSlide);
-		prevBtn.addEventListener('click', prevSlide);
-
-		setInterval(nextSlide, 4000); // Automatically switch slides every 8 seconds
-
-		showSlide(currentSlide);
-
-	</script>
-	<script>
-		document.querySelectorAll('.card').forEach(card => {
-			card.addEventListener('click', function () {
-				document.querySelector('.overlay .overlay-title').textContent = this.getAttribute('data-mission');
-				document.querySelector('.overlay .overlay-description').textContent = this.getAttribute('data-description');
-				document.querySelector('.overlay').style.display = 'flex';
-			});
+	$(document).ready(function() {
+		$('.menu-bar > li > a').click(function(e) {
+			e.preventDefault();
+			var $submenu = $(this).siblings('.sub-menu');
+			$('.sub-menu').not($submenu).slideUp('fast');
+			$submenu.slideToggle('fast');
 		});
 
-		document.querySelector('.overlay-close').addEventListener('click', function () {
-			document.querySelector('.overlay').style.display = 'none';
+		$('.sub-menu > li > a').click(function(e) {
+			e.preventDefault();
+			var $submenu = $(this).siblings('.sub-menu');
+			$('.sub-menu').not($submenu).slideUp('fast');
+			$submenu.slideToggle('fast');
 		});
 
-	</script>
-	<script src=js/vendor/vendor.js></script>
-	<script src=js/main.js></script>
+		$(document).click(function(e) {
+			if (!$(e.target).closest('.navbar').length) {
+				$('.sub-menu').slideUp('fast');
+			}
+		});
+	});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all menu items that have a submenu
+    const menuItems = document.querySelectorAll('.nav-menu li:has(.sub-menu) > a');
+
+    menuItems.forEach(menuItem => {
+        menuItem.addEventListener('click', function(event) {
+            
+            const parentLi = menuItem.parentElement;
+            const submenu = parentLi.querySelector('.sub-menu');
+
+            // Toggle the active class to show/hide the submenu
+            if (parentLi.classList.contains('active')) {
+                parentLi.classList.remove('active');
+            } else {
+                // Close all open submenus
+                document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+                parentLi.classList.add('active');
+            }
+        });
+    });
+
+    // Close submenu if clicking outside of menu
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-wrapper')) {
+            document.querySelectorAll('.nav-menu li.active').forEach(li => li.classList.remove('active'));
+        }
+    });
+
+    // Prevent submenu closing when clicking inside submenu
+    const subMenus = document.querySelectorAll('.sub-menu');
+    subMenus.forEach(subMenu => {
+        subMenu.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    });
+});
+</script>
+<script>
+	const slides = document.querySelectorAll('.slide');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? '1' : '0';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+setInterval(nextSlide, 4000); // Automatically switch slides every 8 seconds
+
+showSlide(currentSlide);
+
+</script>
+<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelector('.overlay .overlay-title').textContent = this.getAttribute('data-mission');
+        document.querySelector('.overlay .overlay-description').textContent = this.getAttribute('data-description');
+        document.querySelector('.overlay').style.display = 'flex';
+    });
+});
+
+document.querySelector('.overlay-close').addEventListener('click', function() {
+    document.querySelector('.overlay').style.display = 'none';
+});
+
+</script>
+<script src=js/vendor/vendor.js></script>
+<script src=js/main.js></script>
 </body>
 
 </html>
