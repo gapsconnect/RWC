@@ -8626,7 +8626,8 @@ header-main .header-lower::before {
 @media (min-width: 992px) {
 	.header-main .menubar {
 		float: left;
-		width: 83%;
+		left: 12%;
+		width: 90%;
 	}
 }
 
@@ -9788,14 +9789,13 @@ header-main .header-lower::before {
 	content: "";
 	width: 140px;
 	top: -119px;
-	left: 25%;
+	left: 20%;
 	height: auto;
 	-webkit-transform: scale(0.5);
 	-ms-transform: scale(0.5);
 	transform: scale(0.5);
 	background-repeat: no-repeat;
 	display: inline-block;
-	height: 163px;
 }
 .booking-content {
 	position: relative;
