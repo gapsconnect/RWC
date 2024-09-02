@@ -11356,13 +11356,11 @@ section {
 	float: left;
 	width: 50%;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	position: relative;
 	min-height: 1px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 @media (min-width: 992px) {
 	.product_details li {
@@ -11378,7 +11376,7 @@ section {
 }
 .product-img {
 	height: 320px;
-	background-size: cover !important;
+	background-size: contain !important;
 	transition: all 0.4s ease-in-out;
 }
 .product_info li {
