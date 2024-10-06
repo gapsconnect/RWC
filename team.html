@@ -32,6 +32,74 @@
 			color: #333;
 			font-weight: bold;
 		}
+
+		.team-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+	height: auto;
+    display: block;
+}
+
+.description {
+    padding: 15px;
+    background-color: #1F2959;
+    color: white;
+    position: relative;
+    height: 150px;
+}
+
+.description h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.description .video-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #BF1E2E;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.description .video-link:hover {
+    background-color: #B89EAB;
+    color: #1F2959;
+}
 	</style>
 </head>
 
@@ -163,134 +231,153 @@
 					<li><a href="#menu" data-filter=".events">Videos</a></li>
 					<li><a href="#menu" data-filter=".player">Players</a></li>
 				</ul>
-				<div class="gallery">
-					<div class="sk-cube-grid" id="galleryLoader">
-						<div class="sk-cube sk-cube1"></div>
-						<div class="sk-cube sk-cube2"></div>
-						<div class="sk-cube sk-cube3"></div>
-						<div class="sk-cube sk-cube4"></div>
-						<div class="sk-cube sk-cube5"></div>
-						<div class="sk-cube sk-cube6"></div>
-						<div class="sk-cube sk-cube7"></div>
-						<div class="sk-cube sk-cube8"></div>
-						<div class="sk-cube sk-cube9"></div>
-					</div>
-					<div id="galleryWrapper" class="clearfix magnificPopupParent">
-						<div class="item events">
-							<a href="images/events/2.jpg">
-								<img src="images/events/2.jpg" alt="image">
-							</a>
-						</div>
-						<div class="item player">
-							<a href="images/player/Coach.jpg" title="Coach">
-								<img src="images/player/Coach.jpg" alt="image">
-							</a>
-							<div class="player-details">Coach</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/AK.jpg" title="Aakash Magar - 18 - MIDFIELD">
-								<img src="images/player/AK.jpg" alt="image">
-							</a>
-							<div class="player-details">Aakash Magar - 18 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/AKASH.jpg" title="Aakash Magar - 18 - MIDFIELD">
-								<img src="images/player/AKASH.jpg" alt="image">
-							</a>
-							<div class="player-details">Aakash Magar - 18 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/amir.jpg" title="Amir Shrestha - 7 - RIGHT BACK">
-								<img src="images/player/amir.jpg" alt="image">
-							</a>
-							<div class="player-details">Amir Shrestha - 7 - RIGHT BACK</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/amit.jpg" title="Amit Thapa - 8 - CENTER BACK">
-								<img src="images/player/amit.jpg" alt="image">
-							</a>
-							<div class="player-details">Amit Thapa - 8 - CENTER BACK</div>
-						</div>
+				<div class="team-gallery">
+					<section class="team-section">
+						<div class="team-gallery">
+							<div class="team-card">
+								<img src="images/player/Coach.jpg" alt="Coach">
+								<div class="description">
+									<h3>Coach</h3>
+									<p></p>
+									<a href="https://www.youtube.com/watch?v=usneUaohHxA" target="_blank" class="video-link">
+										Watch on YouTube
+									</a>
+								</div>
+							</div>
+				
+							<div class="team-card">
+								<img src="images/player/AK.jpg" alt="Player 2">
+								<div class="description">
+									<h3>Aakash Magar -18</h3>
+									<p>MIDFIELD</p>
+								  
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/AKASH.jpg" alt="Player 2">
+								<div class="description">
+									<h3>Aakash Magar -18</h3>
+									<p>MIDFIELD</p>
+								  
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/amir.jpg" alt="Coach">
+								<div class="description">
+									<h3>Amir Shrestha - 7</h3>
+									<p>RIGHT BACK</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/amit.jpg" alt="Coach">
+								<div class="description">
+									<h3>Amit Thapa - 8</h3>
+									<p>CENTER BACK</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/prashant.jpg" alt="Coach">
+								<div class="description">
+									<h3>Prashant Tamang - 3</h3>
+									<p>CENTER BACK</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/rajan.jpg" alt="Coach">
+								<div class="description">
+									<h3>Rajan Gurung - 32</h3>
+									<p>CENTER BACK</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/SAJAN.jpg" alt="Coach">
+								<div class="description">
+									<h3>Sajan Basnet - 4</h3>
+									<p>CENTER BACK</p>
+						
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/AVASH.jpg" alt="Coach">
+								<div class="description">
+									<h3>Avas Bista - 27</h3>
+									<p>FORWARD</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/Crijan.jpg" alt="Coach">
+								<div class="description">
+									<h3>Sijan Bhandari - 9</h3>
+									<p>FORWARD</p>
+									
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/pritivi.jpg" alt="Coach">
+								<div class="description">
+									<h3>Pritivi Thapa - 6</h3>
+									<p>FORWARD</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/RUMESH.jpg" alt="Coach">
+								<div class="description">
+									<h3>Rumesh Bartaula - 26</h3>
+									<p>FORWARD</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/SAROJ.jpg" alt="Coach">
+								<div class="description">
+									<h3>Saroj Budhathoki - 24</h3>
+									<p>FORWARD</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/mikchen.jpg" alt="Coach">
+								<div class="description">
+									<h3>Mikchhen Tamang - 14</h3>
+									<p>MIDFIELD</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/BINIL.jpg" alt="Coach">
+								<div class="description">
+									<h3>Binil Bajgain - 12</h3>
+									<p>LEFT BACK</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/rabi.jpg" alt="Coach">
+								<div class="description">
+									<h3>Rabi Thapa - 9</h3>
+									<p>MIDFIELD</p>
+								</div>
+							</div>
+							<div class="team-card">
+								<img src="images/player/SAGAR.jpg" alt="Coach">
+								<div class="description">
+									<h3>Sagar Thapa - 22</h3>
+									<p>MIDFIELD</p>
+								</div>
+							</div>
 
-						<div class="item player">
-							<a href="images/player/prashant.jpg" title="Prashant Tamang - 3 - CENTER BACK">
-								<img src="images/player/prashant.jpg" alt="image">
-							</a>
-							<div class="player-details">Prashant Tamang - 3 - CENTER BACK</div>
+							<div class="team-card">
+								<img src="images/player/SONAM.jpg" alt="Coach">
+								<div class="description">
+									<h3>Sonam Thapa - 20</h3>
+									<p>MIDFIELD</p>
+								</div>
+							</div>
+							
+							
 						</div>
-						<div class="item player">
-							<a href="images/player/rajan.jpg" title="Rajan Gurung - 32 - CENTER BACK">
-								<img src="images/player/rajan.jpg" alt="image">
-							</a>
-							<div class="player-details">Rajan Gurung - 32 - CENTER BACK</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/SAJAN.jpg" title="Sajan Basnet - 4 - CENTER BACK">
-								<img src="images/player/SAJAN.jpg" alt="image">
-							</a>
-							<div class="player-details">Sajan Basnet - 4 - CENTER BACK</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/AVASH.jpg" title="Avash Bista - 27 - FORWARD">
-								<img src="images/player/AVASH.jpg" alt="image">
-							</a>
-							<div class="player-details">Avash Bista - 27 - FORWARD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/Crijan.jpg" title="Crijan">
-								<img src="images/player/Crijan.jpg" alt="image">
-							</a>
-							<div class="player-details">Sijan Bhandari - 9 - FORWARD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/pritivi.jpg" title="Pritivi Thapa - 6 - MIDFIELD">
-								<img src="images/player/pritivi.jpg" alt="image">
-							</a>
-							<div class="player-details">Pritivi Thapa - 6 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/RUMESH.jpg" title="Rumesh Bartaula - 26 - FORWARD">
-								<img src="images/player/RUMESH.jpg" alt="image">
-							</a>
-							<div class="player-details">Rumesh Bartaula - 26 - FORWARD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/SAROJ.jpg" title="Saroj Budhathoki - 24 - FORWARD">
-								<img src="images/player/SAROJ.jpg" alt="image">
-							</a>
-							<div class="player-details">Saroj Budhathoki - 24 - FORWARD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/mikchen.jpg" title="Mikchhen Tamang - 14 - MIDFIELD">
-								<img src="images/player/mikchen.jpg" alt="image">
-							</a>
-							<div class="player-details">Mikchhen Tamang - 14 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/BINIL.jpg" title="Binil Bajgain - 12 - LEFT BACK">
-								<img src="images/player/BINIL.jpg" alt="image">
-							</a>
-							<div class="player-details">Binil Bajgain - 12 - LEFT BACK</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/rabi.jpg" title="Rabi Thapa - 9 - MIDFIELD">
-								<img src="images/player/rabi.jpg" alt="image">
-							</a>
-							<div class="player-details">Rabi Thapa - 9 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/SAGAR.jpg" title="Sagar Thapa - 22 - MIDFIELD">
-								<img src="images/player/SAGAR.jpg" alt="image">
-							</a>
-							<div class="player-details">Sagar Thapa - 22 - MIDFIELD</div>
-						</div>
-						<div class="item player">
-							<a href="images/player/SONAM.jpg" title="Sonam Thapa - 20 - MIDFIELD">
-								<img src="images/player/SONAM.jpg" alt="image">
-							</a>
-							<div class="player-details">Sonam Thapa - 20 - MIDFIELD</div>
-						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</section>
