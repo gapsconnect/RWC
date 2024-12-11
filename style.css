@@ -8535,7 +8535,6 @@ h6 a:hover {
 .header-main .header-lower {
     background: linear-gradient(
 		45deg,
-			#B89EAB,
 			#D3D3D3,
 			#87CEEB,
 			#C0C0C0
@@ -8983,7 +8982,6 @@ header-main .header-lower::before {
 .footer-type01 {
 	background:  linear-gradient(
     45deg,
-        #B89EAB,
         #D3D3D3,
         #87CEEB,
 		#C0C0C0
@@ -9024,6 +9022,12 @@ header-main .header-lower::before {
 	transform: scale(0.6);
 }
 
+.logo a img {
+	image-rendering: auto; /* Default rendering */
+	image-rendering: crisp-edges; /* Optional for sharper display */
+  }
+
+  
 .footer-container li {
 	padding: 30px 0 20px;
 	display: inline-block;

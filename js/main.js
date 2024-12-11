@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
 $(document).ready(function () {
 
     const announcements = [
-		"Announcement: 3rd Expert Cup on 13th and 14th Sept 2024",
-		"Registration Open: Team Registration <a target='_blank' href='https://form.jotform.com/241838299306062'>Form</a>"	
+		"Happy Holidays! May your days be merry and bright.",
+		"Wishing you a year full of dreams and success. Happy New Year!"	
     ];
 
     let currentAnnouncementIndex = 0;
